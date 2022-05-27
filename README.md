@@ -8,6 +8,8 @@
 
 
 
+---
+
 ### Template ✅ ❎ ❗❓
 
 - ✅ For finished
@@ -20,7 +22,9 @@
 
 - ~~Strikedthrough~~ For not bothering (e.g. too easy)
 
-### 20220522 [file](src/main/kotlin/_2022/_0522/Solution.kt)
+---
+
+### 20220528 [file](src/main/kotlin/_2022/_0522/Solution.kt)
 
 [leetcode-master/0001.两数之和.md at master · youngyangyang04/leetcode-master · GitHub](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0001.%E4%B8%A4%E6%95%B0%E4%B9%8B%E5%92%8C.md)
 
@@ -33,8 +37,6 @@
 - ~~[383. Ransom Note](https://leetcode.com/problems/ransom-note/)~~
 
 - [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) ✅
-
-- 
 
 ---
 
