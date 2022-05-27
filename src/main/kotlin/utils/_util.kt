@@ -1,0 +1,33 @@
+package utils
+
+import kotlin.reflect.KFunction
+import kotlin.reflect.KCallable
+import kotlin.time.ExperimentalTime
+import kotlin.time.TimedValue
+import kotlin.time.measureTimedValue
+
+inline fun<reified T> List<T>.contentEquals(second: List<T>, ignoreOrder: Boolean = false): Boolean {
+    if (size != second.size) {
+        return false
+    }
+    if (!ignoreOrder) return toTypedArray() contentEquals second.toTypedArray()
+
+    for (f in this) {
+        val anyMatch = second.any { it == f }
+        if (!anyMatch) return false
+    }
+    return true
+}
+
+
+
+@OptIn(ExperimentalTime::class)
+inline fun<reified T : KCallable<*>, reified R> List<T>.runTimedTests(
+    testName: String? = null,
+    printTime: Boolean = true,
+    block: T.()->R
+) = forEach {
+    val timeValue = measureTimedValue{ it.block() }
+    val prefix = if (testName.isNullOrEmpty()) "" else "${testName}."
+    if (printTime) println("execution for ${prefix}${it.name} finished, took ${timeValue.duration.inWholeNanoseconds} Nanoseconds")
+}
