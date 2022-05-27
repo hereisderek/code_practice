@@ -1,4 +1,4 @@
-## Code practice
+## Code practice [link]([hereisderek/code_practice · GitHub](https://github.com/hereisderek/code_practice))
 
 ---
 
@@ -32,7 +32,7 @@
 
 - ~~[383. Ransom Note](https://leetcode.com/problems/ransom-note/)~~
 
-- [49. Group Anagrams]([Loading...](https://leetcode.com/problems/group-anagrams/)) ✅
+- [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/) ✅
 
 - 
 
