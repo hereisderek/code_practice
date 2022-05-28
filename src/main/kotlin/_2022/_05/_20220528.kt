@@ -1,6 +1,6 @@
 @file:Suppress("ClassName")
 
-package _2022._0522
+package _2022._05
 
 import utils.contentEquals
 import utils.runTimedTests
@@ -10,7 +10,7 @@ import utils.runTimedTests
 // https://leetcode.cn/problems/two-sum/
 
 
-class Solution_1 {
+class Leetcode_1 {
     // 57 / 57 test cases passed.
     // Status: Accepted
     // Runtime: 342 ms
@@ -28,7 +28,7 @@ class Solution_1 {
     }
 
     companion object {
-        fun test() = Solution_1().apply {
+        fun test() = Leetcode_1().apply {
             twoSum(intArrayOf(2, 7, 11, 15), 9).run {
                 assert(this.contentEquals(intArrayOf(0, 1)))
             }
@@ -44,9 +44,9 @@ class Solution_1 {
 }
 
 // https://leetcode.cn/problems/valid-anagram/
-class Solution_242{
+class Leetcode_242{
     companion object {
-        fun test() = Solution_242().run {
+        fun test() = Leetcode_242().run {
             val methods = arrayOf(/*this::isAnagram2,*/ this::isAnagram)
             methods.forEach {
                 assert(it.invoke("anagram", "nagaram"))
@@ -118,10 +118,10 @@ class Solution_242{
 
 
 // https://leetcode.com/problems/intersection-of-two-arrays/
-class Solution_349 {
+class Leetcode_349 {
     companion object {
-        fun test() = Solution_349().run {
-            listOf(this::intersection, this::_intersection).runTimedTests("Solution_349") {
+        fun test() = Leetcode_349().run {
+            listOf(this::intersection, this::_intersection).runTimedTests("Leetcode_349") {
                 invoke(intArrayOf(1,2,2,1), intArrayOf(2,2)).contentEquals(intArrayOf(2))
                 invoke(intArrayOf(4,9,5), intArrayOf(9,4,9,8,4)).contentEquals(intArrayOf(4,9))
             }
@@ -170,10 +170,10 @@ class Solution_349 {
 }
 
 // https://leetcode.com/problems/group-anagrams/
-class Solution_49 {
+class Leetcode_49 {
     companion object {
-        fun test() = Solution_49().apply {
-            listOf(this::groupAnagrams, this::groupAnagrams_0).runTimedTests("Solution_49") {
+        fun test() = Leetcode_49().apply {
+            listOf(this::groupAnagrams, this::groupAnagrams_0).runTimedTests("Leetcode_49") {
                 listOf(
                     invoke(arrayOf("eat","tea","tan","ate","nat","bat")) to listOf(
                         listOf("bat"), listOf("nat","tan"), listOf("ate","eat","tea")
@@ -205,7 +205,7 @@ class Solution_49 {
     // Runtime: 1633 ms
     // Memory Usage: 44.1 MB
     fun groupAnagrams(strs: Array<String>): List<List<String>> {
-        val isAnagrams = Solution_242()::isAnagram
+        val isAnagrams = Leetcode_242()::isAnagram
         val map = mutableMapOf<String, MutableList<String>>()
 
         for (i in strs.indices) {
@@ -259,10 +259,10 @@ class Solution_49 {
 
 
 fun main() {
-    Solution_1.test()
-    Solution_242.test()
-    Solution_349.test()
-    Solution_49.test()
+    Leetcode_1.test()
+    Leetcode_242.test()
+    Leetcode_349.test()
+    Leetcode_49.test()
 }
 
 

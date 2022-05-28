@@ -31,3 +31,9 @@ inline fun<reified T : KCallable<*>, reified R> List<T>.runTimedTests(
     val prefix = if (testName.isNullOrEmpty()) "" else "${testName}."
     if (printTime) println("execution for ${prefix}${it.name} finished, took ${timeValue.duration.inWholeNanoseconds} Nanoseconds")
 }
+
+inline fun <reified T : Any> T.assertEqual(expected: T) {
+    assert(this == expected) {
+        "Assertion failed, expected:$expected, actual:$this"
+    }
+}
