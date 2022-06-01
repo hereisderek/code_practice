@@ -1,5 +1,6 @@
 package utils
 
+import kotlin.jvm.javaClass
 import kotlin.reflect.KFunction
 import kotlin.reflect.KCallable
 import kotlin.time.ExperimentalTime
@@ -23,13 +24,17 @@ inline fun<reified T> List<T>.contentEquals(second: List<T>, ignoreOrder: Boolea
 
 @OptIn(ExperimentalTime::class)
 inline fun<reified T : KCallable<*>, reified R> List<T>.runTimedTests(
-    testName: String? = null,
+    testName: String? = Thread.currentThread().stackTrace.getOrNull(1)?.className?.split("$", limit = 0)?.get(0),
     printTime: Boolean = true,
     block: T.()->R
-) = forEach {
-    val timeValue = measureTimedValue{ it.block() }
-    val prefix = if (testName.isNullOrEmpty()) "" else "${testName}."
-    if (printTime) println("execution for ${prefix}${it.name} finished, took ${timeValue.duration.inWholeNanoseconds} Nanoseconds")
+) {
+    // val testName = testName ?: Thread.currentThread().stackTrace.getOrNull(1)?.className?.split("$", limit = 0)?.get(0)
+    forEachIndexed { index, it ->
+
+        val timeValue = measureTimedValue{ it.block() }
+        val prefix = if (testName.isNullOrEmpty()) "" else "${testName}."
+        if (printTime) println("execution for ${prefix}${it.name} finished, took ${timeValue.duration.inWholeNanoseconds} Nanoseconds")
+    }
 }
 
 inline fun <reified T : Any> T.assertEqual(expected: T) {
