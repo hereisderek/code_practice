@@ -7,6 +7,10 @@ import kotlin.time.ExperimentalTime
 import kotlin.time.TimedValue
 import kotlin.time.measureTimedValue
 
+
+/**
+ * For checking if the contents of a list is equal to another list, with optional #[ignoreOrder] flag for ignoring the order
+ */
 inline fun<reified T> List<T>.contentEquals(second: List<T>, ignoreOrder: Boolean = false): Boolean {
     if (size != second.size) {
         return false
@@ -35,8 +39,13 @@ inline fun<reified T : KCallable<*>, reified R> List<T>.runTimedTests(
         if (printTime) println("execution for ${prefix}${it.name} finished, took ${timeValue.duration.inWholeNanoseconds} Nanoseconds")
     }
 }
+/// assert
 
-
+inline fun <reified T : Any> T.assertThat(block: T.() -> Boolean) {
+    assert(this.block()) {
+        "Assertion failed, actual:$this"
+    }
+}
 
 inline infix fun <reified T : Any> T.assertEqual(expected: T) {
     assert(this == expected) {

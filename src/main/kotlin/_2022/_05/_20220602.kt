@@ -3,13 +3,15 @@
 package _2022._05
 
 import utils.assertEqual
+import utils.assertThat
 import utils.runTimedTests
 
 
 fun main() {
-    Leetcode_5.test()
-
+    // Leetcode_5.test()
+    Leetcode_15.test()
 }
+
 
 
 interface Leetcode_5 {
@@ -96,6 +98,54 @@ interface Leetcode_5 {
             }
 
             return s.substring(start, start + maxLength)
+        }
+    }
+}
+
+
+// https://leetcode.com/problems/3sum/
+interface Leetcode_15 {
+    fun threeSum(nums: IntArray): List<List<Int>>
+    companion object {
+        fun test() {
+            listOf(
+                S1()::threeSum
+            ).runTimedTests {
+                // invoke(intArrayOf(-1,0,1,2,-1,-4)).assertThat {
+                //     size == 2 && all { it.size == 3 && it.sum() == 0 }
+                // }
+                invoke(intArrayOf(-4,-2,-2,-2,0,1,2,2,2,3,3,4,4,6,6)).assertThat {
+                    size == 6 && all { it.size == 3 && it.sum() == 0 }
+                }
+                // invoke(intArrayOf(0)).assertEqual(emptyList())
+            }
+        }
+    }
+
+    private class S1 : Leetcode_15 {
+        override fun threeSum(nums: IntArray): List<List<Int>> {
+            if (nums.size <= 2) return emptyList()
+            val list = mutableListOf<MutableList<Int>>()
+            for (i in 0 until nums.size - 2) {
+                for (j in i + 1 until nums.size - 1) {
+                    for (k in j + 1 until nums.size) {
+                        val a = nums[i]
+                        val b = nums[j]
+                        val c = nums[k]
+                        if (a + b + c == 0) {
+                            if (
+                                !list.any { it.contains(a) && it.contains(b) }
+                            ) {
+                                list.add(mutableListOf(a, b, c))
+                            } else {
+                                println("skipping [$a $b $c]")
+                            }
+                        }
+                    }
+                }
+            }
+
+            return list
         }
     }
 }
