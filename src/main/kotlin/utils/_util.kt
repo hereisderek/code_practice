@@ -30,15 +30,22 @@ inline fun<reified T : KCallable<*>, reified R> List<T>.runTimedTests(
 ) {
     // val testName = testName ?: Thread.currentThread().stackTrace.getOrNull(1)?.className?.split("$", limit = 0)?.get(0)
     forEachIndexed { index, it ->
-
         val timeValue = measureTimedValue{ it.block() }
         val prefix = if (testName.isNullOrEmpty()) "" else "${testName}."
         if (printTime) println("execution for ${prefix}${it.name} finished, took ${timeValue.duration.inWholeNanoseconds} Nanoseconds")
     }
 }
 
-inline fun <reified T : Any> T.assertEqual(expected: T) {
+
+
+inline infix fun <reified T : Any> T.assertEqual(expected: T) {
     assert(this == expected) {
         "Assertion failed, expected:$expected, actual:$this"
+    }
+}
+
+inline fun <reified T : Any> T.assertEqual(vararg expected: T) {
+    assert(expected.any { it == this }) {
+        "Assertion failed, actual:$this expected:${expected.joinToString()}"
     }
 }

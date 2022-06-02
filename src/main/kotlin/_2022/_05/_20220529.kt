@@ -126,6 +126,10 @@ interface Leetcode_647 {
         }
     }
 
+    // 130 / 130 test cases passed.
+    // Status: Accepted
+    // Runtime: 216 ms
+    // Memory Usage: 34.1 MB
     private class S3 : Leetcode_647 {
         override fun countSubstrings(s: String): Int {
             var counter = 0

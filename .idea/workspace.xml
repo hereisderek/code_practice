@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c15a0fa3-bdf6-48b4-87cd-b0658ceea7d4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220602.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_sample.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220529.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220529.kt" afterDir="false" />
@@ -73,11 +75,20 @@
       <recent name="$PROJECT_DIR$/src/main/kotlin/_2022" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin._20220529Kt">
+  <component name="RunManager" selected="Kotlin._20220602Kt">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="MainKt" />
       <module name="code_practice.main" />
       <shortenClasspath name="NONE" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="_20220602Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2022._05._20220602Kt" />
+      <module name="code_practice.main" />
+      <shortenClasspath name="NONE" />
+      <option name="VM_PARAMETERS" value="-ea" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -92,10 +103,12 @@
     <list>
       <item itemvalue="Kotlin._20220528Kt" />
       <item itemvalue="Kotlin._20220529Kt" />
+      <item itemvalue="Kotlin._20220602Kt" />
       <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._20220602Kt" />
         <item itemvalue="Kotlin.MainKt" />
       </list>
     </recent_temporary>
@@ -114,7 +127,8 @@
       <workItem from="1653899484577" duration="77000" />
       <workItem from="1653899584360" duration="39000" />
       <workItem from="1653899660119" duration="662000" />
-      <workItem from="1653900388588" duration="10058000" />
+      <workItem from="1653900388588" duration="10780000" />
+      <workItem from="1654158248902" duration="9720000" />
     </task>
     <servers />
   </component>
@@ -140,7 +154,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220529.kt</url>
-          <line>154</line>
+          <line>158</line>
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
@@ -149,12 +163,9 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/utils/_util.kt</url>
-          <line>33</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="22" />
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220602.kt</url>
+          <line>63</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

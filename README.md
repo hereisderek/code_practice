@@ -48,10 +48,19 @@ Note: To enable assertion for kotlin, pass in `-ea` as jvm launch argument, see 
 ### [20220529-20220601](src/main/kotlin/_2022/_05/_20220529.kt)
 [youngyangyang04/leetcode-master/0005.最长回文子串.md · GitHub](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0005.%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2.md)
 
-| Marks | link                                                                                             | Notes                                                                                                                                                 |
-|:-----:|--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-|  😕✅  | [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)             | _Not done, continue with [link](https://programmercarl.com/0647.%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2.html#_647-%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2)_ |
-| 😕❗❓  | [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) |                                                                                                                                                       |
+| Marks | link                                                                                             | Notes |
+|:-----:|--------------------------------------------------------------------------------------------------|-------|
+|  😕✅  | [647. Palindromic Substrings](https://leetcode.com/problems/palindromic-substrings/)             |       |
+| 😕❗❓  | [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) |       |
+
+---
+
+### [20220602](src/main/kotlin/_2022/_05/_20220602.kt)
+[youngyangyang04/leetcode-master/0005.最长回文子串.md · GitHub](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0005.%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2.md)
+
+| Marks | link                                                                                             | Notes |
+|:-----:|--------------------------------------------------------------------------------------------------|-------|
+| 😕✅❗  | [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/) | S0 ❓  |
 
 
 --- 
