@@ -1,10 +1,8 @@
 @file:Suppress("ClassName")
 package _2022._05
 
-import utils.assertEqual
+import utils.assertEqualTo
 import utils.runTimedTests
-import java.util.Stack
-import kotlin.math.min
 
 
 fun main() {
@@ -14,7 +12,7 @@ fun main() {
 
 
 // https://leetcode.com/problems/longest-palindromic-substring/
-interface Leetcode_647 {
+private interface Leetcode_647 {
     fun countSubstrings(s: String): Int
 
     companion object {
@@ -25,8 +23,8 @@ interface Leetcode_647 {
                 S3()::countSubstrings,
                 S0()::countSubstrings
             ).runTimedTests() {
-                invoke("abc").assertEqual(3)
-                invoke("aaa").assertEqual(6)
+                invoke("abc").assertEqualTo(3)
+                invoke("aaa").assertEqualTo(6)
             }
         }
     }

@@ -1,6 +1,6 @@
 @file:Suppress("DuplicatedCode", "ClassName")
 
-import utils.assertEqual
+import utils.assertEqualTo
 import utils.runTimedTests
 
 fun main() {
@@ -14,7 +14,7 @@ interface Leetcode {
         fun test() = listOf(
             S1()::someMethod
         ).runTimedTests {
-            invoke().assertEqual("SomeStr")
+            invoke().assertEqualTo("SomeStr")
         }
     }
 

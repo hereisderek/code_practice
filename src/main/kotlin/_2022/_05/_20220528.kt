@@ -10,7 +10,7 @@ import utils.runTimedTests
 // https://leetcode.cn/problems/two-sum/
 
 
-class Leetcode_1 {
+private class Leetcode_1 {
     // 57 / 57 test cases passed.
     // Status: Accepted
     // Runtime: 342 ms
@@ -44,7 +44,7 @@ class Leetcode_1 {
 }
 
 // https://leetcode.cn/problems/valid-anagram/
-class Leetcode_242{
+private class Leetcode_242{
     companion object {
         fun test() = Leetcode_242().run {
             val methods = arrayOf(/*this::isAnagram2,*/ this::isAnagram)
@@ -118,10 +118,10 @@ class Leetcode_242{
 
 
 // https://leetcode.com/problems/intersection-of-two-arrays/
-class Leetcode_349 {
+private class Leetcode_349 {
     companion object {
         fun test() = Leetcode_349().run {
-            listOf(this::intersection, this::_intersection).runTimedTests("Leetcode_349") {
+            listOf(this::intersection, this::_intersection).runTimedTests() {
                 invoke(intArrayOf(1,2,2,1), intArrayOf(2,2)).contentEquals(intArrayOf(2))
                 invoke(intArrayOf(4,9,5), intArrayOf(9,4,9,8,4)).contentEquals(intArrayOf(4,9))
             }
@@ -170,10 +170,10 @@ class Leetcode_349 {
 }
 
 // https://leetcode.com/problems/group-anagrams/
-class Leetcode_49 {
+private class Leetcode_49 {
     companion object {
         fun test() = Leetcode_49().apply {
-            listOf(this::groupAnagrams, this::groupAnagrams_0).runTimedTests("Leetcode_49") {
+            listOf(this::groupAnagrams, this::groupAnagrams_0).runTimedTests {
                 listOf(
                     invoke(arrayOf("eat","tea","tan","ate","nat","bat")) to listOf(
                         listOf("bat"), listOf("nat","tan"), listOf("ate","eat","tea")

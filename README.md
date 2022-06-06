@@ -1,13 +1,15 @@
-## Code practice [link](https://github.com/hereisderek/code_practice)
+r## Code practice [link](https://github.com/hereisderek/code_practice)
 
 ---
 
 ### Templates
 
-| Marks | link | Notes |
-|:-----:|------|-------|
-|  😕✅  |      |       |
-| 😕❗❓  |      |       |
+| Difficulty | Marks | Name | link                                                        | Notes |
+|:----------:|:-----:|------|-------------------------------------------------------------|-------|
+|    Easy    |  😕✅  |      |                                                             |       |
+|   Medium   | 😕❗❓  |      |                                                             |       |
+|    Hard    | 😕❗❓  |      |                                                             |       |
+|   Medium   | 😕❗❓  |      | [Leetcode](https://leetcode.com/problems/4sum/), [Github]() |       |
 
 #### Markers:
 - ✅ For finished
@@ -32,6 +34,7 @@ _Other than those listed below, check out [_util.kt](src/main/kotlin/utils/_util
 
  
 1. Run timed tests on a list of method variable. Sample usage checkout [this](src/main/kotlin/_sample.kt)
+Update: I noticed that this method may not be accurate, not sure of the cause 
 ```kotlin
 @OptIn(ExperimentalTime::class)
 inline fun<reified T : KCallable<*>, reified R> List<T>.runTimedTests(
@@ -46,11 +49,11 @@ inline fun<reified T : KCallable<*>, reified R> List<T>.runTimedTests(
     }
 }
 ```
-Sample output:
+Sample print out:
 ```
-/usr/local/Cellar/openjdk/18.0.1/libexec/openjdk.jdk/Contents/Home/bin/java -ea -javaagent:/Users/derek/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/221.5591.52/IntelliJ IDEA.app/Contents/lib/idea_rt.jar=51964:/Users/derek/Library/Application Support/JetBrains/Toolbox/apps/IDEA-U/ch-0/221.5591.52/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 -classpath /Users/derek/Workspace/mine/code_practice/build/classes/kotlin/main:/Users/derek/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk8/1.6.21/eeb4d60d75e9ea9c11200d52974e522793b14fba/kotlin-stdlib-jdk8-1.6.21.jar:/Users/derek/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-jdk7/1.6.21/568c1b78a8e17a4f35b31f0a74e2916095ed74c2/kotlin-stdlib-jdk7-1.6.21.jar:/Users/derek/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.6.21/11ef67f1900634fd951bad28c53ec957fabbe5b8/kotlin-stdlib-1.6.21.jar:/Users/derek/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.6.21/5e5b55c26dbc80372a920aef60eb774b714559b8/kotlin-stdlib-common-1.6.21.jar:/Users/derek/.gradle/caches/modules-2/files-2.1/org.jetbrains/annotations/13.0/919f0dfe192fb4e063e7dacadee7f8bb9a2672a9/annotations-13.0.jar _2022._05._20220602Kt
-execution for _2022._05.Leetcode_5.longestPalindrome finished, took 4293279 Nanoseconds
-execution for _2022._05.Leetcode_5.longestPalindrome finished, took 34576 Nanoseconds
+execution for _2022._05.Leetcode_15.MY1.threeSum finished, took 476348 Nanoseconds
+execution for _2022._05.Leetcode_15.MY1.threeSum finished, took 423606 Nanoseconds
+execution for _2022._05.Leetcode_15.MY2.threeSum finished, took 435733 Nanoseconds
 ```
 
 2. Assertion (assertEqual)
@@ -61,8 +64,13 @@ test().assertEqual("possible_output1", "possible_output2") // for multiple corre
 ```
 
 
-
-
+3. Build-in data types
+   1. [Node](src/main/kotlin/utils/Node.kt) (`typealias IntNode = Node<Int>`) and some built-in functions, e.g:
+      1. `fun <T> linkedNodesOf(vararg nodes: T) : Node<T>` usage:`linkedNodesOf(1, 2, 3)` to create a linked nodes like `1 -> 2 -> 3`
+      2. `fun <T> Node<T>.toList() : List<T>` usage: `linkedNodesOf(1, 2, 3).toList()` gets: `[1,2,3]`
+      3. `fun <T, R> Node<T>.mapValue(transform: ((T)->R)) : List<R>` usage: `linkedNodesOf(1, 2, 3).mapValue{ it * 2 }` gets `[2,4,6]`
+      4. others see this file: [Node](src/main/kotlin/utils/Node.kt)
+   
 ---
 
 ### [202205](src/main/kotlin/_2022/_05)
@@ -81,7 +89,7 @@ test().assertEqual("possible_output1", "possible_output2") // for multiple corre
 
 ---
 
-#### [20220529-20220601](src/main/kotlin/_2022/_05/_20220529.kt)
+#### [20220529, 20220601](src/main/kotlin/_2022/_05/_20220529.kt)
 [youngyangyang04/leetcode-master/0005.最长回文子串.md · GitHub](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0005.%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2.md)
 
 | Marks | link                                                                                             | Notes |
@@ -91,14 +99,24 @@ test().assertEqual("possible_output1", "possible_output2") // for multiple corre
 
 ---
 
-#### [20220602](src/main/kotlin/_2022/_05/_20220602.kt)
+#### [20220602, 20220605, 20220606](src/main/kotlin/_2022/_05/_20220602.kt)
 [youngyangyang04/leetcode-master/0005.最长回文子串.md · GitHub](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0005.%E6%9C%80%E9%95%BF%E5%9B%9E%E6%96%87%E5%AD%90%E4%B8%B2.md)
 
-| Marks  | link                                                                                                                                                                                     | Notes |
-|:------:|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|
-|  😕✅❗  | [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)                                                                                         | S0 ❓  |
-|   👷   | 15. 3Sum [[leetcode](https://leetcode.com/problems/3sum/)] [[git](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0015.%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.md)] |       |
+| Difficulty | Marks | link                                                                                                                                                                                                                                      | Notes        |
+|:----------:|:-----:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
+|  _Medium_  |  ✅❗   | 5. Longest Palindromic Substring [[leetcode](https://leetcode.com/problems/longest-palindromic-substring/)] [[git](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0015.%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.md)] |              |
+|  _Medium_  |   ✅   | 15. 3Sum 💃💃💃 [[leetcode](https://leetcode.com/problems/3sum/)] [[git](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0015.%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.md)]                                           | My4 not done |
+|            |       |                                                                                                                                                                                                                                           |              |
 
+---
+#### [20220606](src/main/kotlin/_2022/_05/_20220606.kt)
+
+| Difficulty |      Marks      | Name                                      | link                                                                                                                                                                                                                                                                       | Notes                                                                                                                  |
+|:----------:|:---------------:|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+|    Easy    |       😕✅       |                                           |                                                                                                                                                                                                                                                                            |                                                                                                                        |
+|   Medium   |       😏✅       | 17. Letter Combinations of a Phone Number | [Leetcode](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) [Github](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0017.%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E7%9A%84%E5%AD%97%E6%AF%8D%E7%BB%84%E5%90%88.md)               | Didn't read the sample code since it didn't take me too much thinking to solve the question, but it might worth a read |
+|   Medium   | Skipped for now | 18. 4Sum 💃💃💃💃                         | [Leetcode](https://leetcode.com/problems/4sum/) [Github](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0018.%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C.md)                                                                                             |                                                                                                                        |
+|   Medium   |       😕❓       | 19. Remove Nth Node From End of List      | [Leetcode](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) [Github](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0019.%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%ACN%E4%B8%AA%E8%8A%82%E7%82%B9.md) |                                                                                                                        |
 
 --- 
 ### References:
