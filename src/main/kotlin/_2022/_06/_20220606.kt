@@ -1,6 +1,6 @@
 @file:Suppress("DuplicatedCode", "ClassName")
 
-package _2022._05
+package _2022._06
 
 import utils.*
 
@@ -117,8 +117,8 @@ private interface Leetcode_17 {
 
     // sample 140 ms submission
     // it actually took much longer in my local test:
-    // execution for _2022._05.Leetcode_17.My1.letterCombinations finished, took 63463 Nanoseconds
-    // execution for _2022._05.Leetcode_17.Sample2.letterCombinations finished, took 2083344 Nanoseconds
+    // execution for _2022._06.Leetcode_17.My1.letterCombinations finished, took 63463 Nanoseconds
+    // execution for _2022._06.Leetcode_17.Sample2.letterCombinations finished, took 2083344 Nanoseconds
     class Sample2 : Leetcode_17 {
         override fun letterCombinations(digits: String): List<String> {
             val ret : MutableList<String> = mutableListOf()
@@ -158,14 +158,7 @@ private interface Leetcode_17 {
  * }
  */
 
-// private typealias ListNode = Node<Int>
-private typealias ListNode = IntNode
 private interface Leetcode_19 {
-
-    // class ListNode(var `val`: Int) {
-    //     var next: ListNode? = null
-    // }
-
     fun removeNthFromEnd(head: ListNode?, n: Int): ListNode?
 
     companion object {
@@ -214,7 +207,8 @@ private interface Leetcode_19 {
             return head
         }
     }
-    // 1 2 3 4
+
+    // https://leetcode.com/submissions/detail/716307384/
     private class My2 : Leetcode_19 {
         override fun removeNthFromEnd(head: ListNode?, n: Int): ListNode? {
             if (head == null) return null

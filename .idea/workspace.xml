@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c15a0fa3-bdf6-48b4-87cd-b0658ceea7d4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220607.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220606.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220606.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220602.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220602.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220606.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220606.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Node.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Node.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/_util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/_util.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/utils/NodeTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/utils/NodeTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,12 +24,22 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -81,8 +97,8 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin._20220606Kt">
-    <configuration name="NodeTest.test creation" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Kotlin._20220607Kt">
+    <configuration name="NodeTest.test creation (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -96,29 +112,6 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;utils.NodeTest.test creation&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="UtilTest.test List contentEquals with ignore order and not" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;utils.UtilTest.test List contentEquals with ignore order and not&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -154,6 +147,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="_20220607Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="_2022._06._20220607Kt" />
+      <module name="code_practice.main" />
+      <shortenClasspath name="NONE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="code_practice" />
       <shortenClasspath name="NONE" />
@@ -162,21 +164,21 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Gradle.NodeTest.test creation" />
-      <item itemvalue="Gradle.UtilTest.test List contentEquals with ignore order and not" />
+      <item itemvalue="Gradle.NodeTest.test creation (1)" />
       <item itemvalue="Kotlin._20220528Kt" />
       <item itemvalue="Kotlin._20220529Kt" />
+      <item itemvalue="Kotlin._20220607Kt" />
       <item itemvalue="Kotlin._20220606Kt" />
       <item itemvalue="Kotlin._20220602Kt" />
       <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._20220607Kt" />
+        <item itemvalue="Gradle.NodeTest.test creation (1)" />
         <item itemvalue="Kotlin._20220606Kt" />
         <item itemvalue="Kotlin._20220602Kt" />
         <item itemvalue="Kotlin.MainKt" />
-        <item itemvalue="Gradle.UtilTest.test List contentEquals with ignore order and not" />
-        <item itemvalue="Gradle.NodeTest.test creation" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +201,7 @@
       <workItem from="1654473973667" duration="850000" />
       <workItem from="1654477535472" duration="8311000" />
       <workItem from="1654494832758" duration="15635000" />
-      <workItem from="1654578827001" duration="3432000" />
+      <workItem from="1654578827001" duration="10836000" />
     </task>
     <servers />
   </component>
@@ -234,17 +236,17 @@
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220602.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220602.kt</url>
           <line>66</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220602.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220602.kt</url>
           <line>143</line>
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220602.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220602.kt</url>
           <line>126</line>
           <properties>
             <option name="lambda-ordinal" value="-1" />
@@ -253,19 +255,29 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <condition expression="i == 1" language="kotlin" />
-          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220602.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220602.kt</url>
           <line>246</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220606.kt</url>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220606.kt</url>
           <line>27</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220606.kt</url>
-          <line>223</line>
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220606.kt</url>
+          <line>224</line>
           <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220606.kt</url>
+          <line>231</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220607.kt</url>
+          <line>53</line>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

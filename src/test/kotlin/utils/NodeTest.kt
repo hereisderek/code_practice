@@ -14,5 +14,13 @@ internal class NodeTest {
         assertEquals(intList, nodes1.toList())
         assertEquals(intList, nodes1.mapValue { it })
 
+        assertTrue(
+            linkedNodesOf(1,2,4) == linkedNodesOf(1,2,4)
+        )
+        assertTrue(
+            linkedNodesOf(1,2,4) == listOf(
+                Node(1),Node(2),Node(4),
+            ).apply { linked() }[0]
+        )
     }
 }

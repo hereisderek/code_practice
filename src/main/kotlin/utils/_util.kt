@@ -54,7 +54,7 @@ inline fun<reified T : KCallable<*>, reified R> List<T>.runTimedTests(
 }
 /// assert
 
-/*inline */fun </*reified*/ T : Any> T.assertThat(lazyMsg: ((actual: T)->String)? = null, block: T.() -> Boolean) {
+/*inline */fun </*reified*/ T> T.assertThat(lazyMsg: ((actual: T)->String)? = null, block: T.() -> Boolean) {
     assert(this.block()) {
         lazyMsg?.invoke(this) ?: "Assertion failed, actual:$this"
     }
