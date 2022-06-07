@@ -172,9 +172,19 @@ private interface Leetcode_19 {
         fun test() = listOf(
             My2()::removeNthFromEnd
         ).runTimedTests {
-            invoke(
-                linkedNodesOf(1, 2, 3, 4, 5), 4
-            )?.toList().assertEqualTo(listOf(1, 2, 3, 5))
+            // invoke(
+            //     linkedNodesOf(1, 2, 3, 4, 5), 2
+            // )?.toList().assertEqualTo(listOf(1, 2, 3, 5))
+            //
+            // invoke(
+            //     linkedNodesOf(1, 2, 3, 4, 5), 4
+            // )?.toList().assertEqualTo(listOf(1, 3, 4, 5))
+            //
+            // assert(invoke(linkedNodesOf(1), 1) == null)
+            //
+            // invoke(linkedNodesOf(1, 2), 1)?.toList().assertEqualTo(listOf(1))
+
+            invoke(linkedNodesOf(1, 2), 2)?.toList().assertEqualTo(listOf(2))
         }
 
     }
@@ -208,17 +218,20 @@ private interface Leetcode_19 {
     private class My2 : Leetcode_19 {
         override fun removeNthFromEnd(head: ListNode?, n: Int): ListNode? {
             if (head == null) return null
-            var fast : ListNode = head
-            var slow : ListNode = head
+            val dummy = ListNode(-1, head)
+            var fast : ListNode? = dummy
+            var slow : ListNode? = dummy
             for (i in 0 until n) {
-                fast = fast.next ?: return null
+                fast = fast?.next
             }
-            while (fast.next != null) {
-                fast = fast.next!!
-                slow = slow.next ?: return null
+            while (fast?.next != null) {
+                fast = fast?.next
+                slow = slow?.next
             }
-            slow.next = slow.next!!.next
-            return head
+            val clean = slow?.next
+            slow?.next = slow?.next?.next
+            clean?.next = null
+            return dummy.next
         }
     }
 }
