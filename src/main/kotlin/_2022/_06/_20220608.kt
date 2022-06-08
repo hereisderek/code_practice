@@ -3,7 +3,8 @@
 package _2022._06
 
 import utils.*
-import java.util.LinkedList
+import java.util.*
+import kotlin.Comparator
 
 fun main() {
     Leetcode_23.test()
@@ -36,7 +37,9 @@ private interface Leetcode_23 {
             }
         }
     }
-
+    // https://leetcode.com/submissions/detail/717334868/
+    // Runtime: 517 ms, faster than 32.33% of Kotlin online submissions for Merge k Sorted Lists.
+    // Memory Usage: 38.9 MB, less than 85.80% of Kotlin online submissions for Merge k Sorted Lists.
     private class My1 : Leetcode_23 {
 
         private fun attach(previous: ListNode, list: Array<ListNode?>) {
@@ -63,6 +66,38 @@ private interface Leetcode_23 {
             val dummy = ListNode(-1)
             attach(dummy, lists)
             return dummy.next
+        }
+    }
+
+    private class S01 : Leetcode_23 {
+        override fun mergeKLists(lists: Array<ListNode?>): ListNode? {
+            val queue = PriorityQueue<ListNode>(
+                Math.max(1, lists.size),
+                Comparator { a, b -> a.`val`.compareTo(b.`val`) }
+            )
+
+            lists.forEach {
+                if (it != null) {
+                    queue.add(it)
+                }
+            }
+
+            var fakeHead = ListNode(0)
+            var tail = fakeHead
+            var node = queue.poll()
+            while (node != null) {
+                val newListHead = node.next
+                tail.next = node
+                tail = node
+
+                if (newListHead != null) {
+                    queue.add(newListHead)
+                }
+
+                node = queue.poll()
+            }
+
+            return fakeHead.next
         }
     }
 
