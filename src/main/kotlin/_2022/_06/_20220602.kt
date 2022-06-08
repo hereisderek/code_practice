@@ -3,6 +3,7 @@
 package _2022._06
 
 import utils.assertEqualTo
+import utils.assertEqualToAny
 import utils.assertThat
 import utils.contentEquals
 import utils.runTimedTests
@@ -26,7 +27,7 @@ private interface Leetcode_5 {
             S0()::longestPalindrome,
             S1()::longestPalindrome
         ).runTimedTests {
-            invoke("babad").assertEqualTo("bab", "aba")
+            invoke("babad").assertEqualToAny("bab", "aba")
             invoke("cbbd") assertEqualTo "bb"
         }
         // fun test() {

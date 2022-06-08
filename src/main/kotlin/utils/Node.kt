@@ -3,7 +3,10 @@ package utils
 typealias IntNode = Node<Int>
 typealias ListNode = IntNode
 
-data class Node<T>(var `val`: T, var next: Node<T>? = null)
+data class Node<T>(var `val`: T, var next: Node<T>? = null) {
+    val hasNext: Boolean get() = next != null
+    override fun toString(): String = "Node(${`val`},${hasNext})"
+}
 
 
 /// creation
@@ -36,6 +39,43 @@ fun cycledNodesOf(values: IntArray, pos: Int) : ListNode {
     return dummy.next!!
 }
 
+/**
+ *
+ * intersectVal - The value of the node where the intersection occurs. This is 0 if there is no intersected node.
+ * listA - The first linked list.
+ * listB - The second linked list.
+ * skipA - The number of nodes to skip ahead in listA (starting from the head) to get to the intersected node.
+ * skipB - The number of nodes to skip ahead in listB (starting from the head) to get to the intersected node.
+ * The judge will then create the linked structure based on these inputs and pass the two heads, headA and headB to your program. If you correctly return the intersected node, then your solution will be accepted.
+ *
+ */
+
+fun intersectedNodes(
+    headA:ListNode, headB:ListNode, skipA: Int, skipB: Int, intersectVal: Int
+) : Pair<ListNode, ListNode> {
+    if (intersectVal == 0) return Pair(headA, headB)
+
+    var hA: ListNode? = headA
+    var hB: ListNode? = headB
+    for (i in 0 until skipA - 1) {
+        hA = hA?.next
+    }
+
+    for (i in 0 until skipB - 1) {
+        hB = hB?.next
+    }
+
+    if (hA?.next?.`val` != null) check(hA?.next?.`val` == intersectVal)
+    if (hB?.next?.`val` != null) check(hB?.next?.`val` == intersectVal)
+    hB?.next = hA?.next
+
+    return Pair(headA, headB)
+}
+
+
+
+
+
 // Not sure we'd want this
 /*
 fun <T> linkedNodesOf(vararg nodes: Node<T>) : Node<T> {
@@ -51,6 +91,9 @@ fun <T> linkedNodesOf(vararg nodes: Node<T>) : Node<T> {
 */
 
 operator fun <T> Node<T>.get(index: Int) : Node<T>? {
+    if (index < 0) return null
+    if (index == 0) return this
+
     var pt : Node<T>? = this
     for (i in 0 until index) {
         pt = pt?.next

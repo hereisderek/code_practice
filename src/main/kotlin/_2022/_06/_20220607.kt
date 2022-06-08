@@ -202,14 +202,13 @@ private interface Leetcode_142 {
             val test3 = cycledNodesOf(intArrayOf(1), -1)
 
             listOf(
-                My1()::detectCycle,
+                Sample1()::detectCycle,
             ).runTimedTests {
                 invoke(test1).assertThat {
-                    this == test1.get(1)
-                    // this?.`val` == 2
+                    this == test1[1]
                 }
                 invoke(test2).assertThat {
-                    this?.`val` == 1
+                    this == test2[0] && this == test2
                 }
                 invoke(test3).assertThat {
                     this == null
@@ -219,9 +218,36 @@ private interface Leetcode_142 {
         }
     }
 
-    private class My1 : Leetcode_142 {
+    // https://labuladong.github.io/article/?qno=142
+    private class Sample1 : Leetcode_142 {
         override fun detectCycle(head: ListNode?): ListNode? {
-            TODO("Not yet implemented")
+            if (head == null) return null
+            if (head.next == head) return head
+
+            var slow: ListNode? = head
+            var fast: ListNode? = head
+
+            while (slow != null && fast != null) {
+                slow = slow.next
+                fast = fast.next?.next
+                if (slow == fast) break
+            }
+
+            // 上面的代码类似 hasCycle 函数
+            if (fast == null || fast?.next == null) {
+                // fast 遇到空指针说明没有环
+                return null
+            }
+
+            // 重新指向头结点
+            slow = head
+
+            // 快慢指针同步前进，相交点就是环起点
+            while (slow != fast) {
+                fast = fast?.next;
+                slow = slow?.next;
+            }
+            return slow
         }
     }
 }

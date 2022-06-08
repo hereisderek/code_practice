@@ -106,7 +106,6 @@ test().assertEqual("possible_output1", "possible_output2") // for multiple corre
 |:----------:|:-----:|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|
 |  _Medium_  |  ✅❗   | 5. Longest Palindromic Substring [[leetcode](https://leetcode.com/problems/longest-palindromic-substring/)] [[git](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0015.%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.md)] |              |
 |  _Medium_  |   ✅   | 15. 3Sum 💃💃💃 [[leetcode](https://leetcode.com/problems/3sum/)] [[git](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0015.%E4%B8%89%E6%95%B0%E4%B9%8B%E5%92%8C.md)]                                           | My4 not done |
-|            |       |                                                                                                                                                                                                                                           |              |
 
 ---
 #### [20220606](src/main/kotlin/_2022/_06/_20220606.kt)
@@ -119,21 +118,25 @@ test().assertEqual("possible_output1", "possible_output2") // for multiple corre
 |   Medium   |       😕❓       | 19. Remove Nth Node From End of List      | [Leetcode](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) [Github](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0019.%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%ACN%E4%B8%AA%E8%8A%82%E7%82%B9.md) |                                                                                                                        |
 
 ---
-#### [20220607](src/main/kotlin/_2022/_06/_20220607.kt)
+#### [20220607](src/main/kotlin/_2022/_06/_20220607.kt) [labuladong](https://labuladong.github.io/algo/2/17/16/)
 
 | Difficulty |      Marks      | Name                                      | link                                                                                                                                                                                                                                                                       | Notes                                                                                                                  |
 |:----------:|:---------------:|-------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 |    Easy    |       😏✅       | 21. Merge Two Sorted Lists                | [Leetcode](https://leetcode.com/problems/merge-two-sorted-lists/) [labuladong](https://labuladong.github.io/algo/2/17/16/)                                                                                                                                                 | Sample1 is interesting (recursion)                                                                                     |
 |    Easy    |       😏✅       | 141. Linked List Cycle                    | [Leetcode](https://leetcode.com/problems/linked-list-cycle/)                                                                                                                                                                                                               |
-|   Medium   |                 | 142. Linked List Cycle II                 | [Leetcode](https://leetcode.com/problems/linked-list-cycle-ii/) [labuladong](https://labuladong.github.io/article/?qno=142)                                                                                                                                                |
-|            |                 |                                           |                                                                                                                                                                                                                                                                            |
-|            |                 |                                           |                                                                                                                                                                                                                                                                            |
-|   Medium   |       😏✅       | 17. Letter Combinations of a Phone Number | [Leetcode](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) [Github](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0017.%E7%94%B5%E8%AF%9D%E5%8F%B7%E7%A0%81%E7%9A%84%E5%AD%97%E6%AF%8D%E7%BB%84%E5%90%88.md)               | Didn't read the sample code since it didn't take me too much thinking to solve the question, but it might worth a read |
-|   Medium   | Skipped for now | 18. 4Sum 💃💃💃💃                         | [Leetcode](https://leetcode.com/problems/4sum/) [Github](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0018.%E5%9B%9B%E6%95%B0%E4%B9%8B%E5%92%8C.md)                                                                                             |                                                                                                                        |
-|   Medium   |       😕❓       | 19. Remove Nth Node From End of List      | [Leetcode](https://leetcode.com/problems/remove-nth-node-from-end-of-list/) [Github](https://github.com/youngyangyang04/leetcode-master/blob/master/problems/0019.%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E7%9A%84%E5%80%92%E6%95%B0%E7%AC%ACN%E4%B8%AA%E8%8A%82%E7%82%B9.md) |                                                                                                                        |
+|   Medium   |        ❗        | 142. Linked List Cycle II                 | [Leetcode](https://leetcode.com/problems/linked-list-cycle-ii/) [labuladong](https://labuladong.github.io/article/?qno=142)                                                                                                                                                |
+
+---
+#### [20220608](src/main/kotlin/_2022/_06/_20220607.kt) [labuladong](https://labuladong.github.io/algo/2/17/16/)
+
+| Difficulty | Marks | Name                                  | link                                                                                                                                    | Notes                              |
+|:----------:|:-----:|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
+|    Hard    |  😏✅  | 23. Merge k Sorted Lists              | [Leetcode](https://leetcode.com/problems/merge-k-sorted-lists/) [labuladong](https://labuladong.github.io/article/?qno=23)              | Need to read the sample code       |
+|    Easy    |       | 160. Intersection of Two Linked Lists | [Leetcode](https://leetcode.com/problems/intersection-of-two-linked-lists/) [labuladong](https://labuladong.github.io/article/?qno=160) | Sample1 is interesting (recursion) |
+
+[//]: # (|            |       |                                       |                                                                                                                                         |)
 
 
-[//]: # (https://labuladong.github.io/algo/2/17/16/)
 
 
 --- 

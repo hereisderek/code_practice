@@ -60,13 +60,13 @@ inline fun<reified T : KCallable<*>, reified R> List<T>.runTimedTests(
     }
 }
 
-inline infix fun <reified T : Any> T?.assertEqualTo(expected: T) {
+inline infix fun <reified T> T.assertEqualTo(expected: T) {
     assert(this == expected) {
         "Assertion failed, expected:$expected, actual:$this"
     }
 }
 
-inline fun <reified T : Any> T?.assertEqualTo(vararg expected: T) {
+inline fun <reified T> T.assertEqualToAny(vararg expected: T) {
     assert(expected.any { it == this }) {
         "Assertion failed, actual:$this expected:${expected.joinToString()}"
     }
