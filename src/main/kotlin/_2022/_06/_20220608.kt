@@ -21,7 +21,8 @@ private interface Leetcode_23 {
         fun test() {
 
             listOf(
-                My1()::mergeKLists
+                My1()::mergeKLists,
+                S01()::mergeKLists,
             ).runTimedTests {
                 val t1 = arrayOf<ListNode?>(
                     linkedNodesOf(1,4,5),
@@ -69,6 +70,7 @@ private interface Leetcode_23 {
         }
     }
 
+    // https://labuladong.github.io/algo/2/21/62/
     private class S01 : Leetcode_23 {
         override fun mergeKLists(lists: Array<ListNode?>): ListNode? {
             val queue = PriorityQueue<ListNode>(
