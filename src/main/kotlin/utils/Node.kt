@@ -3,9 +3,32 @@ package utils
 typealias IntNode = Node<Int>
 typealias ListNode = IntNode
 
+// @Suppress("NOTHING_TO_INLINE", "FunctionName")
+// inline fun IntNode() = IntNode(-1, null)
+//
+// @Suppress("NOTHING_TO_INLINE", "FunctionName")
+// inline fun ListNode(`val`: Int = -1, next: ListNode? = null) = ListNode(-1, null)
+
 data class Node<T>(var `val`: T, var next: Node<T>? = null) {
     val hasNext: Boolean get() = next != null
     override fun toString(): String = "Node(${`val`},${hasNext})"
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (other == null) return false
+        val o = (other as? Node<T>) ?: return false
+        if (!Generic<Node<T>>().isInstance(other)) return false
+
+        var p1 : Node<T>? = this
+        var p2 : Node<T>? = o
+
+        while (p1 != null && p2 !== p1) {
+            if (p1.`val` != p2?.`val`) return false
+            p1 = p1.next
+            p2 = p2?.next
+        }
+        return true
+    }
 }
 
 

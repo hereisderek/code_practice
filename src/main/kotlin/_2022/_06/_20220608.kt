@@ -122,7 +122,6 @@ private interface Leetcode_160 {
                 linkedNodesOf(1,5),
                 3, 2, 0
             )
-            println("t1:$t1, t2:$t2, t3:$t3")
 
             listOf(
                 My1()::getIntersectionNode
@@ -151,6 +150,9 @@ private interface Leetcode_160 {
         }
     }
 
+    // https://leetcode.com/submissions/detail/721942632/
+    // Runtime: 351 ms, faster than 61.24% of Kotlin online submissions for Intersection of Two Linked Lists.
+    // Memory Usage: 57.3 MB, less than 42.51% of Kotlin online submissions for Intersection of Two Linked Lists.
     private class My1 : Leetcode_160 {
         override fun getIntersectionNode(headA: ListNode?, headB: ListNode?): ListNode? {
             var p1 = headA

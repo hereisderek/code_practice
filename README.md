@@ -4,12 +4,12 @@ r## Code practice [link](https://github.com/hereisderek/code_practice)
 
 ### Templates
 
-| Difficulty | Marks | Name | link                                                        | Notes |
-|:----------:|:-----:|------|-------------------------------------------------------------|-------|
-|    Easy    |  😕✅  |      |                                                             |       |
-|   Medium   | 😕❗❓  |      |                                                             |       |
-|    Hard    | 😕❗❓  |      |                                                             |       |
-|   Medium   | 😕❗❓  |      | [Leetcode](https://leetcode.com/problems/4sum/), [Github]() |       |
+| Difficulty | Marks | Name | link                     | Notes |
+|:----------:|:-----:|------|--------------------------|-------|
+|    Easy    |  😕✅  |      | [Leetcode](), [Github]() |       |
+|   Medium   | 😕❗❓  |      | [Leetcode](), [Github]() |       |
+|    Hard    | 😕❗❓  |      | [Leetcode](), [Github]() |       |
+|   Medium   | 😕❗❓  |      | [Leetcode](), [Github]() |       |
 
 #### Markers:
 - ✅ For finished
@@ -139,12 +139,12 @@ test().assertEqual("possible_output1", "possible_output2") // for multiple corre
 
 ---
 
-| Difficulty | Marks | Name | link                                                        | Notes |
-|:----------:|:-----:|------|-------------------------------------------------------------|-------|
-|    Easy    |  😕✅  |      |                                                             |       |
-|   Medium   | 😕❗❓  |      |                                                             |       |
-|    Hard    | 😕❗❓  |      |                                                             |       |
-|   Medium   | 😕❗❓  |      | [Leetcode](https://leetcode.com/problems/4sum/), [Github]() |       |
+| Difficulty | Marks | Name                           | link                                                                 | Notes                                                                            |
+|:----------:|:-----:|--------------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------|
+|    Easy    |  😏   | 876. Middle of the Linked List | [Leetcode](https://leetcode.com/problems/middle-of-the-linked-list/) | Faster than 100% submission 😏😏                                                 |
+|   Medium   |   ❗   | 92. Reverse Linked List II     | [Leetcode](https://leetcode.com/problems/reverse-linked-list-ii/)    | My2                                                                              |
+|    Easy    |  😕✅  | 206. Reverse Linked List       | [Leetcode](https://leetcode.com/problems/reverse-linked-list/)       | Need to check sample and read [this](https://labuladong.github.io/algo/2/17/17/) |
+|   Medium   | 😕❗❓  |                                | [Leetcode](https://leetcode.com/problems/4sum/), [Github]()          |                                                                                  |
 
 
 --- 
