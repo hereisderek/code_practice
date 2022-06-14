@@ -27,7 +27,6 @@ inline fun<reified T : Comparable<T>> List<T>.contentEquals(second: List<T>, ign
 }
 
 // inline fun<reified T : Comparable<T>> List<List<T>>.deepContentEquals(second: List<List<T>>, ignoreOrder: Boolean = false): Boolean {
-//
 //     return true
 // }
 
@@ -41,7 +40,6 @@ inline fun<reified T : KCallable<*>, reified R> List<T>.runTimedTests(
         measureTime { it.block() }
         print("")
     }
-
     // val testName: String? = Thread.currentThread().stackTrace.getOrNull(1)?.className?.split("$", limit = 0)?.get(0),
     forEachIndexed { index, it ->
         (it as CallableReference).owner

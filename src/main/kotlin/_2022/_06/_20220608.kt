@@ -7,8 +7,8 @@ import java.util.*
 import kotlin.Comparator
 
 fun main() {
-    Leetcode_23.test()
-    // Leetcode_160.test()
+    // Leetcode_23.test()
+    Leetcode_160.test()
 }
 
 
@@ -74,14 +74,11 @@ private interface Leetcode_23 {
     private class S01 : Leetcode_23 {
         override fun mergeKLists(lists: Array<ListNode?>): ListNode? {
             val queue = PriorityQueue<ListNode>(
-                Math.max(1, lists.size),
-                Comparator { a, b -> a.`val`.compareTo(b.`val`) }
-            )
+                Math.max(1, lists.size)
+            ){ a, b -> a.`val`.compareTo(b.`val`) }
 
             lists.forEach {
-                if (it != null) {
-                    queue.add(it)
-                }
+                if (it != null) { queue.add(it) }
             }
 
             var fakeHead = ListNode(0)
@@ -126,12 +123,45 @@ private interface Leetcode_160 {
                 3, 2, 0
             )
             println("t1:$t1, t2:$t2, t3:$t3")
+
+            listOf(
+                My1()::getIntersectionNode
+            ).runTimedTests {
+                t1.run {
+                    invoke(first, second).apply {
+                        assertEqualTo(first[2])
+                        assertEqualTo(second[3])
+                        this!!.`val` assertEqualTo 8
+                    }
+                }
+
+                t2.run {
+                    invoke(first, second).apply {
+                        assertEqualTo(first[3])
+                        assertEqualTo(second[1])
+                        this!!.`val` assertEqualTo 2
+                    }
+                }
+
+                t3.run {
+                    invoke(first, second) assertEqualTo(null)
+                }
+
+            }
         }
     }
 
     private class My1 : Leetcode_160 {
         override fun getIntersectionNode(headA: ListNode?, headB: ListNode?): ListNode? {
-            TODO("Not yet implemented")
+            var p1 = headA
+            var p2 = headB
+
+            while (p1 !== p2) { // ! much use `!==` instead of `==` for checking the reference
+                p1 = if (p1 != null) p1.next else headB
+                p2 = if (p2 != null) p2.next else headA
+            }
+
+            return p1
         }
     }
 

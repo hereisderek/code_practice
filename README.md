@@ -127,16 +127,24 @@ test().assertEqual("possible_output1", "possible_output2") // for multiple corre
 |   Medium   |        ❗        | 142. Linked List Cycle II                 | [Leetcode](https://leetcode.com/problems/linked-list-cycle-ii/) [labuladong](https://labuladong.github.io/article/?qno=142)                                                                                                                                                |
 
 ---
-#### [20220608](src/main/kotlin/_2022/_06/_20220607.kt) [labuladong](https://labuladong.github.io/algo/2/17/16/)
+#### [20220608,20220617](src/main/kotlin/_2022/_06/_20220607.kt) [labuladong](https://labuladong.github.io/algo/2/17/16/)
 
 | Difficulty | Marks | Name                                  | link                                                                                                                                    | Notes                              |
 |:----------:|:-----:|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
 |    Hard    |  😏✅  | 23. Merge k Sorted Lists              | [Leetcode](https://leetcode.com/problems/merge-k-sorted-lists/) [labuladong](https://labuladong.github.io/article/?qno=23)              | Need to read the sample code       |
-|    Easy    |       | 160. Intersection of Two Linked Lists | [Leetcode](https://leetcode.com/problems/intersection-of-two-linked-lists/) [labuladong](https://labuladong.github.io/article/?qno=160) | Sample1 is interesting (recursion) |
+|    Easy    |   ❗   | 160. Intersection of Two Linked Lists | [Leetcode](https://leetcode.com/problems/intersection-of-two-linked-lists/) [labuladong](https://labuladong.github.io/article/?qno=160) | Sample1 is interesting (recursion) |
 
 [//]: # (|            |       |                                       |                                                                                                                                         |)
 
 
+---
+
+| Difficulty | Marks | Name | link                                                        | Notes |
+|:----------:|:-----:|------|-------------------------------------------------------------|-------|
+|    Easy    |  😕✅  |      |                                                             |       |
+|   Medium   | 😕❗❓  |      |                                                             |       |
+|    Hard    | 😕❗❓  |      |                                                             |       |
+|   Medium   | 😕❗❓  |      | [Leetcode](https://leetcode.com/problems/4sum/), [Github]() |       |
 
 
 --- 
