@@ -1,0 +1,4 @@
+
+interface Testable {
+    fun test()
+}

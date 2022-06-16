@@ -9,9 +9,22 @@ typealias ListNode = IntNode
 // @Suppress("NOTHING_TO_INLINE", "FunctionName")
 // inline fun ListNode(`val`: Int = -1, next: ListNode? = null) = ListNode(-1, null)
 
-data class Node<T>(var `val`: T, var next: Node<T>? = null) {
+data class Node<T>(var `val`: T, var next: Node<T>? = null) : Cloneable {
     val hasNext: Boolean get() = next != null
     override fun toString(): String = "Node(${`val`},${hasNext})"
+
+
+    /**
+     * returns a string in the form of `[1,2,3,4,5]`
+     * <bold>Be cause:</bold> if the node has circular reference this will lead to stackoverflow and eventually a crash
+     */
+    fun toUnsafeString(): String {
+        return "[" + unsafeValue()
+    }
+
+    private fun unsafeValue() : String {
+        return if (this.next == null) "$`val`]" else "$`val`,${this.next!!.unsafeValue()}"
+    }
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
@@ -22,12 +35,30 @@ data class Node<T>(var `val`: T, var next: Node<T>? = null) {
         var p1 : Node<T>? = this
         var p2 : Node<T>? = o
 
-        while (p1 != null && p2 !== p1) {
-            if (p1.`val` != p2?.`val`) return false
-            p1 = p1.next
+        while (p1 != null || p2 !== p1) {
+            if ((p1 == null) != (p2 == null)) return false
+            if (p1?.`val` != p2?.`val`) return false
+            p1 = p1?.next
             p2 = p2?.next
         }
         return true
+    }
+
+    /**
+     * create a deep clone of the linked node
+     * This might throw a stackoverflow exception if it contains circle
+     */
+    public override fun clone(): Node<T> {
+        val head : Node<T> = Node(`val`)
+        var p1 : Node<T>? = this.next
+        var p2 : Node<T> = head
+        while (p1 != null) {
+            val node = Node(p1.`val`)
+            p2.next = node
+            p2 = node
+            p1 = p1.next
+        }
+        return head
     }
 }
 

@@ -3,20 +3,21 @@
 import utils.assertEqualTo
 import utils.runTimedTests
 
-/*
 fun main() {
     Leetcode.test()
 }
 
 private interface Leetcode {
 
-    companion object {
-        fun test() {
+    companion object : Testable {
+        override fun test() {
+            /*
             listOf(
-                // S1()::someMethod
+                M1()::someMethod,
             ).runTimedTests {
                 invoke().assertEqualTo(Unit)
             }
+            */
         }
     }
 
@@ -24,4 +25,3 @@ private interface Leetcode {
 
     }
 }
-*/

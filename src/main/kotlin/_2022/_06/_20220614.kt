@@ -154,7 +154,8 @@ private interface Leetcode_206 {
     companion object {
         fun test() {
             listOf(
-                M1()::reverseList
+                M1()::reverseList,
+                S1()::reverseList,
             ).runTimedTests {
                 invoke(linkedNodesOf(1,2,3)) assertEqualTo linkedNodesOf(3,2,1)
                 invoke(null) assertEqualTo null
@@ -180,6 +181,16 @@ private interface Leetcode_206 {
             head.next = null
 
             return dummy.next
+        }
+    }
+
+    private class S1 : Leetcode_206 {
+        override fun reverseList(head: ListNode?): ListNode? {
+            if (head?.next == null) return head
+            val previous = reverseList(head.next)
+            head.next?.next = head
+            head.next = null
+            return previous
         }
     }
 }

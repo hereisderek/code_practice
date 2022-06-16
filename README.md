@@ -2,19 +2,18 @@ r## Code practice [link](https://github.com/hereisderek/code_practice)
 
 ---
 
-### Templates
+### [Templates]()
 
 | Difficulty | Marks | Name | link                     | Notes |
 |:----------:|:-----:|------|--------------------------|-------|
-|    Easy    |  🟠✅  |      | [Leetcode](), [Github]() |       |
-|   Medium   | 🟠❗❓  |      | [Leetcode](), [Github]() |       |
-|    Hard    | 🟠❗❓  |      | [Leetcode](), [Github]() |       |
-|   Medium   | 🟠❗❓  |      | [Leetcode](), [Github]() |       |
+|     🟢     | ✅❗❓❌  |      | [Leetcode](), [Github]() |       |
+|     🟠     | ✅❗❓❌  |      | [Leetcode](), [Github]() |       |
+|     🔴     | ✅❗❓❌  |      | [Leetcode](), [Github]() |       |
 
 #### Markers:
-- ✅ For finished
+- ✅/✔️ For finished
 - 👷 For working in progress
-- ❎ For unfinished due to complicity or challenging
+- ❌ For unfinished due to complicity or challenging
 - ❗For marking good questions
 - ❓with doubt or unfinished
 - ~~Strikedthrough~~ For not bothering (e.g. too easy)
@@ -22,7 +21,7 @@ r## Code practice [link](https://github.com/hereisderek/code_practice)
 #### Difficulties: 
 - 🟢(Easy)
 - 🟠(Medium) 
-- 🤨(Hard)
+- 🔴(Hard) 🤨
 ---
 
 ### Kotlin
@@ -127,26 +126,53 @@ test().assertEqual("possible_output1", "possible_output2") // for multiple corre
 |   Medium   |        ❗        | 142. Linked List Cycle II                 | [Leetcode](https://leetcode.com/problems/linked-list-cycle-ii/) [labuladong](https://labuladong.github.io/article/?qno=142)                                                                                                                                                |
 
 ---
-#### [20220608,20220617](src/main/kotlin/_2022/_06/_20220607.kt) [labuladong](https://labuladong.github.io/algo/2/17/16/)
+#### [20220608,20220614](src/main/kotlin/_2022/_06/_20220607.kt) [labuladong](https://labuladong.github.io/algo/2/17/16/)
 
 | Difficulty | Marks | Name                                  | link                                                                                                                                    | Notes                              |
 |:----------:|:-----:|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|------------------------------------|
 |    Hard    |  🟢✅  | 23. Merge k Sorted Lists              | [Leetcode](https://leetcode.com/problems/merge-k-sorted-lists/) [labuladong](https://labuladong.github.io/article/?qno=23)              | Need to read the sample code       |
 |    Easy    |   ❗   | 160. Intersection of Two Linked Lists | [Leetcode](https://leetcode.com/problems/intersection-of-two-linked-lists/) [labuladong](https://labuladong.github.io/article/?qno=160) | Sample1 is interesting (recursion) |
 
-[//]: # (|            |       |                                       |                                                                                                                                         |)
+---
+#### [20220614,20220615](src/main/kotlin/_2022/_06/_20220614.kt)
+
+[labuladong](https://labuladong.github.io/algo/2/17/17/)
+
+| Difficulty | Marks | Name                           | link                                                                 | Notes                                                                                        |
+|:----------:|:-----:|--------------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+|    Easy    |  🟢   | 876. Middle of the Linked List | [Leetcode](https://leetcode.com/problems/middle-of-the-linked-list/) | Faster than 100% submission 🟢🟢                                                             |
+|   Medium   |   ❗   | 92. Reverse Linked List II     | [Leetcode](https://leetcode.com/problems/reverse-linked-list-ii/)    | My2                                                                                          |
+|    Easy    |  🟠✅  | 206. Reverse Linked List       | [Leetcode](https://leetcode.com/problems/reverse-linked-list/)       | Need to check sample and read [this](https://labuladong.github.io/algo/2/17/17/) and read S1 |
 
 
 ---
-
-| Difficulty | Marks | Name                           | link                                                                 | Notes                                                                            |
-|:----------:|:-----:|--------------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------------------|
-|    Easy    |  🟢   | 876. Middle of the Linked List | [Leetcode](https://leetcode.com/problems/middle-of-the-linked-list/) | Faster than 100% submission 🟢🟢                                                 |
-|   Medium   |   ❗   | 92. Reverse Linked List II     | [Leetcode](https://leetcode.com/problems/reverse-linked-list-ii/)    | My2                                                                              |
-|    Easy    |  🟠✅  | 206. Reverse Linked List       | [Leetcode](https://leetcode.com/problems/reverse-linked-list/)       | Need to check sample and read [this](https://labuladong.github.io/algo/2/17/17/) |
-|   Medium   | 🟠❗❓  |                                | [Leetcode](https://leetcode.com/problems/4sum/), [Github]()          |                                                                                  |
+#### [20220615,20220615](src/main/kotlin/_2022/_06/_20220615.kt)
 
 
+| Difficulty | Marks | Name                         | link                                                                            | Notes |
+|:----------:|:-----:|------------------------------|---------------------------------------------------------------------------------|-------|
+|    Easy    |  🟠✅  |                              | [Leetcode](), [Github]()                                                        |       |
+|   Medium   | 🟠❗❓  |                              | [Leetcode](), [Github]()                                                        |       |
+|    Hard    | 🔴❗❓  |                              | [Leetcode](), [Github]()                                                        |       |
+|    Hard    | 🔴❗❗❓ | 25. Reverse Nodes in k-Group | [Leetcode](https://leetcode.com/problems/reverse-nodes-in-k-group/), [Github]() |       |
+
+
+**TODO:**
+ * https://labuladong.github.io/algo/2/17/18/
+
+---
+
+### [20220616](src/main/kotlin/_2022/_06/_20220616.kt)
+
+| Difficulty | Marks | Name                                    | link                                                                                       | Notes |
+|:----------:|:-----:|-----------------------------------------|--------------------------------------------------------------------------------------------|-------|
+|     🟢     |   ❌   | 234. Palindrome Linked List             | [Leetcode](https://leetcode.com/problems/palindrome-linked-list/), [Github]()              |       |
+|     🟢     |   ✅   | 26. Remove Duplicates from Sorted Array | [Leetcode](https://leetcode.com/problems/remove-duplicates-from-sorted-array/), [Github]() |       |
+|     🟢     |   ✅   | 27. Remove Element                      | [Leetcode](https://leetcode.com/problems/remove-element/), [Github]()                      |       |
+|     🟢     |   ❌   | 83. Remove Duplicates from Sorted List  | [Leetcode](https://leetcode.com/problems/remove-duplicates-from-sorted-list/), [Github]()  |       |
+
+
+TODO: Leetcode_710
 --- 
 ### References:
 

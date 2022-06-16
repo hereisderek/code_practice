@@ -58,11 +58,35 @@ inline fun<reified T : KCallable<*>, reified R> List<T>.runTimedTests(
     }
 }
 
-inline infix fun <reified T> T.assertEqualTo(expected: T) {
+inline infix fun <reified T> T.assertEqualTo(expected: T) = assertEqualTo(expected) { expected, actual ->
+    "Assertion failed, expected:$expected, actual:$actual"
+}
+
+inline fun <reified T> T.assertEqualTo(
+    expected: T,
+    noinline lazyMsg:  ((expected: T, actual: T) -> String)
+) {
     assert(this == expected) {
-        "Assertion failed, expected:$expected, actual:$this"
+        lazyMsg.invoke(expected, this)
     }
 }
+
+/*
+inline fun <reified T> T.assertEqualTo(
+    expected: T,
+    toStr: (T.()->String) = { this.toString() },
+    noinline lazyMsg:  ((expected: T, actual: T) -> Pair<String, String>)? = null
+) {
+    assert(this == expected) {
+        if (lazyMsg == null) {
+            "Assertion failed, expected:${expected.toStr()}, actual:${this.toStr()}"
+        } else {
+            val strPair = lazyMsg.invoke(expected, this)
+            "Assertion failed, expected:${strPair.first}, actual:${strPair.second}"
+        }
+    }
+}
+*/
 
 inline fun <reified T> T.assertEqualToAny(vararg expected: T) {
     assert(expected.any { it == this }) {
