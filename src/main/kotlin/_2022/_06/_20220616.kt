@@ -234,21 +234,20 @@ private interface Leetcode_83 {
             }
         }
     }
-
+    // https://leetcode.com/submissions/detail/724363733/
+    // Runtime: 374 ms, faster than 7.14% of Kotlin online submissions for Remove Duplicates from Sorted List.
+    // Memory Usage: 37.4 MB, less than 69.39% of Kotlin online submissions for Remove Duplicates from Sorted List.
     private class M1 : Leetcode_83 {
         override fun deleteDuplicates(head: ListNode?): ListNode? {
             if (head?.next == null) return head
-            var pre : ListNode? = head
             var cur : ListNode? = head
-            while (cur != null) {
+            while(cur != null) {
                 val next = cur.next
-                // it actually checks for next
-                if (next?.`val` == pre?.`val`) {
-                    cur.next = next?.next
+                if (next?.`val` == cur.`val`) {
+                    cur.next = next.next
                 } else {
-                    pre = cur
+                    cur = next
                 }
-                cur = next
             }
             return head
         }

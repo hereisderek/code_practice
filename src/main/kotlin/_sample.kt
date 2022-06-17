@@ -1,5 +1,6 @@
 @file:Suppress("DuplicatedCode", "ClassName")
 
+import Testable
 import utils.assertEqualTo
 import utils.runTimedTests
 

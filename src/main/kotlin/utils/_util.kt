@@ -1,3 +1,5 @@
+@file:Suppress("DuplicatedCode")
+
 package utils
 
 import kotlin.reflect.KCallable
@@ -11,8 +13,29 @@ import kotlin.jvm.internal.ClassReference
  * For checking if the contents of a list is equal to another list, with optional #[ignoreOrder] flag for ignoring the order
  * This is meant for validation of results, not to be used as part of the solution as it is not efficient
  */
-inline fun<reified T : Comparable<T>> List<T>.contentEquals(second: List<T>, ignoreOrder: Boolean = false): Boolean {
+
+inline fun<reified T : Comparable<T>> Iterable<T>.contentEquals(second: Iterable<T>, ignoreOrder: Boolean = false): Boolean {
     if (this == second) return true
+    if (this is Collection && second is Collection) {
+        if (size != second.size) return false
+    }
+
+    if (!ignoreOrder) {
+        val i = iterator()
+        val k = second.iterator()
+        while (i.hasNext() || k.hasNext()){
+            if (i.hasNext() != k.hasNext()) return false
+            if (i.next() != k.next()) return false
+        }
+        return true
+    }
+    // return this.containsAll(second) && second.containsAll(this) // doesn't handle cases as ["a", "a", "b"] vs ["a", "b", "b"]
+    // return this.sortedBy { it } == second.sortedBy { it }
+    return this.sorted() == second.sorted()
+}
+
+inline fun<reified T : Comparable<T>> Array<T>.contentEquals(second: Array<T>, ignoreOrder: Boolean = false): Boolean {
+    if (this === second) return true
     if (size != second.size) return false
 
     if (!ignoreOrder) {
@@ -22,13 +45,32 @@ inline fun<reified T : Comparable<T>> List<T>.contentEquals(second: List<T>, ign
         return true
     }
     // return this.containsAll(second) && second.containsAll(this) // doesn't handle cases as ["a", "a", "b"] vs ["a", "b", "b"]
-    // return this.sortedBy { it } == second.sortedBy { it }
     return this.sorted() == second.sorted()
 }
 
-// inline fun<reified T : Comparable<T>> List<List<T>>.deepContentEquals(second: List<List<T>>, ignoreOrder: Boolean = false): Boolean {
-//     return true
-// }
+inline fun IntArray?.contentEquals(second: IntArray?, ignoreOrder: Boolean = false): Boolean {
+    if (this === second) return true
+    if (this == null || second == null) return false
+
+    if (size != second.size) return false
+
+    if (!ignoreOrder) {
+        for (i in indices) {
+            if (get(i) != second[i]) return false
+        }
+        return true
+    }
+
+    return this.sorted() == second.sorted()
+}
+
+inline fun <A, B> Collection<Pair<A, B>>.forEachPair(block: ((first: A, second: B)->Unit)) {
+    forEach {
+        block.invoke(it.first, it.second)
+    }
+}
+
+
 
 @OptIn(ExperimentalTime::class)
 inline fun<reified T : KCallable<*>, reified R> List<T>.runTimedTests(

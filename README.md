@@ -169,11 +169,26 @@ test().assertEqual("possible_output1", "possible_output2") // for multiple corre
 |     🟢     |   ❌   | 234. Palindrome Linked List             | [Leetcode](https://leetcode.com/problems/palindrome-linked-list/), [Github]()              |       |
 |     🟢     |   ✅   | 26. Remove Duplicates from Sorted Array | [Leetcode](https://leetcode.com/problems/remove-duplicates-from-sorted-array/), [Github]() |       |
 |     🟢     |   ✅   | 27. Remove Element                      | [Leetcode](https://leetcode.com/problems/remove-element/), [Github]()                      |       |
-|     🟢     |   ❌   | 83. Remove Duplicates from Sorted List  | [Leetcode](https://leetcode.com/problems/remove-duplicates-from-sorted-list/), [Github]()  |       |
+|     🟢     |   ✅   | 83. Remove Duplicates from Sorted List  | [Leetcode](https://leetcode.com/problems/remove-duplicates-from-sorted-list/), [Github]()  |       |
 
 
 TODO: Leetcode_710
+
+---
+
+### [20220617](src/main/kotlin/_2022/_06/_20220617.kt)
+
+| Difficulty | Marks | Name                                    | link                                                                                    | Notes |
+|:----------:|:-----:|-----------------------------------------|-----------------------------------------------------------------------------------------|-------|
+|     🟠     |  ✅🟢  | 167. Two Sum II - Input Array Is Sorted | [Leetcode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/), [Github]() |       |
+|     🟢     | ❌  | 283. Move Zeroes                        | [Leetcode](https://leetcode.com/problems/move-zeroes/), [Github]()                      |       |
+
+
 --- 
+
+
+
+
 ### References:
 
 - [LeetCode Top 100 Problem Selection | Step-by-step Data Science](https://h1ros.github.io/posts/coding/leetcode-top-100-problem-selection/)
