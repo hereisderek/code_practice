@@ -25,7 +25,7 @@ tasks.withType<KotlinCompile> {
         freeCompilerArgs = listOf(
             "-Xuse-k2",
             "-Xjdk-release=11",
-            "-Xbackend-thread=4",
+            // "-Xbackend-thread=4",
         )
         jvmTarget = "11"
         languageVersion = "1.7"

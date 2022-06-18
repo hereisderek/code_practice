@@ -181,7 +181,7 @@ TODO: Leetcode_710
 | Difficulty | Marks | Name                                    | link                                                                                    | Notes |
 |:----------:|:-----:|-----------------------------------------|-----------------------------------------------------------------------------------------|-------|
 |     🟠     |  ✅🟢  | 167. Two Sum II - Input Array Is Sorted | [Leetcode](https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/), [Github]() |       |
-|     🟢     | ❌  | 283. Move Zeroes                        | [Leetcode](https://leetcode.com/problems/move-zeroes/), [Github]()                      |       |
+|     🟢     |   ✅   | 283. Move Zeroes                        | [Leetcode](https://leetcode.com/problems/move-zeroes/), [Github]()                      |       |
 
 
 --- 

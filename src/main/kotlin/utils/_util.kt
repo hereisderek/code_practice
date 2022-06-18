@@ -94,6 +94,22 @@ inline fun<reified T : KCallable<*>, reified R> List<T>.runTimedTests(
 }
 /// assert
 
+inline fun  <T> T.assertEqualTo(
+    expected: T,
+    noinline checker: ((expected: T, actual: T) -> Boolean)? = null,
+    crossinline toStr: (T.() -> String) = { toString() },
+    noinline lazyMsg: ((expected: T, actual: T) -> String)? = null
+) {
+    val actual = this
+    val msg = {
+        lazyMsg?.invoke(expected, actual) ?: "Assertion failed, expected:${expected.toStr()} actual:${actual.toStr()}"
+    }
+    assert(
+        checker?.invoke(expected, this) ?: (expected == actual),
+        msg
+    )
+}
+
 /*inline */fun </*reified*/ T> T.assertThat(lazyMsg: ((actual: T)->String)? = null, block: T.() -> Boolean) {
     assert(this.block()) {
         lazyMsg?.invoke(this) ?: "Assertion failed, actual:$this"
