@@ -151,9 +151,6 @@ test().assertEqual("possible_output1", "possible_output2") // for multiple corre
 
 | Difficulty | Marks | Name                         | link                                                                            | Notes |
 |:----------:|:-----:|------------------------------|---------------------------------------------------------------------------------|-------|
-|    Easy    |  🟠✅  |                              | [Leetcode](), [Github]()                                                        |       |
-|   Medium   | 🟠❗❓  |                              | [Leetcode](), [Github]()                                                        |       |
-|    Hard    | 🔴❗❓  |                              | [Leetcode](), [Github]()                                                        |       |
 |    Hard    | 🔴❗❗❓ | 25. Reverse Nodes in k-Group | [Leetcode](https://leetcode.com/problems/reverse-nodes-in-k-group/), [Github]() |       |
 
 
@@ -186,6 +183,13 @@ TODO: Leetcode_710
 
 --- 
 
+### [20220618](src/main/kotlin/_2022/_06/_20220618.kt)
+
+| Difficulty | Marks | Name                                | link                                                                                | Notes |
+|:----------:|:-----:|-------------------------------------|-------------------------------------------------------------------------------------|-------|
+|     🟢     |   ✅   | 344. Reverse String                 | [Leetcode](https://leetcode.com/problems/reverse-string/), [Github]()               |       |
+|     🟢     |   ✅   | 303. Range Sum Query - Immutable    | [Leetcode](https://leetcode.com/problems/range-sum-query-immutable/), [Github]()    |       |
+|     🟠     |   ❌   | 304. Range Sum Query 2D - Immutable | [Leetcode](https://leetcode.com/problems/range-sum-query-2d-immutable/), [Github]() |       |
 
 
 

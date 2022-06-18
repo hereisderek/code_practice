@@ -7,6 +7,7 @@ import kotlin.time.ExperimentalTime
 import kotlin.time.measureTime
 import kotlin.jvm.internal.CallableReference
 import kotlin.jvm.internal.ClassReference
+import kotlin.time.Duration
 
 
 /**
@@ -92,12 +93,62 @@ inline fun<reified T : KCallable<*>, reified R> List<T>.runTimedTests(
         if (printTime) println("execution for ${prefix}${it.name} finished, took ${duration.inWholeNanoseconds} Nanoseconds")
     }
 }
+
+
+@OptIn(ExperimentalTime::class)
+@JvmName("runTimedTestsOn")
+inline fun<reified T, reified R> List<T>.runTimedTests(
+    printTime: Boolean = true,
+    testName: String? = null,
+    block: T.()->R
+) {
+    var duration : Duration? = null
+    try {
+        firstOrNull()?.also {
+            measureTime { it.block() }
+            print("")
+        }
+        forEach {
+            val duration = measureTime{ it.block() }
+            val prefix = if (testName.isNullOrEmpty()) "" else "${testName}."
+            if (printTime) println("execution for ${prefix} finished, took ${duration.inWholeNanoseconds} Nanoseconds")
+        }
+    } catch (e: Throwable) {
+
+    }  finally {
+
+    }
+
+
+    firstOrNull()?.also {
+        measureTime { it.block() }
+        print("")
+    }
+    forEach {
+        val duration = measureTime{ it.block() }
+        val prefix = if (testName.isNullOrEmpty()) "" else "${testName}."
+        if (printTime) println("execution for ${prefix} finished, took ${duration.inWholeNanoseconds} Nanoseconds")
+    }
+}
+
+
 /// assert
 
 inline fun  <T> T.assertEqualTo(
     expected: T,
     noinline checker: ((expected: T, actual: T) -> Boolean)? = null,
-    crossinline toStr: (T.() -> String) = { toString() },
+    crossinline toStr: (T.() -> String) = {
+        when (this) {
+            is Iterable<*> -> joinToString()
+            is IntArray -> joinToString()
+            is CharArray -> joinToString()
+            is FloatArray -> joinToString()
+            is BooleanArray -> joinToString()
+            is DoubleArray -> joinToString()
+            is Array<*> -> joinToString()
+            else -> toString()
+        }
+    },
     noinline lazyMsg: ((expected: T, actual: T) -> String)? = null
 ) {
     val actual = this
