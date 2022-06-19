@@ -165,7 +165,7 @@ private interface Leetcode_304 {
     companion object : Testable {
         override fun test() {
             val tests = listOf<Pair<Array<IntArray>, List<Pair<IntArray, Int>>>>(
-/*                 arrayOf(
+                arrayOf(
                     intArrayOf(3, 0, 1, 4, 2),
                     intArrayOf(5, 6, 3, 2, 1),
                     intArrayOf(1, 2, 0, 1, 5),
@@ -182,7 +182,7 @@ private interface Leetcode_304 {
                     intArrayOf(0,0,0,0) to -4,
                     intArrayOf(0,0,0,1) to -9,
                     intArrayOf(0,1,0,1) to -5,
-                ), */
+                ),
                 arrayOf(
                     intArrayOf(8,-4,5),
                     intArrayOf(-1,4,4),
@@ -196,20 +196,13 @@ private interface Leetcode_304 {
             tests.flatMap {
                 listOf(
                     M1(it.first) to it.second,
-                    M1(it.first) to it.second,
+                    // M1(it.first) to it.second,
                 )
-            }.forEachPair { m, tests ->
-                tests.forEachPair { pos, expected ->
-                    m.sumRegion(pos[0],pos[1],pos[2],pos[3]).assertEqualTo(expected)
+            }.runTimedTests {
+                second.forEachPair { pos, expected ->
+                    first.sumRegion(pos[0],pos[1],pos[2],pos[3]).assertEqualTo(expected)
                 }
             }
-            /*
-            listOf(
-                M1()::someMethod,
-            ).runTimedTests {
-                invoke().assertEqualTo(Unit)
-            }
-            */
         }
     }
 

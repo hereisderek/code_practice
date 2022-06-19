@@ -102,32 +102,31 @@ inline fun<reified T, reified R> List<T>.runTimedTests(
     testName: String? = null,
     block: T.()->R
 ) {
-    var duration : Duration? = null
     try {
         firstOrNull()?.also {
             measureTime { it.block() }
             print("")
         }
-        forEach {
-            val duration = measureTime{ it.block() }
-            val prefix = if (testName.isNullOrEmpty()) "" else "${testName}."
-            if (printTime) println("execution for ${prefix} finished, took ${duration.inWholeNanoseconds} Nanoseconds")
+    } catch (e: Exception) {
+        // Ignored
+    }
+
+    forEachIndexed { index, it ->
+        var duration : Duration? = null
+        try {
+            duration = measureTime { it.block() }
+        } catch (e: Exception) {
+            throw e
+        } finally {
+            val prefix = try {
+                if (testName.isNullOrEmpty()) {
+                    (Thread.currentThread().stackTrace.getOrNull(1) as StackTraceElement).className.split("$")[0]
+                } else null
+            } catch (e: Exception) {
+                null
+            } ?: testName
+            if (printTime) println("execution for ${prefix}@$index finished, took ${duration?.inWholeNanoseconds} Nanoseconds")
         }
-    } catch (e: Throwable) {
-
-    }  finally {
-
-    }
-
-
-    firstOrNull()?.also {
-        measureTime { it.block() }
-        print("")
-    }
-    forEach {
-        val duration = measureTime{ it.block() }
-        val prefix = if (testName.isNullOrEmpty()) "" else "${testName}."
-        if (printTime) println("execution for ${prefix} finished, took ${duration.inWholeNanoseconds} Nanoseconds")
     }
 }
 

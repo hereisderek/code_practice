@@ -189,7 +189,7 @@ TODO: Leetcode_710
 |:----------:|:-----:|-------------------------------------|-------------------------------------------------------------------------------------|-------|
 |     🟢     |   ✅   | 344. Reverse String                 | [Leetcode](https://leetcode.com/problems/reverse-string/), [Github]()               |       |
 |     🟢     |   ✅   | 303. Range Sum Query - Immutable    | [Leetcode](https://leetcode.com/problems/range-sum-query-immutable/), [Github]()    |       |
-|     🟠     |   ❌   | 304. Range Sum Query 2D - Immutable | [Leetcode](https://leetcode.com/problems/range-sum-query-2d-immutable/), [Github]() |       |
+|     🟠     |   ✅   | 304. Range Sum Query 2D - Immutable | [Leetcode](https://leetcode.com/problems/range-sum-query-2d-immutable/), [Github]() |       |
 
 
 
