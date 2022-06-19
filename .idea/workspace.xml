@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c15a0fa3-bdf6-48b4-87cd-b0658ceea7d4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220619.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/_20220618Kt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/_20220619Kt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/_types.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220618.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220618.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/_util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/_util.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220619.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220619.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_sample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_sample.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Tuple.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Tuple.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +39,9 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Kotlin File" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Data Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -119,7 +122,7 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin._20220618Kt">
+  <component name="RunManager" selected="Kotlin._20220619Kt">
     <configuration name="NodeTest.test creation (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -143,15 +146,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="_20220618Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="_2022._06._20220618Kt" />
-      <module name="code_practice.main" />
-      <shortenClasspath name="NONE" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="code_practice" />
       <shortenClasspath name="NONE" />
@@ -171,10 +165,12 @@
       <item itemvalue="Kotlin._20220602Kt" />
       <item itemvalue="Kotlin._20220616Kt" />
       <item itemvalue="Kotlin._20220617Kt" />
+      <item itemvalue="Kotlin._20220619Kt" />
       <item itemvalue="Kotlin._20220618Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._20220619Kt" />
         <item itemvalue="Kotlin._20220618Kt" />
         <item itemvalue="Gradle.NodeTest.test creation (1)" />
       </list>
@@ -210,7 +206,7 @@
       <workItem from="1655522664790" duration="2542000" />
       <workItem from="1655526731494" duration="11277000" />
       <workItem from="1655545992834" duration="33000" />
-      <workItem from="1655546056186" duration="12934000" />
+      <workItem from="1655546056186" duration="24776000" />
     </task>
     <task id="LOCAL-00001" summary="assertEqualTo added lazyMsg; Node added toUnsafeString() clone() and fixed equals(); added Tuple; Leetcode_206 Leetcode_25 Leetcode_234 Leetcode_26 Leetcode_27 Leetcode_83">
       <created>1655385356850</created>
@@ -360,9 +356,14 @@
           <option name="timeStamp" value="127" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/utils/_util.kt</url>
-          <line>120</line>
-          <option name="timeStamp" value="135" />
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220619.kt</url>
+          <line>130</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/utils/_types.kt</url>
+          <line>22</line>
+          <option name="timeStamp" value="137" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

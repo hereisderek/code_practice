@@ -4,9 +4,7 @@ import Testable
 import utils.assertEqualTo
 import utils.runTimedTests
 
-fun main() {
-    Leetcode.test()
-}
+
 
 private interface Leetcode {
 
@@ -25,4 +23,8 @@ private interface Leetcode {
     private class M1 : Leetcode {
 
     }
+}
+
+fun main() {
+    Leetcode.test()
 }

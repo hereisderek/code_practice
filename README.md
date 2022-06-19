@@ -192,6 +192,30 @@ TODO: Leetcode_710
 |     🟠     |   ✅   | 304. Range Sum Query 2D - Immutable | [Leetcode](https://leetcode.com/problems/range-sum-query-2d-immutable/), [Github]() |       |
 
 
+Leetcode 370: Range Addition
+
+---
+
+### [20220619](src/main/kotlin/_2022/_06/_20220619.kt)
+
+| Difficulty | Marks |     | Name                                | link                                                                             | Notes           |
+|:----------:|:-----:|:----|-------------------------------------|----------------------------------------------------------------------------------|-----------------|
+|     🟠     |   ❓   |     | ~~370: Range Addition~~             | [Leetcode](https://baihuqian.github.io/2018-08-16-range-addition/), [Github]()   | Put off for now |
+|     🟠     |  ✅🟢  |     | 1094. Car Pooling                   | [Leetcode](https://leetcode.com/problems/car-pooling/), [Github]()               |                 |
+|     🟠     |   ❓   |     | ~~1109. Corporate Flight Bookings~~ | [Leetcode](https://leetcode.com/problems/corporate-flight-bookings/), [Github]() |                 |
+|     🟠     | ✅❗❓❌  |     | 48. Rotate Image                    | [Leetcode](https://leetcode.com/problems/rotate-image/), [Github]()              |                 |
+|     🟢     | ✅❗❓❌  |     |                                     | [Leetcode](), [Github]()                                                         |                 |
+|     🟠     | ✅❗❓❌  |     |                                     | [Leetcode](), [Github]()                                                         |                 |
+|     🔴     | ✅❗❓❌  |     |                                     | [Leetcode](), [Github]()                                                         |                 |
+---
+
+### [Templates]()
+
+| Difficulty | Marks | Name | link                     | Notes |
+|:----------:|:-----:|------|--------------------------|-------|
+|     🟢     | ✅❗❓❌  |      | [Leetcode](), [Github]() |       |
+|     🟠     | ✅❗❓❌  |      | [Leetcode](), [Github]() |       |
+|     🔴     | ✅❗❓❌  |      | [Leetcode](), [Github]() |       |
 
 ### References:
 

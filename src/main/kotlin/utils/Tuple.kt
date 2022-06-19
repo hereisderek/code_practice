@@ -19,10 +19,16 @@ class MutableTuple<A, B, C>(
     override var third: C,
 ) : Tuple<A, B, C>
 
+fun <A, B, C> tupleOf(first: A, second: B, third: C) = immutableTupleOf(first, second, third)
+
 fun <A, B, C> immutableTupleOf(first: A, second: B, third: C) = ImmutableTuple(first, second, third)
 
 fun <A, B, C> mutableTupleOf(first: A, second: B, third: C) = MutableTuple(first, second, third)
 
-
+fun <A, B, C> Iterable<Tuple<A, B, C>>.forEachTuple(block: (first: A, second: B, third: C)->Unit) {
+    forEach {
+        block.invoke(it.first, it.second, it.third)
+    }
+}
 
 // data class Tuple()
