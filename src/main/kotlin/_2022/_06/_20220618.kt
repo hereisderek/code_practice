@@ -165,7 +165,7 @@ private interface Leetcode_304 {
     companion object : Testable {
         override fun test() {
             val tests = listOf<Pair<Array<IntArray>, List<Pair<IntArray, Int>>>>(
-                arrayOf(
+/*                 arrayOf(
                     intArrayOf(3, 0, 1, 4, 2),
                     intArrayOf(5, 6, 3, 2, 1),
                     intArrayOf(1, 2, 0, 1, 5),
@@ -182,7 +182,16 @@ private interface Leetcode_304 {
                     intArrayOf(0,0,0,0) to -4,
                     intArrayOf(0,0,0,1) to -9,
                     intArrayOf(0,1,0,1) to -5,
-                )
+                ), */
+                arrayOf(
+                    intArrayOf(8,-4,5),
+                    intArrayOf(-1,4,4),
+                    intArrayOf(-2,3,1),
+                ) to listOf(
+                    intArrayOf(0,1,0,2) to 1,
+                    intArrayOf(1,1,1,2) to 8,
+                    intArrayOf(0,1,0,2) to 1,
+                ),
             )
             tests.flatMap {
                 listOf(
@@ -226,8 +235,8 @@ private interface Leetcode_304 {
         override fun sumRegion(row1: Int, col1: Int, row2: Int, col2: Int): Int {
             return when{
                 row1 == 0 && col1 == 0 -> 0
-                row1 == 0 -> 0 - sum[row1][col2]
-                col1 == 0 -> 0 - sum[row2][col1]
+                row1 == 0 -> 0 - sum[row2][col1 - 1]
+                col1 == 0 -> 0 - sum[row1 - 1][col2]
                 else -> sum[row1-1][col1-1] - sum[row2][col1 - 1] - sum[row1 - 1][col2]
             } + sum[row2][col2]
         }
