@@ -198,15 +198,66 @@ Leetcode 370: Range Addition
 
 ### [20220619](src/main/kotlin/_2022/_06/_20220619.kt)
 
-| Difficulty | Marks |     | Name                                | link                                                                             | Notes           |
-|:----------:|:-----:|:----|-------------------------------------|----------------------------------------------------------------------------------|-----------------|
-|     🟠     |   ❓   |     | ~~370: Range Addition~~             | [Leetcode](https://baihuqian.github.io/2018-08-16-range-addition/), [Github]()   | Put off for now |
-|     🟠     |  ✅🟢  |     | 1094. Car Pooling                   | [Leetcode](https://leetcode.com/problems/car-pooling/), [Github]()               |                 |
-|     🟠     |   ❓   |     | ~~1109. Corporate Flight Bookings~~ | [Leetcode](https://leetcode.com/problems/corporate-flight-bookings/), [Github]() |                 |
-|     🟠     | ✅❗❓❌  |     | 48. Rotate Image                    | [Leetcode](https://leetcode.com/problems/rotate-image/), [Github]()              |                 |
-|     🟢     | ✅❗❓❌  |     |                                     | [Leetcode](), [Github]()                                                         |                 |
-|     🟠     | ✅❗❓❌  |     |                                     | [Leetcode](), [Github]()                                                         |                 |
-|     🔴     | ✅❗❓❌  |     |                                     | [Leetcode](), [Github]()                                                         |                 |
+| Difficulty |     | Marks |     | Name                                | link                                                                             | Notes           |
+|:----------:|:----|:-----:|:----|-------------------------------------|----------------------------------------------------------------------------------|-----------------|
+|     🟠     |     |   ❓   |     | ~~370: Range Addition~~             | [Leetcode](https://baihuqian.github.io/2018-08-16-range-addition/), [Github]()   | Put off for now |
+|     🟠     |     |  ✅🟢  |     | 1094. Car Pooling                   | [Leetcode](https://leetcode.com/problems/car-pooling/), [Github]()               |                 |
+|     🟠     |     |   ❓   |     | ~~1109. Corporate Flight Bookings~~ | [Leetcode](https://leetcode.com/problems/corporate-flight-bookings/), [Github]() |                 |
+|     🟠     |     |   ❓   |     | 48. Rotate Image                    | [Leetcode](https://leetcode.com/problems/rotate-image/), [Github]()              |                 |
+
+---
+
+### [20220620](src/main/kotlin/_2022/_06/_20220620.kt)
+
+| Difficulty | Marks | Name              | link                                                                 | Notes |
+|:----------:|:-----:|-------------------|----------------------------------------------------------------------|-------|
+|     🟠     |   ✅   | 54. Spiral Matrix | [Leetcode](https://leetcode.com/problems/spiral-matrix/), [Github]() |       |
+
+---
+
+### [20220621](src/main/kotlin/_2022/_06/_20220621.kt)
+
+| Difficulty | Marks | Name                                              | link                                                                                                  | Notes                  |
+|:----------:|:-----:|---------------------------------------------------|-------------------------------------------------------------------------------------------------------|------------------------|
+|     🟠     |   ❓   | 59. Spiral Matrix II                              | [Leetcode](https://leetcode.com/problems/spiral-matrix-ii/), [Github]()                               |                        |
+|     🟠     |  ✅❓   | 3. Longest Substring Without Repeating Characters | [Leetcode](https://leetcode.com/problems/longest-substring-without-repeating-characters/), [Github]() | TODO: read explanation |
+
+
+---
+
+### [20220627,20200630](src/main/kotlin/_2022/_06/_20220627.kt)
+
+| Difficulty | Marks | Name                                                        | link                                                                                                           | Notes |
+|:----------:|:-----:|-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|-------|
+|     🔴     |       | 76. Minimum Window Substring                                | [Leetcode]( https://leetcode.com/problems/minimum-window-substring/), [Github]()                               |       |
+|     🟠     |       | 34. Find First and Last Position of Element in Sorted Array | [Leetcode](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/), [Github]() |       |
+|     🟠     |       | 1109. Corporate Flight Bookings                             | [Leetcode](), [Github]()                                                                                       |       |
+
+|            |       |                                                             |                                                                                                                |       |
+|     🟢     | ✅❗❓❌  |                                                             | [Leetcode](), [Github]()                                                                                       |       |
+|     🟠     | ✅❗❓❌  |                                                             | [Leetcode](), [Github]()                                                                                       |       |
+|     🔴     | ✅❗❓❌  |                                                             | [Leetcode](), [Github]()                                                                                       |       |
+
+---
+
+### [20220701]()
+
+| Difficulty | Marks | Name                              | link                                                                                | Notes |
+|:----------:|:-----:|-----------------------------------|-------------------------------------------------------------------------------------|-------|
+|     🟠     |   ✅   | 11. Container With Most Water     | [Leetcode](https://leetcode.com/problems/container-with-most-water/), [Github]()    |       |
+|     🔴     | ✅❗❓❌  | 42. Trapping Rain Water           | [Leetcode](https://leetcode.com/problems/trapping-rain-water/), [Github]()          |       |
+---
+
+### [20220702]()
+
+| Difficulty | Marks | Name                              | link                                                                                | Notes |
+|:----------:|:-----:|-----------------------------------|-------------------------------------------------------------------------------------|-------|
+|     🟠     |   ✅   | 238. Product of Array Except Self | [Leetcode](https://leetcode.com/problems/product-of-array-except-self/), [Github]() |       |
+|     🟢     | ✅❗❓❌  | 217. Contains Duplicate           | [Leetcode](), [Github]()                                                            |       |
+|     🟢     | ✅❗❓❌  |                                   | [Leetcode](), [Github]()                                                            |       |
+|     🟠     | ✅❗❓❌  |                                   | [Leetcode](), [Github]()                                                            |       |
+|     🔴     | ✅❗❓❌  |                                   | [Leetcode](), [Github]()                                                            |       |
+
 ---
 
 ### [Templates]()

@@ -173,7 +173,11 @@ private class Leetcode_349 {
 private class Leetcode_49 {
     companion object {
         fun test() = Leetcode_49().apply {
-            listOf(this::groupAnagrams, this::groupAnagrams_0).runTimedTests {
+            listOf(
+                this::groupAnagrams,
+                this::groupAnagrams_0,
+                this::groupAnagrams_1,
+            ).runTimedTests {
                 listOf(
                     invoke(arrayOf("eat","tea","tan","ate","nat","bat")) to listOf(
                         listOf("bat"), listOf("nat","tan"), listOf("ate","eat","tea")
@@ -255,13 +259,35 @@ private class Leetcode_49 {
         }
         return result.values.toList()
     }
+
+    // https://leetcode.com/submissions/detail/736310459/
+    // Runtime: 510 ms, faster than 82.55% of Kotlin online submissions for Group Anagrams.
+    // Memory Usage: 45.4 MB, less than 86.38% of Kotlin online submissions for Group Anagrams.
+    fun groupAnagrams_1(strs: Array<String>): List<List<String>> {
+        val map = HashMap<HashMap<Char, Int>, MutableList<String>>()
+        strs.forEach {
+
+            val cMap = HashMap<Char, Int>()
+            it.forEach {
+                cMap[it] = (cMap[it] ?: 0) + 1
+            }
+
+            if (map.containsKey(cMap)) {
+                map[cMap]!! += it
+            } else {
+                map[cMap] = mutableListOf(it)
+            }
+        }
+
+        return map.values.toList()
+    }
 }
 
 
 fun main() {
-    Leetcode_1.test()
-    Leetcode_242.test()
-    Leetcode_349.test()
+    // Leetcode_1.test()
+    // Leetcode_242.test()
+    // Leetcode_349.test()
     Leetcode_49.test()
 }
 

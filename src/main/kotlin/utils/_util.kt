@@ -132,12 +132,14 @@ inline fun<reified T, reified R> List<T>.runTimedTests(
 
 
 /// assert
+inline infix fun <reified T> T.assertEqualTo(expected: T) = assertEqualTo(expected, checker = null)
+
 
 inline fun  <T> T.assertEqualTo(
     expected: T,
     noinline checker: ((expected: T, actual: T) -> Boolean)? = null,
     crossinline toStr: (T.() -> String) = {
-        when (this) {
+        "[" + when (this) {
             is Iterable<*> -> joinToString()
             is IntArray -> joinToString()
             is CharArray -> joinToString()
@@ -146,7 +148,7 @@ inline fun  <T> T.assertEqualTo(
             is DoubleArray -> joinToString()
             is Array<*> -> joinToString()
             else -> toString()
-        }
+        } + "]"
     },
     noinline lazyMsg: ((expected: T, actual: T) -> String)? = null
 ) {
@@ -155,7 +157,16 @@ inline fun  <T> T.assertEqualTo(
         lazyMsg?.invoke(expected, actual) ?: "Assertion failed, expected:${expected.toStr()} actual:${actual.toStr()}"
     }
     assert(
-        checker?.invoke(expected, this) ?: (expected == actual),
+        when{
+            checker != null -> checker.invoke(expected, actual)
+            expected is IntArray && actual is IntArray -> expected.contentEquals(actual)
+            expected is CharArray && actual is CharArray -> expected.contentEquals(actual)
+            expected is FloatArray && actual is FloatArray -> expected.contentEquals(actual)
+            expected is BooleanArray && actual is BooleanArray -> expected.contentEquals(actual)
+            expected is DoubleArray && actual is DoubleArray -> expected.contentEquals(actual)
+            expected is Array<*> && actual is Array<*> -> expected.contentEquals(actual)
+            else -> expected == actual
+        },
         msg
     )
 }
@@ -166,9 +177,6 @@ inline fun  <T> T.assertEqualTo(
     }
 }
 
-inline infix fun <reified T> T.assertEqualTo(expected: T) = assertEqualTo(expected) { expected, actual ->
-    "Assertion failed, expected:$expected, actual:$actual"
-}
 
 inline fun <reified T> T.assertEqualTo(
     expected: T,

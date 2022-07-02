@@ -28,7 +28,7 @@ private interface Leetcode_5 {
             S1()::longestPalindrome
         ).runTimedTests {
             invoke("babad").assertEqualToAny("bab", "aba")
-            invoke("cbbd") assertEqualTo "bb"
+            invoke("cbbd").assertEqualTo("bb")
         }
         // fun test() {
         //     S1().longestPalindrome("babad").assertEqual("bab", "aba")

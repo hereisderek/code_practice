@@ -38,6 +38,14 @@ fun Matrix.toMatrixStr(print: Boolean = true) : String {
     return str
 }
 
+fun Matrix.matrixEquals(other: Matrix) : Boolean {
+    if (size != other.size) return false
+    for (i in indices) {
+        if (!get(i).contentEquals(other[i])) return false
+    }
+    return true
+}
+
 fun Matrix.deepClone() : Matrix = Matrix(size) {
     this[it].clone()
 }

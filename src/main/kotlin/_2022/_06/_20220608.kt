@@ -33,8 +33,8 @@ private interface Leetcode_23 {
                 val t3 = arrayOf<ListNode?>(null)
 
                 invoke(t1).assertEqualTo(linkedNodesOf(1,1,2,3,4,4,5,6))
-                invoke(t2) assertEqualTo null
-                invoke(t3) assertEqualTo null
+                invoke(t2).assertEqualTo(null)
+                invoke(t3).assertEqualTo(null)
             }
         }
     }

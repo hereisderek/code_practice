@@ -140,7 +140,7 @@ private interface Leetcode_1094 {
 // 48. Rotate Image
 // https://leetcode.com/problems/rotate-image/
 
-
+// 先把二维矩阵沿对角线反转，然后反转矩阵的每一行，结果就是顺时针反转整个矩阵。
 private interface Leetcode_48 {
     fun rotate(matrix: Array<IntArray>): Unit
     companion object : Testable {
@@ -183,39 +183,34 @@ private interface Leetcode_48 {
                 }
 
             }
-            /*
-            listOf(
-                M1()::someMethod,
-            ).runTimedTests {
-                invoke().assertEqualTo(Unit)
-            }
-            */
         }
     }
 
     private class M1 : Leetcode_48 {
-        private val position = IntArray(2)
-        private fun newPos(y: Int, x: Int, side: Int) : IntArray {
-            if (side % 2 == 0) {
-
-            } else {
-
-            }
-            return position
-        }
         override fun rotate(matrix: Array<IntArray>) {
-            matrix.toMatrixStr()
+            println("original matrix: ${matrix.toMatrixStr()}")
+
             val size = matrix.size
 
+            for (i in matrix.indices) {
+                for (j in i until size) {
+                    val temp = matrix[i][j]
+                    matrix[i][j] = matrix[j][i]
+                    matrix[j][i] = temp
+                }
+            }
 
+            for (n in matrix) {
+                n.reverse()
+            }
 
-            // TODO("Not yet implemented")
+            println("rotated matrix: ${matrix.toMatrixStr()}")
         }
     }
 }
 
 fun main() {
-    // Leetcode_370.test()
-    // Leetcode_1094.test()
-    Leetcode_48.test()
+    Leetcode_370.test()
+    Leetcode_1094.test()
+    // Leetcode_48.test()
 }
