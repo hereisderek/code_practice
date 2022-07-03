@@ -240,7 +240,7 @@ Leetcode 370: Range Addition
 
 ---
 
-### [20220701]()
+### [20220701](src/main/kotlin/_2022/_07/_20220701.kt)
 
 | Difficulty | Marks | Name                              | link                                                                                | Notes |
 |:----------:|:-----:|-----------------------------------|-------------------------------------------------------------------------------------|-------|
@@ -248,25 +248,37 @@ Leetcode 370: Range Addition
 |     🔴     | ✅❗❓❌  | 42. Trapping Rain Water           | [Leetcode](https://leetcode.com/problems/trapping-rain-water/), [Github]()          |       |
 ---
 
-### [20220702]()
+### [20220702](src/main/kotlin/_2022/_07/_20220702.kt)
 
-| Difficulty | Marks | Name                              | link                                                                                | Notes |
-|:----------:|:-----:|-----------------------------------|-------------------------------------------------------------------------------------|-------|
-|     🟠     |   ✅   | 238. Product of Array Except Self | [Leetcode](https://leetcode.com/problems/product-of-array-except-self/), [Github]() |       |
-|     🟢     | ✅❗❓❌  | 217. Contains Duplicate           | [Leetcode](), [Github]()                                                            |       |
-|     🟢     | ✅❗❓❌  |                                   | [Leetcode](), [Github]()                                                            |       |
-|     🟠     | ✅❗❓❌  |                                   | [Leetcode](), [Github]()                                                            |       |
-|     🔴     | ✅❗❓❌  |                                   | [Leetcode](), [Github]()                                                            |       |
-
+| Difficulty | Marks | Name                              | link                                                                                | Notes                           |
+|:----------:|:-----:|-----------------------------------|-------------------------------------------------------------------------------------|---------------------------------|
+|     🟠     |   ✅   | 238. Product of Array Except Self | [Leetcode](https://leetcode.com/problems/product-of-array-except-self/), [Github]() |                                 |
+|     🟢     |   ✅   | 217. Contains Duplicate           | [Leetcode](), [Github]()                                                            |                                 |
+|     🟠     |   ✅   | 347. Top K Frequent Elements      | [Leetcode](https://leetcode.com/problems/top-k-frequent-elements/), [Github]()      | 1. Heatmap, 2. bucket list/sort |
+|     🟢     |   ✅   | 125. Valid Palindrome             | [Leetcode](https://leetcode.com/problems/valid-palindrome/), [Github]()             |                                 |
+|     🟠     |   ✅   | 271. Encode and Decode Strings    | [Lintcode_659](https://www.lintcode.com/problem/659/), [Github]()                   |                                 |
 ---
+
+### [20220703](src/main/kotlin/_2022/_07/_20220703.kt)
+
+| Difficulty | Marks | Name                                         | link                                                                               | Notes |
+|:----------:|:-----:|----------------------------------------------|------------------------------------------------------------------------------------|-------|
+|     🟠     | ✅❗❓❌  | 128. Longest Consecutive Sequence            | [Leetcode](https://leetcode.com/problems/longest-consecutive-sequence/)            |       |
+|     🟢     |   ✅   | 121. Best Time to Buy and Sell Stock         | [Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)         |       |
+|     🟠     |  ✅❓   | 424. Longest Repeating Character Replacement | [Leetcode](https://leetcode.com/problems/longest-repeating-character-replacement/) |       |
+|     🟠     | ✅❗❓❌  | 567. Permutation in String                   | [Leetcode](https://leetcode.com/problems/permutation-in-string/)                   |       |
+|     🟢     | ✅❗❓❌  |                                              | [Leetcode]()                                                                       |       |
+|     🟠     | ✅❗❓❌  |                                              | [Leetcode]()                                                                       |       |
+|     🔴     | ✅❗❓❌  |                                              | [Leetcode]()                                                                       |       |
+
 
 ### [Templates]()
 
-| Difficulty | Marks | Name | link                     | Notes |
-|:----------:|:-----:|------|--------------------------|-------|
-|     🟢     | ✅❗❓❌  |      | [Leetcode](), [Github]() |       |
-|     🟠     | ✅❗❓❌  |      | [Leetcode](), [Github]() |       |
-|     🔴     | ✅❗❓❌  |      | [Leetcode](), [Github]() |       |
+| Difficulty | Marks | Name | link         | Notes |
+|:----------:|:-----:|------|--------------|-------|
+|     🟢     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🔴     | ✅❗❓❌  |      | [Leetcode]() |       |
 
 ### References:
 

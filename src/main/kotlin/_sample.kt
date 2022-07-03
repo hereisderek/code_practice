@@ -12,7 +12,7 @@ private interface Leetcode {
         override fun test() {
             /*
             listOf(
-                M1()::someMethod,
+                M1()::,
             ).runTimedTests {
                 invoke().assertEqualTo(Unit)
             }

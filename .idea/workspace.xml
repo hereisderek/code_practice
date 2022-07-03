@@ -5,23 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c15a0fa3-bdf6-48b4-87cd-b0658ceea7d4" name="Changes" comment="assertEqualTo added lazyMsg; Node added toUnsafeString() clone() and fixed equals(); added Tuple; Leetcode_206 Leetcode_25 Leetcode_234 Leetcode_26 Leetcode_27 Leetcode_83">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/_20220620Kt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/_20220621Kt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/_20220627Kt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/_20220702Kt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220620.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220621.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220627.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220701.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220702.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/_20220703Kt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220703.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220528.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220528.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220602.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220602.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220608.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220608.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220619.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220619.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/_types.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/_types.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/_util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/_util.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220702.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220702.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_sample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_sample.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +93,7 @@
     "project.structure.last.edited": "SDKs",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Markdown",
+    "settings.editor.selected.configurable": "editing.templates",
     "show.migrate.to.gradle.popup": "false"
   },
   "keyToStringList": {
@@ -129,7 +118,7 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin._20220528Kt">
+  <component name="RunManager" selected="Kotlin._20220703Kt">
     <configuration name="NodeTest.test creation (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -178,9 +167,11 @@
       <item itemvalue="Kotlin._20220621Kt" />
       <item itemvalue="Kotlin._20220627Kt" />
       <item itemvalue="Kotlin._20220702Kt" />
+      <item itemvalue="Kotlin._20220703Kt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin._20220703Kt" />
         <item itemvalue="Kotlin._20220702Kt" />
         <item itemvalue="Kotlin._20220627Kt" />
         <item itemvalue="Gradle.NodeTest.test creation (1)" />
@@ -223,7 +214,7 @@
       <workItem from="1656133386170" duration="759000" />
       <workItem from="1656134222848" duration="12440000" />
       <workItem from="1656558022542" duration="7024000" />
-      <workItem from="1656580385620" duration="29295000" />
+      <workItem from="1656580385620" duration="63264000" />
     </task>
     <task id="LOCAL-00001" summary="assertEqualTo added lazyMsg; Node added toUnsafeString() clone() and fixed equals(); added Tuple; Leetcode_206 Leetcode_25 Leetcode_234 Leetcode_26 Leetcode_27 Leetcode_83">
       <created>1655385356850</created>
@@ -250,14 +241,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220528.kt</url>
-          <line>92</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_05/_20220529.kt</url>
           <line>156</line>
@@ -458,6 +441,26 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220627.kt</url>
           <line>348</line>
           <option name="timeStamp" value="174" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220702.kt</url>
+          <line>176</line>
+          <option name="timeStamp" value="181" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220702.kt</url>
+          <line>211</line>
+          <option name="timeStamp" value="182" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220702.kt</url>
+          <line>203</line>
+          <option name="timeStamp" value="185" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220702.kt</url>
+          <line>316</line>
+          <option name="timeStamp" value="186" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

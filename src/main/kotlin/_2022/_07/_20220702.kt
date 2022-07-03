@@ -3,9 +3,10 @@
 package _2022._07
 
 import Testable
-import utils.assertEqualTo
-import utils.forEachPair
-import utils.runTimedTests
+import utils.*
+import java.util.*
+import kotlin.collections.ArrayList
+import kotlin.collections.HashMap
 
 
 // https://leetcode.com/problems/product-of-array-except-self/
@@ -133,28 +134,202 @@ private interface Leetcode_217 {
     }
 }
 
-private interface Leetcode {
-
+// 347. Top K Frequent Elements
+// https://leetcode.com/problems/top-k-frequent-elements/
+private interface Leetcode_347 {
+    fun topKFrequent(nums: IntArray, k: Int): IntArray
     companion object : Testable {
         override fun test() {
-            /*
+            val tests = listOf(
+                tupleOf(
+                    intArrayOf(1,1,1,2,2,3), 2, intArrayOf(1,2)
+                ),
+                tupleOf(
+                    intArrayOf(1), 1, intArrayOf(1)
+                ),
+                tupleOf(
+                    intArrayOf(-1, -1), 1, intArrayOf(-1)
+                ),
+            )
             listOf(
-                M1()::someMethod,
+                S1()::topKFrequent,
             ).runTimedTests {
-                invoke().assertEqualTo(Unit)
+                tests.forEachTuple { first, second, third ->
+                    invoke(first, second).assertEqualTo(third)
+                }
             }
-            */
         }
     }
 
-    private class M1 : Leetcode {
+    // TODO: Heatmap
+    private class M1 : Leetcode_347 {
+        override fun topKFrequent(nums: IntArray, k: Int): IntArray {
+            val map = HashMap<Int, Int>()
+            val topK = mutableListOf<Int>()
+            nums.forEach {
+                if (map.containsKey(it)) {
+                    map[it] = map[it]!! + 1
+                } else {
+                    map[it] = 1
+                }
+            }
 
+            TODO("Not yet implemented")
+        }
+    }
+    private class S1 : Leetcode_347 {
+        override fun topKFrequent(nums: IntArray, k: Int): IntArray {
+            if (nums.isEmpty()) return intArrayOf()
+            if (nums.size == 1) return intArrayOf(nums[0])
+
+            val freq = Array<ArrayList<Int>?>(nums.size+1){ null }
+            val map = HashMap<Int, Int>()
+            nums.forEach {
+                if (map.containsKey(it)) {
+                    map[it] = map[it]!! + 1
+                } else {
+                    map[it] = 1
+                }
+            }
+
+            map.forEach { (t, u) ->
+                val list = freq.getOrNull(u) ?: ArrayList<Int>().also {
+                    freq[u] = it
+                }
+                list.add(t)
+            }
+            var counter = 0
+            val res = IntArray(k)
+            for (i in freq.size - 1 downTo 0) {
+                val list = freq[i] ?: continue
+                for (l in list) {
+                    res[counter] = l
+                    counter ++
+                }
+                if (counter == k) break
+            }
+
+            return res
+        }
     }
 }
 
 
 
+
+// 125. Valid Palindrome
+// https://leetcode.com/problems/valid-palindrome/
+private interface Leetcode_125 {
+    fun isPalindrome(s: String): Boolean
+    companion object : Testable {
+        override fun test() {
+            val tests = listOf(
+                "A man, a plan, a canal: Panama" to true,
+                "race a car" to false,
+                " " to true
+            )
+            listOf(
+                M1()::isPalindrome,
+            ).runTimedTests {
+                tests.forEachPair { first, second ->
+                    invoke(first).assertEqualTo(second)
+                }
+
+            }
+        }
+    }
+
+    private class M1 : Leetcode_125 {
+        override fun isPalindrome(s: String): Boolean {
+            // val alphanumeric = (0 .. 25).map { 'a' + it } + (0 until 10).map { '0' + it }.toList()
+            val alphanumeric = "abcdefghijklmnopqrstuvwxyz0123456789"
+            val str = s.toLowerCase().filter { it in alphanumeric }
+
+            var left = 0
+            var right = str.length - 1
+            while (left < right) {
+                if (str[left] != str[right]) return false
+                left++
+                right--
+            }
+
+            return true
+        }
+    }
+}
+
+// 659 · Encode and Decode Strings
+// https://www.lintcode.com/problem/659/
+
+private interface Lintcode_659 {
+    fun encode(strs: List<String>) : String
+    fun decode(str: String) : List<String>
+    companion object : Testable {
+
+        override fun test() {
+            val tests = listOf(
+                listOf("we", "say", ":", "yes"),
+                listOf(":", ";", "a:;", ";:b:;"),
+            )
+            listOf(
+                // M1(),
+                M2(),
+            ).runTimedTests {
+                tests.forEach {
+                    val encoded = encode(it)
+                    val decoded = decode(encoded)
+                    it.assertEqualTo(decoded){ exp, act ->
+                        "assertion failed, original: [${exp.joinToString()}] vs actual: [${act.joinToString()}], encoded:[${encoded}]"
+                    }
+                    println(
+                        "original: [${it.joinToString()}] vs actual: [${decoded.joinToString()}], encoded:[${encoded}]"
+                    )
+                }
+
+            }
+        }
+    }
+
+    private class M1 : Lintcode_659 {
+        override fun encode(strs: List<String>): String {
+            return strs.joinToString(separator = "]:;[")
+        }
+
+        override fun decode(str: String): List<String> {
+            return str.split("]:;[")
+        }
+    }
+
+    private class M2 : Lintcode_659 {
+        // into: 2#we3#say1#:3#yes
+        override fun encode(strs: List<String>): String {
+            return StringBuffer().apply {
+                for (w in strs) {
+                    append("${w.length}#${w}")
+                }
+            }.toString()
+        }
+
+        override fun decode(str: String): List<String> {
+            val list = ArrayList<String>()
+            var pointer = 0
+
+            while (pointer < str.length) {
+                var j = pointer
+                while (str[j] != '#') { j++ }
+                val length = str.substring(pointer, j).toInt()
+                pointer = j + length + 1
+                val word = str.substring(j+1, pointer)
+                list.add(word)
+            }
+            return list
+        }
+    }
+}
 fun main() {
     // Leetcode_238.test()
-    Leetcode_217.test()
+    // Leetcode_217.test()
+    // Leetcode_347.test()
+    // Leetcode_125.test()
+    Lintcode_659.test()
 }
