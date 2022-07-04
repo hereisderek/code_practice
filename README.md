@@ -252,6 +252,7 @@ Leetcode 370: Range Addition
 |     🟠     |   ✅   | 347. Top K Frequent Elements      | [Leetcode](https://leetcode.com/problems/top-k-frequent-elements/)      | 1. Heatmap, 2. bucket list/sort |
 |     🟢     |   ✅   | 125. Valid Palindrome             | [Leetcode](https://leetcode.com/problems/valid-palindrome/)             |                                 |
 |     🟠     |   ✅   | 271. Encode and Decode Strings    | [Lintcode_659](https://www.lintcode.com/problem/659/)                   |                                 |
+
 ---
 
 ### [20220703](src/main/kotlin/_2022/_07/_20220703.kt)
@@ -262,10 +263,18 @@ Leetcode 370: Range Addition
 |     🟢     |   ✅   | 121. Best Time to Buy and Sell Stock         | [Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)         |       |
 |     🟠     |  ✅❓   | 424. Longest Repeating Character Replacement | [Leetcode](https://leetcode.com/problems/longest-repeating-character-replacement/) |       |
 |     🟠     | ✅❗❓❌  | 567. Permutation in String                   | [Leetcode](https://leetcode.com/problems/permutation-in-string/)                   |       |
-|     🟢     | ✅❗❓❌  |                                              | [Leetcode]()                                                                       |       |
-|     🟠     | ✅❗❓❌  |                                              | [Leetcode]()                                                                       |       |
-|     🔴     | ✅❗❓❌  |                                              | [Leetcode]()                                                                       |       |
 
+---
+
+### [20220704](src/main/kotlin/_2022/_07/_20220704.kt)
+
+| Difficulty | Marks | Name | link         | Notes |
+|:----------:|:-----:|------|--------------|-------|
+|     🟢     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🔴     | ✅❗❓❌  |      | [Leetcode]() |       |
+
+---
 
 ### [Templates]()
 
@@ -274,6 +283,8 @@ Leetcode 370: Range Addition
 |     🟢     | ✅❗❓❌  |      | [Leetcode]() |       |
 |     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
 |     🔴     | ✅❗❓❌  |      | [Leetcode]() |       |
+
+---
 
 ### References:
 

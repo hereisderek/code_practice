@@ -229,13 +229,14 @@ private interface Leetcode_567 {
     companion object : Testable {
         override fun test() {
             val tests = listOf(
-                // tupleOf("ab", "eidbaooo", true),
-                // tupleOf("ab", "eidboaoo", false),
+                tupleOf("ab", "eidbaooo", true),
+                tupleOf("ab", "eidboaoo", false),
                 tupleOf("ab", "ab", true),
                 tupleOf("ab", "ba", true),
+                tupleOf("adc", "dcda", true),
             )
             listOf(
-                M1()::checkInclusion,
+                M2()::checkInclusion,
             ).runTimedTests {
                 tests.forEachTuple { first, second, third ->
                     invoke(first, second).assertEqualTo(third)
@@ -245,6 +246,7 @@ private interface Leetcode_567 {
     }
 
     // misunderstood the question, thought "permutation" was reversing order
+    @Deprecated("not working", level = DeprecationLevel.ERROR)
     private class M1 : Leetcode_567 {
         override fun checkInclusion(s1: String, s2: String): Boolean {
             var p1 = s1.length - 1
@@ -263,25 +265,33 @@ private interface Leetcode_567 {
     }
 
 
+    // https://leetcode.com/submissions/detail/737850787/
+    // Runtime: 206 ms, faster than 96.21% of Kotlin online submissions for Permutation in String.
+    // Memory Usage: 35.1 MB, less than 99.53% of Kotlin online submissions for Permutation in String.
     private class M2 : Leetcode_567 {
-        private fun checkPermutation() {
-
-        }
         override fun checkInclusion(s1: String, s2: String): Boolean {
             val s1Map = IntArray(26)
+            s1.forEach {
+                s1Map[it - 'a'] ++
+            }
+
             val s2Map = IntArray(26)
+            var left = 0
+            var right = 0
+            while (right < s2.length) {
+                val c = s2[right]
+                s2Map[c - 'a']++
 
-
-            var p1 = s1.length - 1
-            var p2 = 0
-            while (p2 < s2.length) {
-                while (p1 >= 0 && p2 < s2.length && s1[p1] == s2[p2]) {
-                    p1--
-                    p2++
+                if (s1.length == (right - left + 1)) {
+                    if (s1Map.contentEquals(s2Map)) return true
                 }
-                if (p1 == -1) return true
-                p1 = s1.length - 1
-                p2++
+
+                right++
+
+                if ((right - left + 1) > s1.length) {
+                    s2Map[s2[left] - 'a']--
+                    left++
+                }
             }
             return false
         }
@@ -290,8 +300,8 @@ private interface Leetcode_567 {
 }
 
 fun main() {
-    Leetcode_128.test()
+    // Leetcode_128.test()
     // Leetcode_121.test()
     // Leetcode_424.test()
-    // Leetcode_567.test()
+    Leetcode_567.test()
 }
