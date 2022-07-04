@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="_20220704Kt" type="JetRunConfigurationType" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="_2022._07._20220704Kt" />
+    <module name="code_practice.main" />
+    <shortenClasspath name="NONE" />
+    <option name="VM_PARAMETERS" value="-ea" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

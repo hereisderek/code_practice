@@ -413,7 +413,7 @@ private interface Leetcode_11 {
 
 
 fun main() {
-    // Leetcode_76.test()
+    Leetcode_76.test()
     // Leetcode_34.test()
-    Leetcode_11.test()
+    // Leetcode_11.test()
 }

@@ -268,11 +268,14 @@ Leetcode 370: Range Addition
 
 ### [20220704](src/main/kotlin/_2022/_07/_20220704.kt)
 
-| Difficulty | Marks | Name | link         | Notes |
-|:----------:|:-----:|------|--------------|-------|
-|     🟢     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🔴     | ✅❗❓❌  |      | [Leetcode]() |       |
+| Difficulty | Marks | Name                        | link                                                              | Notes                             |
+|:----------:|:-----:|-----------------------------|-------------------------------------------------------------------|-----------------------------------|
+|     🔴     | ✅❗❓❌  | 239. Sliding Window Maximum | [Leetcode](https://leetcode.com/problems/sliding-window-maximum/) |                                   |
+|     🟢     |   ✅   | 20. Valid Parentheses       | [Leetcode](https://leetcode.com/problems/valid-parentheses/)      |                                   |
+|     🟠     |  ✅❗   | 155. Min Stack              | [Leetcode](https://leetcode.com/problems/min-stack/)              | The use of miniStack in S1 and S2 |
+|     🟢     | ✅❗❓❌  |                             | [Leetcode]()                                                      |                                   |
+|     🟠     | ✅❗❓❌  |                             | [Leetcode]()                                                      |                                   |
+|     🔴     | ✅❗❓❌  |                             | [Leetcode]()                                                      |                                   |
 
 ---
 
