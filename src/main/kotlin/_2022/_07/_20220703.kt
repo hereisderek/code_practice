@@ -28,13 +28,25 @@ private interface Leetcode_128 {
         }
     }
 
+    // https://leetcode.com/submissions/detail/737828338/
+    // Runtime: 647 ms, faster than 86.18% of Kotlin online submissions for Longest Consecutive Sequence.
+    // Memory Usage: 73 MB, less than 71.43% of Kotlin online submissions for Longest Consecutive Sequence.
     private class M1 : Leetcode_128 {
         override fun longestConsecutive(nums: IntArray): Int {
-            val res = ArrayList<ArrayList<Int>>()
-            val s = nums.size
-            val map = HashMap<Int, ArrayList<Int>>()
+            val map = HashSet<Int>()
+            nums.forEach { map.add(it) }
+            var max = 0
+            map.forEach {
+                if (!map.contains(it - 1)) {
+                    var counter = 0
+                    while (map.contains(counter+it)) {
+                        counter++
+                    }
+                    max = Math.max(max, counter)
+                }
+            }
 
-            TODO("Not yet implemented")
+            return max
         }
     }
 }
@@ -278,8 +290,8 @@ private interface Leetcode_567 {
 }
 
 fun main() {
-    // Leetcode_128.test()
+    Leetcode_128.test()
     // Leetcode_121.test()
     // Leetcode_424.test()
-    Leetcode_567.test()
+    // Leetcode_567.test()
 }
