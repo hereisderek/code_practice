@@ -1,4 +1,4 @@
-r## Code practice [link](https://github.com/hereisderek/code_practice)
+## Code practice [link](https://github.com/hereisderek/code_practice)
 
 ---
 
