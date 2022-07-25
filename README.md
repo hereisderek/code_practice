@@ -262,7 +262,7 @@ Leetcode 370: Range Addition
 |     🟠     |   ✅   | 128. Longest Consecutive Sequence            | [Leetcode](https://leetcode.com/problems/longest-consecutive-sequence/)            |       |
 |     🟢     |   ✅   | 121. Best Time to Buy and Sell Stock         | [Leetcode](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)         |       |
 |     🟠     |  ✅❓   | 424. Longest Repeating Character Replacement | [Leetcode](https://leetcode.com/problems/longest-repeating-character-replacement/) |       |
-|     🟠     | ✅❗❓❌  | 567. Permutation in String                   | [Leetcode](https://leetcode.com/problems/permutation-in-string/)                   |       |
+|     🟠     |   ✅   | 567. Permutation in String                   | [Leetcode](https://leetcode.com/problems/permutation-in-string/)                   |       |
 
 ---
 
@@ -273,10 +273,38 @@ Leetcode 370: Range Addition
 |     🔴     | ✅❗❓❌  | 239. Sliding Window Maximum | [Leetcode](https://leetcode.com/problems/sliding-window-maximum/) |                                   |
 |     🟢     |   ✅   | 20. Valid Parentheses       | [Leetcode](https://leetcode.com/problems/valid-parentheses/)      |                                   |
 |     🟠     |  ✅❗   | 155. Min Stack              | [Leetcode](https://leetcode.com/problems/min-stack/)              | The use of miniStack in S1 and S2 |
-|     🟢     | ✅❗❓❌  |                             | [Leetcode]()                                                      |                                   |
-|     🟠     | ✅❗❓❌  |                             | [Leetcode]()                                                      |                                   |
-|     🔴     | ✅❗❓❌  |                             | [Leetcode]()                                                      |                                   |
 
+---
+
+### [20220705](src/main/kotlin/_2022/_07/_20220705.kt)
+
+| Difficulty | Marks | Name                                  | link                                                                        | Notes |
+|:----------:|:-----:|---------------------------------------|-----------------------------------------------------------------------------|-------|
+|     🟠     |   ✅   | 150. Evaluate Reverse Polish Notation | [Leetcode](https://leetcode.com/problems/evaluate-reverse-polish-notation/) |       |
+|     🟠     |  ✅❓   | 22. Generate Parentheses              | [Leetcode](https://leetcode.com/problems/generate-parentheses/)             |       |
+|     🟢     | ✅❗❓❌  | 496. Next Greater Element I           | [Leetcode](https://leetcode.com/problems/next-greater-element-i/)           |       |
+---
+
+### [20220724](src/main/kotlin/_2022/_07/_20220724.kt)
+
+| Difficulty | Marks | Name                    | link                                                          | Notes |
+|:----------:|:-----:|-------------------------|---------------------------------------------------------------|-------|
+|     🟠     |   ✅   | 739. Daily Temperatures | [Leetcode](https://leetcode.com/problems/daily-temperatures/) |       |
+|     🟠     |   ✅   | 853. Car Fleet          | [Leetcode](https://leetcode.com/problems/car-fleet/)          |       |
+                                            |            |
+
+---
+
+### [20220725](src/main/kotlin/_2022/_07/_20220725.kt)
+
+| Difficulty | Marks | Name                               | link                                                                      | Notes |
+|:----------:|:-----:|------------------------------------|---------------------------------------------------------------------------|-------|
+|     🔴     |   ❌   | 84. Largest Rectangle in Histogram | [Leetcode](https://leetcode.com/problems/largest-rectangle-in-histogram/) |       |
+|     🟢     |   ✅   | 704. Binary Search                 | [Leetcode](https://leetcode.com/problems/binary-search/)                  |       |
+|     🟠     |   ✅   | 74. Search a 2D Matrix             | [Leetcode](https://leetcode.com/problems/search-a-2d-matrix/)             |       |
+|     🟢     | ✅❗❓❌  |                                    | [Leetcode]()                                                              |       |
+|     🟠     | ✅❗❓❌  |                                    | [Leetcode]()                                                              |       |
+|     🔴     | ✅❗❓❌  |                                    | [Leetcode]()                                                              |       |
 ---
 
 ### [Templates]()

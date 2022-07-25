@@ -268,8 +268,11 @@ private interface Leetcode_567 {
     // https://leetcode.com/submissions/detail/737850787/
     // Runtime: 206 ms, faster than 96.21% of Kotlin online submissions for Permutation in String.
     // Memory Usage: 35.1 MB, less than 99.53% of Kotlin online submissions for Permutation in String.
+    // O(26*n)
     private class M2 : Leetcode_567 {
         override fun checkInclusion(s1: String, s2: String): Boolean {
+            if (s1.length > s2.length) return false
+
             val s1Map = IntArray(26)
             s1.forEach {
                 s1Map[it - 'a'] ++

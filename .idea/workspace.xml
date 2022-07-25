@@ -5,12 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c15a0fa3-bdf6-48b4-87cd-b0658ceea7d4" name="Changes" comment="assertEqualTo added lazyMsg; Node added toUnsafeString() clone() and fixed equals(); added Tuple; Leetcode_206 Leetcode_25 Leetcode_234 Leetcode_26 Leetcode_27 Leetcode_83">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/_20220704Kt.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/images/20.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations/_20220705Kt.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220705.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220724.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220725.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/_runTimedTests.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220627.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_06/_20220627.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220704.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220704.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220703.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220703.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_sample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_sample.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/Tuple.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/Tuple.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/_util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/_util.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +34,17 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="code_practice" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -36,9 +52,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Kotlin File" />
         <option value="Kotlin Data Class" />
         <option value="Kotlin Interface" />
+        <option value="Kotlin File" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -69,43 +85,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.format.on.save.advertiser.fired": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "dart.analysis.tool.window.visible": "false",
-    "go.import.settings.migrated": "true",
-    "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "/Users/derek/Workspace/mine/code_practice/src/main/kotlin/_2022/_07/images",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editing.templates",
-    "show.migrate.to.gradle.popup": "false"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.format.on.save.advertiser.fired&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/derek/Workspace/mine/code_practice/src/main/kotlin/_2022/_07&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "kotlin"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;kotlin&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/kotlin/_2022/_07/images" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/_2022/_07" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/_2022/_07/images" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/_2022/_06" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -119,7 +135,7 @@
       <recent name="utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin._20220704Kt">
+  <component name="RunManager" selected="Kotlin._20220725Kt">
     <configuration name="NodeTest.test creation (1)" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -170,10 +186,14 @@
       <item itemvalue="Kotlin._20220702Kt" />
       <item itemvalue="Kotlin._20220703Kt" />
       <item itemvalue="Kotlin._20220704Kt" />
+      <item itemvalue="Kotlin._20220705Kt" />
+      <item itemvalue="Kotlin._20220725Kt" />
+      <item itemvalue="Kotlin._20220724Kt" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin._20220704Kt" />
+        <item itemvalue="Kotlin._20220725Kt" />
+        <item itemvalue="Kotlin._20220724Kt" />
         <item itemvalue="Gradle.NodeTest.test creation (1)" />
       </list>
     </recent_temporary>
@@ -215,7 +235,15 @@
       <workItem from="1656134222848" duration="12440000" />
       <workItem from="1656558022542" duration="7024000" />
       <workItem from="1656580385620" duration="63649000" />
-      <workItem from="1656893672312" duration="17620000" />
+      <workItem from="1656893672312" duration="18671000" />
+      <workItem from="1656992080308" duration="42000" />
+      <workItem from="1656992259887" duration="9682000" />
+      <workItem from="1657066483801" duration="9989000" />
+      <workItem from="1657177968703" duration="2830000" />
+      <workItem from="1657360709730" duration="806000" />
+      <workItem from="1657714714249" duration="1617000" />
+      <workItem from="1658392144083" duration="17512000" />
+      <workItem from="1658706077132" duration="10197000" />
     </task>
     <task id="LOCAL-00001" summary="assertEqualTo added lazyMsg; Node added toUnsafeString() clone() and fixed equals(); added Tuple; Leetcode_206 Leetcode_25 Leetcode_234 Leetcode_26 Leetcode_27 Leetcode_83">
       <created>1655385356850</created>
@@ -465,12 +493,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220703.kt</url>
-          <line>285</line>
+          <line>288</line>
           <option name="timeStamp" value="189" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220703.kt</url>
-          <line>280</line>
+          <line>283</line>
           <option name="timeStamp" value="190" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
@@ -482,6 +510,22 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220704.kt</url>
           <line>183</line>
           <option name="timeStamp" value="194" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220705.kt</url>
+          <line>86</line>
+          <option name="timeStamp" value="195" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <condition expression="left &gt;= 4 || right &gt;= 4" language="kotlin" />
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220705.kt</url>
+          <line>171</line>
+          <option name="timeStamp" value="199" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220725.kt</url>
+          <line>156</line>
+          <option name="timeStamp" value="200" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
