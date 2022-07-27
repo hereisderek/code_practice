@@ -3,7 +3,6 @@
 package _2022._07
 
 import Testable
-import utils.Matrix
 import utils.assertEqualTo
 import utils.runTimedTests
 import utils.tupleOf
@@ -183,8 +182,109 @@ private interface Leetcode_74 {
 }
 
 
+// 875. Koko Eating Bananas
+// https://leetcode.com/problems/koko-eating-bananas/
+private interface Leetcode_875 {
+    fun minEatingSpeed(piles: IntArray, h: Int): Int
+    companion object : Testable {
+        override fun test() {
+            val tests = listOf(
+                tupleOf(intArrayOf(3,6,7,11), 8, 4),
+                tupleOf(intArrayOf(30,11,23,4,20), 5, 30),
+                tupleOf(intArrayOf(30,11,23,4,20), 6, 23),
+            )
+            listOf(
+                M1()::minEatingSpeed,
+            ).runTimedTests(tests) { a, b, c ->
+                invoke(a, b).assertEqualTo(c)
+            }
+        }
+    }
+
+    // 805306368,805306368,805306368
+    // inspired by [link](https://labuladong.github.io/algo/2/20/31/)
+    private class M1 : Leetcode_875 {
+        override fun minEatingSpeed(piles: IntArray, h: Int): Int {
+            var l = 1
+            var r = 1000000000 + 1 // in case when h > piles.size
+            while (l < r) {
+                val m = l + (r - l) / 2
+                if (getH(piles, m) > h) {
+                    l = m + 1
+                } else {
+                    // if calculated h is < or == to h then
+                    // continue to re-assign r to the new m
+                    r = m
+                }
+
+            }
+            return l
+        }
+
+        private fun getH(piles: IntArray, k: Int) : Int {
+            var h = 0
+            piles.forEach {
+                h += it / k
+                if (it % k != 0) h++
+            }
+            return h
+        }
+    }
+}
+
+
+// 33. Search in Rotated Sorted Array
+// https://leetcode.com/problems/search-in-rotated-sorted-array/
+private interface Leetcode_33 {
+    fun search(nums: IntArray, target: Int): Int
+    companion object : Testable {
+        override fun test() {
+            val tests = listOf(
+                tupleOf(intArrayOf(4,5,6,7,0,1,2), 0, 4),
+                tupleOf(intArrayOf(4,5,6,7,0,1,2), 3, -1),
+                tupleOf(intArrayOf(1), 0, -1),
+            )
+            listOf(
+                M1()::search,
+            ).runTimedTests(tests) { a, b, c ->
+                invoke(a, b).assertEqualTo(c)
+            }
+        }
+    }
+
+    // this was to calculate the pivot point, which is not what was asked
+    private class M1 : Leetcode_33 {
+        override fun search(nums: IntArray, target: Int): Int {
+            var l = 0
+            var r = nums.size
+            while (l < r) {
+                val m = l + (r - l) / 2
+                when{
+                    nums[m] > nums[l] && nums[m] > nums[r] -> l = m + 1
+                    nums[m] < nums[r] && nums[m] < nums[l] -> r = m
+                    else -> {
+
+                    }
+                }
+            }
+
+            TODO("Not yet implemented")
+        }
+    }
+
+    // https://www.youtube.com/watch?v=U8XENwh8Oy8
+    private class S2 : Leetcode_33 {
+        override fun search(nums: IntArray, target: Int): Int {
+
+            TODO("Not yet implemented")
+        }
+    }
+}
+
+
 fun main() {
     // Leetcode_84.test()
-    Leetcode_704.test()
-    Leetcode_74.test()
+    // Leetcode_704.test()
+    // Leetcode_74.test()
+    Leetcode_875.test()
 }

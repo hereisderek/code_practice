@@ -302,12 +302,40 @@ Leetcode 370: Range Addition
 |     🔴     |   ❌   | 84. Largest Rectangle in Histogram | [Leetcode](https://leetcode.com/problems/largest-rectangle-in-histogram/) |       |
 |     🟢     |   ✅   | 704. Binary Search                 | [Leetcode](https://leetcode.com/problems/binary-search/)                  |       |
 |     🟠     |   ✅   | 74. Search a 2D Matrix             | [Leetcode](https://leetcode.com/problems/search-a-2d-matrix/)             |       |
+|     🟠     |  ✅❗   | 875. Koko Eating Bananas           | [Leetcode](https://leetcode.com/problems/koko-eating-bananas/)            |       |
+|     🟠     |   ❌   | 33. Search in Rotated Sorted Array | [Leetcode](https://leetcode.com/problems/search-in-rotated-sorted-array/) |       |
+|            |       |                                    |                                                                           |       |
 |     🟢     | ✅❗❓❌  |                                    | [Leetcode]()                                                              |       |
 |     🟠     | ✅❗❓❌  |                                    | [Leetcode]()                                                              |       |
 |     🔴     | ✅❗❓❌  |                                    | [Leetcode]()                                                              |       |
+
+
 ---
 
-### [Templates]()
+### [20220726](src/main/kotlin/_2022/_07/_20220726.kt)
+
+| Difficulty | Marks | Name              | link                                                    | Notes |
+|:----------:|:-----:|-------------------|---------------------------------------------------------|-------|
+|     🟠     | ✅❗❓❌  | 143. Reorder List | [Leetcode](https://leetcode.com/problems/reorder-list/) |       |
+|     🟢     | ✅❗❓❌  |                   | [Leetcode]()                                            |       |
+|     🟠     | ✅❗❓❌  |                   | [Leetcode]()                                            |       |
+|     🔴     | ✅❗❓❌  |                   | [Leetcode]()                                            |       |
+
+
+---
+
+### [20220727](src/main/kotlin/_2022/_07/_20220727.kt)
+
+| Difficulty | Marks | Name                               | link                                                                     | Notes |
+|:----------:|:-----:|------------------------------------|--------------------------------------------------------------------------|-------|
+|     🟠     | ✅❗❓❌  | 138. Copy List with Random Pointer | [Leetcode](https://leetcode.com/problems/copy-list-with-random-pointer/) |       |
+|     🟢     | ✅❗❓❌  |                                    | [Leetcode]()                                                             |       |
+|     🟠     | ✅❗❓❌  |                                    | [Leetcode]()                                                             |       |
+|     🔴     | ✅❗❓❌  |                                    | [Leetcode]()                                                             |       |
+
+---
+
+### [202207](src/main/kotlin/_2022/_07/_20220726.kt)
 
 | Difficulty | Marks | Name | link         | Notes |
 |:----------:|:-----:|------|--------------|-------|
