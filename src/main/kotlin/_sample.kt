@@ -29,6 +29,13 @@ private interface Leetcode {
     }
 }
 
+interface Leetcode_ {
+
+    private class S : Leetcode_ {
+
+    }
+}
+
 fun main() {
     Leetcode.test()
 }

@@ -1,6 +1,6 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="_20220607Kt" type="JetRunConfigurationType" nameIsGenerated="true">
-    <option name="MAIN_CLASS_NAME" value="_2022._06._20220607Kt" />
+  <configuration default="false" name="MainKt" type="JetRunConfigurationType" nameIsGenerated="true">
+    <option name="MAIN_CLASS_NAME" value="MainKt" />
     <module name="code_practice.main" />
     <shortenClasspath name="NONE" />
     <option name="VM_PARAMETERS" value="-ea" />

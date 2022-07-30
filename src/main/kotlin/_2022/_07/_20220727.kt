@@ -91,6 +91,7 @@ private interface Leetcode_138 {
     // Runtime: 364 ms, faster than 28.57% of Kotlin online submissions for Copy List with Random Pointer.
     // Memory Usage: 38.9 MB, less than 74.29% of Kotlin online submissions for Copy List with Random Pointer.
     // https://leetcode.com/submissions/detail/758144087/
+    // what do you know, it's actually very similar to the solution from neetcode, lol
     private class M1 : Leetcode_138 {
         override fun copyRandomList(node: Node?): Node? {
             val map = HashMap<Node, Node>()

@@ -17,6 +17,7 @@
 - ❗For marking good questions
 - ❓with doubt or unfinished
 - ~~Strikedthrough~~ For not bothering (e.g. too easy)
+- `MARK` in code for paying extra attention
 
 #### Difficulties: 
 - 🟢(Easy)
@@ -328,11 +329,50 @@ Leetcode 370: Range Addition
 
 | Difficulty | Marks | Name                               | link                                                                     | Notes |
 |:----------:|:-----:|------------------------------------|--------------------------------------------------------------------------|-------|
-|     🟠     | ✅❗❓❌  | 138. Copy List with Random Pointer | [Leetcode](https://leetcode.com/problems/copy-list-with-random-pointer/) |       |
-|     🟢     | ✅❗❓❌  |                                    | [Leetcode]()                                                             |       |
-|     🟠     | ✅❗❓❌  |                                    | [Leetcode]()                                                             |       |
-|     🔴     | ✅❗❓❌  |                                    | [Leetcode]()                                                             |       |
+|     🟠     |   ✅   | 138. Copy List with Random Pointer | [Leetcode](https://leetcode.com/problems/copy-list-with-random-pointer/) |       |
+---
 
+### [2022078](src/main/kotlin/_2022/_07/_20220728.kt)
+
+| Difficulty | Marks | Name                           | link                                                                 | Notes |
+|:----------:|:-----:|--------------------------------|----------------------------------------------------------------------|-------|
+|     🟠     |   ✅   | 2. Add Two Numbers             | [Leetcode](https://leetcode.com/problems/add-two-numbers/)           |       |
+|     🟠     |   ❌   | 287. Find the Duplicate Number | [Leetcode](https://leetcode.com/problems/find-the-duplicate-number/) |       |
+|     🟠     |   ❌   | 146. LRU Cache                 | [Leetcode](https://leetcode.com/problems/lru-cache/)                 |       |
+---
+
+### [20220729](src/main/kotlin/_2022/_07/_20220729.kt)
+
+| Difficulty | Marks | Name                              | link                                                                    | Notes |
+|:----------:|:-----:|-----------------------------------|-------------------------------------------------------------------------|-------|
+|     🟢     |   ✅   | 226. Invert Binary Tree           | [Leetcode](https://leetcode.com/problems/invert-binary-tree/)           |       |
+|     🟢     |  ✅❗   | 104. Maximum Depth of Binary Tree | [Leetcode](https://leetcode.com/problems/maximum-depth-of-binary-tree/) |       |
+|     🟢     |   ✅   | 110. Balanced Binary Tree         | [Leetcode](https://leetcode.com/problems/balanced-binary-tree/)         |       |
+|     🟢     |   ✅   | 100. Same Tree                    | [Leetcode](https://leetcode.com/problems/same-tree/)                    |       |
+|     🟢     |  ✅❗   | 572. Subtree of Another Tree      | [Leetcode](https://leetcode.com/problems/subtree-of-another-tree/)      |       |
+|     🟢     | ✅❗❓❌  |                                   | [Leetcode]()                                                            |       |
+|     🟠     | ✅❗❓❌  |                                   | [Leetcode]()                                                            |       |
+|     🔴     | ✅❗❓❌  |                                   | [Leetcode]()                                                            |       |
+
+
+ * 572: can use a utility method `isSameTree` to check or need to be careful (see solution)
+
+---
+
+### [20220730](src/main/kotlin/_2022/_07/_20220730.kt)
+
+| Difficulty | Marks | Name                                                | link                                                                                      | Notes |
+|:----------:|:-----:|-----------------------------------------------------|-------------------------------------------------------------------------------------------|-------|
+|     🟢     |   ✅   | 235. Lowest Common Ancestor of a Binary Search Tree | [Leetcode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |       |
+|     🟢     | ✅❗❓❌  |                                                     | [Leetcode]()                                                                              |       |
+|     🟢     | ✅❗❓❌  |                                                     | [Leetcode]()                                                                              |       |
+|     🟢     | ✅❗❓❌  |                                                     | [Leetcode]()                                                                              |       |
+|     🟢     | ✅❗❓❌  |                                                     | [Leetcode]()                                                                              |       |
+|     🟠     | ✅❗❓❌  |                                                     | [Leetcode]()                                                                              |       |
+|     🔴     | ✅❗❓❌  |                                                     | [Leetcode]()                                                                              |       |
+
+
+* 235: `Binary search tree`: left <= `val` <= right
 ---
 
 ### [202207](src/main/kotlin/_2022/_07/_20220726.kt)
@@ -342,6 +382,7 @@ Leetcode 370: Range Addition
 |     🟢     | ✅❗❓❌  |      | [Leetcode]() |       |
 |     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
 |     🔴     | ✅❗❓❌  |      | [Leetcode]() |       |
+
 
 ---
 
