@@ -364,15 +364,36 @@ Leetcode 370: Range Addition
 | Difficulty | Marks | Name                                                | link                                                                                      | Notes |
 |:----------:|:-----:|-----------------------------------------------------|-------------------------------------------------------------------------------------------|-------|
 |     🟢     |   ✅   | 235. Lowest Common Ancestor of a Binary Search Tree | [Leetcode](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) |       |
-|     🟢     | ✅❗❓❌  |                                                     | [Leetcode]()                                                                              |       |
-|     🟢     | ✅❗❓❌  |                                                     | [Leetcode]()                                                                              |       |
-|     🟢     | ✅❗❓❌  |                                                     | [Leetcode]()                                                                              |       |
+|     🟢     | ✅❗❓❌  | 703. Kth Largest Element in a Stream                | [Leetcode](https://leetcode.com/problems/kth-largest-element-in-a-stream/)                |       |
+|     🟢     |   ✅   | 1046. Last Stone Weight                             | [Leetcode](https://leetcode.com/problems/last-stone-weight/)                              |       |
+|     🟢     |   ✅   | 70. Climbing Stairs                                 | [Leetcode](https://leetcode.com/problems/climbing-stairs/)                                |       |
+|     🟢     |   ✅   | 746. Min Cost Climbing Stairs                       | [Leetcode](https://leetcode.com/problems/min-cost-climbing-stairs/)                       |       |
 |     🟢     | ✅❗❓❌  |                                                     | [Leetcode]()                                                                              |       |
 |     🟠     | ✅❗❓❌  |                                                     | [Leetcode]()                                                                              |       |
 |     🔴     | ✅❗❓❌  |                                                     | [Leetcode]()                                                                              |       |
 
 
 * 235: `Binary search tree`: left <= `val` <= right
+* 746: Build an array dp where dp[i] is the minimum cost to climb to the top starting from the ith staircase.
+
+
+---
+
+### [20220731](src/main/kotlin/_2022/_07/_20220726.kt)
+
+| Difficulty | Marks | Name                  | link                                                        | Notes |
+|:----------:|:-----:|-----------------------|-------------------------------------------------------------|-------|
+|     🟢     |   ✅   | 136. Single Number    | [Leetcode](https://leetcode.com/problems/single-number/)    |       |
+|     🟢     |  ✅❗   | 191. Number of 1 Bits | [Leetcode](https://leetcode.com/problems/number-of-1-bits/) |       |
+|     🟢     |   ❌   | 338. Counting Bits    | [Leetcode](https://leetcode.com/problems/counting-bits/)    |       |
+|     🟢     |   ✅   | 190. Reverse Bits     | [Leetcode](https://leetcode.com/problems/reverse-bits/)     |       |
+|     🟢     | ✅❗❓❌  | 268. Missing Number   | [Leetcode](https://leetcode.com/problems/missing-number/)   |       |
+|     🟢     | ✅❗❓❌  |                       | [Leetcode]()                                                |       |
+|     🟠     | ✅❗❓❌  |                       | [Leetcode]()                                                |       |
+|     🔴     | ✅❗❓❌  |                       | [Leetcode]()                                                |       |
+
+* 191: use mod n = n % 2
+
 ---
 
 ### [202207](src/main/kotlin/_2022/_07/_20220726.kt)

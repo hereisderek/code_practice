@@ -1,4 +1,4 @@
 
 interface Testable {
-    fun test() {}
+    fun test()
 }
