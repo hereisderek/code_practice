@@ -7,7 +7,7 @@ import utils.runTimedTests
 
 //
 //
-private interface Leetcode {
+interface Leetcode {
 
     companion object : Testable {
         override fun test() {
@@ -34,8 +34,4 @@ interface Leetcode_ {
     private class S : Leetcode_ {
 
     }
-}
-
-fun main() {
-    Leetcode.test()
 }

@@ -396,7 +396,19 @@ Leetcode 370: Range Addition
 
 ---
 
-### [202207](src/main/kotlin/_2022/_07/_20220726.kt)
+### [20220802](src/main/kotlin/_2022/_08/_20220802.kt)
+
+| Difficulty | Marks | Name                              | link                                                                  | Notes |
+|:----------:|:-----:|-----------------------------------|-----------------------------------------------------------------------|-------|
+|     🟠     | ✅❗❓❌  | 208. Implement Trie (Prefix Tree) | [Leetcode](https://leetcode.com/problems/implement-trie-prefix-tree/) |       |
+|     🟢     | ✅❗❓❌  |                                   | [Leetcode]()                                                          |       |
+|     🟠     | ✅❗❓❌  |                                   | [Leetcode]()                                                          |       |
+|     🔴     | ✅❗❓❌  |                                   | [Leetcode]()                                                          |       |
+
+
+---
+
+### [202208](src/main/kotlin/_2022/_08/_202208.kt)
 
 | Difficulty | Marks | Name | link         | Notes |
 |:----------:|:-----:|------|--------------|-------|
