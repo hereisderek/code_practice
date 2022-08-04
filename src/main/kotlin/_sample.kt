@@ -1,4 +1,4 @@
-@file:Suppress("DuplicatedCode", "ClassName")
+@file:Suppress("DuplicatedCode", "ClassName", "ObjectPropertyName")
 
 import Testable
 import utils.assertEqualTo
@@ -7,7 +7,7 @@ import utils.runTimedTests
 
 //
 //
-interface Leetcode {
+private interface Leetcode {
 
     companion object : Testable {
         override fun test() {
@@ -29,9 +29,13 @@ interface Leetcode {
     }
 }
 
-interface Leetcode_ {
+private interface Leetcode_ {
 
     private class S : Leetcode_ {
 
     }
 }
+
+val _sample = listOf<Testable>(
+    Leetcode,
+)

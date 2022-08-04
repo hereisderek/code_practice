@@ -137,6 +137,7 @@ private interface Leetcode_287 {
 
 // 146. LRU Cache
 // https://leetcode.com/problems/lru-cache/
+// https://www.youtube.com/watch?v=7ABFKPK2hD4
 private interface Leetcode_146 {
     fun get(key: Int): Int
     fun put(key: Int, value: Int)

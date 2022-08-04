@@ -235,7 +235,7 @@ private interface Leetcode_875 {
 
 // 33. Search in Rotated Sorted Array
 // https://leetcode.com/problems/search-in-rotated-sorted-array/
-private interface Leetcode_33 {
+interface Leetcode_33 {
     fun search(nums: IntArray, target: Int): Int
     companion object : Testable {
         override fun test() {
@@ -245,7 +245,7 @@ private interface Leetcode_33 {
                 tupleOf(intArrayOf(1), 0, -1),
             )
             listOf(
-                M1()::search,
+                S2()::search,
             ).runTimedTests(tests) { a, b, c ->
                 invoke(a, b).assertEqualTo(c)
             }
@@ -273,10 +273,32 @@ private interface Leetcode_33 {
     }
 
     // https://www.youtube.com/watch?v=U8XENwh8Oy8
+    // https://leetcode.com/problems/search-in-rotated-sorted-array/discuss/806396/Kotlin-solution-or-O(log-n)
     private class S2 : Leetcode_33 {
         override fun search(nums: IntArray, target: Int): Int {
-
-            TODO("Not yet implemented")
+            var start = 0
+            var end = nums.size - 1
+            while (start < end) {
+                var mid = (end + start) / 2
+                if (nums[mid] == target) {
+                    return mid
+                } else if (nums[start] <= nums[mid]) {
+                    if (nums[start] <= target && target <= nums[mid]) {
+                        end = mid - 1
+                    } else {
+                        start = mid + 1
+                    }
+                } else {
+                    if (nums[mid] <= nums[end]) {
+                        if (nums[mid] <= target && target <= nums[end]) {
+                            start = mid + 1
+                        } else {
+                            end = mid - 1
+                        }
+                    }
+                }
+            }
+            return if (nums[start] == target) start else -1
         }
     }
 }

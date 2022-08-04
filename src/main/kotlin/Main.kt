@@ -1,18 +1,18 @@
 import _2022._07.*
-import _2022._08.Leetcode_208
 
 
 fun main(args: Array<String>) {
 
-    listOf<Testable>(
-        // Leetcode_853,
-        // Leetcode_1046,
-        // Leetcode_746,
-        // Leetcode_191,
-        // Leetcode_190,
-        // Leetcode_268,
-        Leetcode_208,
-    ).forEach { it.test() }
+    val tests = listOf<List<Testable>>(
+        _2022._08._20220802,
+        _2022._08._20220803,
+        // _2022._08.tests,
 
+    ).flatten()
 
+    for (i in tests.indices) {
+        println("Running test ${i+1}/${tests.size} ...")
+        tests[i].test()
+        println()
+    }
 }

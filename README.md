@@ -398,13 +398,37 @@ Leetcode 370: Range Addition
 
 ### [20220802](src/main/kotlin/_2022/_08/_20220802.kt)
 
-| Difficulty | Marks | Name                              | link                                                                  | Notes |
-|:----------:|:-----:|-----------------------------------|-----------------------------------------------------------------------|-------|
-|     🟠     | ✅❗❓❌  | 208. Implement Trie (Prefix Tree) | [Leetcode](https://leetcode.com/problems/implement-trie-prefix-tree/) |       |
-|     🟢     | ✅❗❓❌  |                                   | [Leetcode]()                                                          |       |
-|     🟠     | ✅❗❓❌  |                                   | [Leetcode]()                                                          |       |
-|     🔴     | ✅❗❓❌  |                                   | [Leetcode]()                                                          |       |
+| Difficulty | Marks | Name                                            | link                                                                                  | Notes                                        |
+|:----------:|:-----:|-------------------------------------------------|---------------------------------------------------------------------------------------|----------------------------------------------|
+|     🟠     |   ✅   | 208. Implement Trie (Prefix Tree)               | [Leetcode](https://leetcode.com/problems/implement-trie-prefix-tree/)                 |                                              |
+|     🟠     |   ❓   | 211. Design Add and Search Words Data Structure | [Leetcode](https://leetcode.com/problems/design-add-and-search-words-data-structure/) |                                              |
+|     🟠     |   ✅   | 981. Time Based Key-Value Store                 | [Leetcode](https://leetcode.com/problems/time-based-key-value-store/)                 |                                              |
+|     🟠     |   ✅   | 973. K Closest Points to Origin                 | [Leetcode](https://leetcode.com/problems/k-closest-points-to-origin/)                 |                                              |
+|     🟠     |   ✅   | 215. Kth Largest Element in an Array            | [Leetcode](https://leetcode.com/problems/kth-largest-element-in-an-array/)            |                                              |
+|     🟠     |   ✅   | 78. Subsets                                     | [Leetcode](https://leetcode.com/problems/subsets/)                                    | try to solve with single res: ArrayList<Int> |
+|     🟠     | ✅❗❓❌  | 39. Combination Sum                             | [Leetcode](https://leetcode.com/problems/combination-sum/)                            | S1                                           |
 
+---
+
+### [20220803](src/main/kotlin/_2022/_08/_20220803.kt)
+
+| Difficulty | Marks | Name             | link                                                    | Notes |
+|:----------:|:-----:|------------------|---------------------------------------------------------|-------|
+|     🟠     |   ✅   | 46. Permutations | [Leetcode](https://leetcode.com/problems/permutations/) |       |
+|     🟠     | ✅❗❓❌  | 90. Subsets II   | [Leetcode](https://leetcode.com/problems/subsets-ii/)   |       |
+
+
+---
+
+### [20220804](src/main/kotlin/_2022/_08/_20220804.kt)
+
+| Difficulty | Marks | Name                   | link                                                          | Notes |
+|:----------:|:-----:|------------------------|---------------------------------------------------------------|-------|
+|     🟢     | ✅❗❓❌  |                        | [Leetcode]()                                                  |       |
+|     🟠     |   ❓   | 40. Combination Sum II | [Leetcode](https://leetcode.com/problems/combination-sum-ii/) |       |
+|     🟠     | ✅❗❓❌  | 200. Number of Islands | [Leetcode](https://leetcode.com/problems/number-of-islands/)  |       |
+|     🟠     | ✅❗❓❌  |                        | [Leetcode]()                                                  |       |
+|     🔴     | ✅❗❓❌  |                        | [Leetcode]()                                                  |       |
 
 ---
 
@@ -417,8 +441,27 @@ Leetcode 370: Range Addition
 |     🔴     | ✅❗❓❌  |      | [Leetcode]() |       |
 
 
+
 ---
 
+### Read List
+- [Union-Find/Disjoint Set](https://labuladong.github.io/algo/2/22/53/)
+
+### TODO:
+- Quick sort
+- Quick select
+- depth first search
+
+
+### Binary search tree
+- when there are multiple same value (not distinct), how to get the left most index of the given value (or right)
+- `l < r` vs `l <= r` 
+
+### backtrack / dfs
+- you can go either way 
+  - starting from position 0, and for each layer down the line you can either add or not add the next element (Leetcode_46), or 
+  - starting form all the element including, you can have any many children as the element, and for each child, consider the corresponding element removed (Leetcode_90)
+ 
 ### References:
 
 - [LeetCode Top 100 Problem Selection | Step-by-step Data Science](https://h1ros.github.io/posts/coding/leetcode-top-100-problem-selection/)
