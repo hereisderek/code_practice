@@ -180,14 +180,14 @@ inline fun  <T> T.assertEqualTo(
 }
 
 
-inline fun <reified T> T.assertEqualTo(
+/* inline fun <reified T> T.assertEqualTo(
     expected: T,
     noinline lazyMsg:  ((expected: T, actual: T) -> String)
 ) {
     assert(this == expected) {
         lazyMsg.invoke(expected, this)
     }
-}
+} */
 
 /*
 inline fun <reified T> T.assertEqualTo(

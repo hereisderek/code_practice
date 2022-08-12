@@ -74,7 +74,7 @@ private interface Leetcode_739 {
 
 // 853. Car Fleet
 // https://leetcode.com/problems/car-fleet/
-interface Leetcode_853 {
+private interface Leetcode_853 {
     fun carFleet(target: Int, position: IntArray, speed: IntArray): Int
 
     companion object : Testable {

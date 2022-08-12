@@ -235,7 +235,7 @@ private interface Leetcode_875 {
 
 // 33. Search in Rotated Sorted Array
 // https://leetcode.com/problems/search-in-rotated-sorted-array/
-interface Leetcode_33 {
+private interface Leetcode_33 {
     fun search(nums: IntArray, target: Int): Int
     companion object : Testable {
         override fun test() {

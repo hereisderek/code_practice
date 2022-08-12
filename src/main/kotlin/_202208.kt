@@ -4,7 +4,6 @@ import Testable
 import utils.assertEqualTo
 import utils.runTimedTests
 
-
 //
 //
 private interface Leetcode {
@@ -36,6 +35,6 @@ private interface Leetcode_ {
     }
 }
 
-val _sample = listOf<Testable>(
+val _202208 = listOf<Testable>(
     Leetcode,
 )

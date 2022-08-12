@@ -11,7 +11,7 @@ import utils.runTimedTests
 // https://leetcode.com/problems/single-number/
 
 
-interface Leetcode_136 {
+private interface Leetcode_136 {
     fun singleNumber(nums: IntArray): Int
     private class S : Leetcode_136 {
         override fun singleNumber(nums: IntArray): Int {
@@ -26,7 +26,7 @@ interface Leetcode_136 {
 
 // 191. Number of 1 Bits
 // https://leetcode.com/problems/number-of-1-bits/
-interface Leetcode_191 {
+private interface Leetcode_191 {
     fun hammingWeight(n:Int):Int
 
     companion object : Testable {
@@ -160,7 +160,7 @@ private interface Leetcode_338 {
 
 // 190. Reverse Bits
 // https://leetcode.com/problems/reverse-bits/
-interface Leetcode_190 {
+private interface Leetcode_190 {
     // you need treat n as an unsigned value
     fun reverseBits(n:Int): Int
 
@@ -204,7 +204,7 @@ interface Leetcode_190 {
 
 // 268. Missing Number
 // https://leetcode.com/problems/missing-number/
-interface Leetcode_268 {
+private interface Leetcode_268 {
     fun missingNumber(nums: IntArray): Int
 
     companion object : Testable {

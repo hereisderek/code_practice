@@ -424,11 +424,75 @@ Leetcode 370: Range Addition
 
 | Difficulty | Marks | Name                   | link                                                          | Notes |
 |:----------:|:-----:|------------------------|---------------------------------------------------------------|-------|
-|     🟢     | ✅❗❓❌  |                        | [Leetcode]()                                                  |       |
 |     🟠     |   ❓   | 40. Combination Sum II | [Leetcode](https://leetcode.com/problems/combination-sum-ii/) |       |
-|     🟠     | ✅❗❓❌  | 200. Number of Islands | [Leetcode](https://leetcode.com/problems/number-of-islands/)  |       |
-|     🟠     | ✅❗❓❌  |                        | [Leetcode]()                                                  |       |
-|     🔴     | ✅❗❓❌  |                        | [Leetcode]()                                                  |       |
+|     🟠     |  ✅❗   | 200. Number of Islands | [Leetcode](https://leetcode.com/problems/number-of-islands/)  |       |
+
+---
+
+### [202208](src/main/kotlin/_2022/_08/_202208.kt)
+
+| Difficulty | Marks | Name | link         | Notes |
+|:----------:|:-----:|------|--------------|-------|
+|     🟠     | ✅❗❓❌  |   695. Max Area of Island   | [Leetcode](https://leetcode.com/problems/max-area-of-island/) |       |
+|     🟠     | ✅❗❓❌  |  133. Clone Graph    | [Leetcode](https://leetcode.com/problems/clone-graph/) |       |
+
+
+---
+
+### [20220806](src/main/kotlin/_2022/_08/_20220806.kt)
+
+| Difficulty | Marks | Name | link         | Notes                 |
+|:----------:|:-----:|------|--------------|-----------------------|
+|     🟠     | ✅  |  417. Pacific Atlantic Water Flow    | [Leetcode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | revert: ocean to land |
+|     🟠     | ✅❗❓❌  | 130. Surrounded Regions     | [Leetcode](https://leetcode.com/problems/surrounded-regions/) |                       |
+
+
+
+Note:
+- 130: reverse thinking, thanks all non-surrounded region to T and change all O to X then change Ts back to O
+
+---
+
+### [20220807](src/main/kotlin/_2022/_08/_2022087.kt)
+
+| Difficulty | Marks | Name              | link                                                    | Notes |
+|:----------:|:-----:|-------------------|---------------------------------------------------------|-------|
+|     🟠     |  ✅❗   | 198. House Robber | [Leetcode](https://leetcode.com/problems/house-robber/) |       |
+
+
+---
+
+### [20220808](src/main/kotlin/_2022/_08/_20220808.kt)
+
+| Difficulty | Marks | Name             | link                                                   | Notes |
+|:----------:|:-----:|------------------|--------------------------------------------------------|-------|
+|     🟠     | ✅❗❓❌  | 322. Coin Change | [Leetcode](https://leetcode.com/problems/coin-change/) |       |
+|     🟠     | ✅❗❓❌  | 91. Decode Ways  | [Leetcode](https://leetcode.com/problems/decode-ways/) |       |
+
+
+---
+
+### [20220810](src/main/kotlin/_2022/_08/_20220810.kt)
+
+| Difficulty | Marks | Name | link         | Notes |
+|:----------:|:-----:|------|--------------|-------|
+|     🟠     | ✅  |  36. Valid Sudoku    | [Leetcode](https://leetcode.com/problems/valid-sudoku/) |       |
+|     🟠     | ✅❗❓❌  | 53. Maximum Subarray     | [Leetcode](https://leetcode.com/problems/maximum-subarray/) |       |
+
+
+---
+
+### [20220811](src/main/kotlin/_2022/_08/_20220811.kt)
+
+| Difficulty | Marks | Name             | link                                                    | Notes |
+|:----------:|:-----:|------------------|---------------------------------------------------------|-------|
+|     🟠     |  ✅❗   | 134. Gas Station | [Leetcode](https://leetcode.com/problems/gas-station/)  |       |
+|     🟠     |  ✅❓❓  | 55. Jump Game    | [Leetcode](https://leetcode.com/problems/jump-game/)    |       |
+|     🟠     |  ✅❓   | 45. Jump Game II | [Leetcode](https://leetcode.com/problems/jump-game-ii/) |       |
+
+Notes:
+- 55: M4
+- 134: S1
 
 ---
 
@@ -439,8 +503,6 @@ Leetcode 370: Range Addition
 |     🟢     | ✅❗❓❌  |      | [Leetcode]() |       |
 |     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
 |     🔴     | ✅❗❓❌  |      | [Leetcode]() |       |
-
-
 
 ---
 

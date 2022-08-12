@@ -4,17 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c15a0fa3-bdf6-48b4-87cd-b0658ceea7d4" name="Changes" comment="Leetcode_208 (with three solutions)">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220803.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220804.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/utils/UnionFind.kt" afterDir="false" />
+    <list default="true" id="c15a0fa3-bdf6-48b4-87cd-b0658ceea7d4" name="Changes" comment="Leetcode_33 Leetcode_40 Leetcode_46 Leetcode_90 UnionFind">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220807.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220808.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220810.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220811.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_202208.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/utils/UnionFindTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220724.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220724.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220725.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220725.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220728.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220728.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220802.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220802.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_sample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_sample.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220729.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220729.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220731.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220731.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220804.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220804.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_sample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220805.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/UnionFind.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/UnionFind.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/_util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/_util.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +58,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Kotlin Data Class" />
         <option value="Kotlin File" />
         <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -105,10 +114,10 @@
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3268366&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -160,6 +169,29 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="UnionFindTest.test Union Find" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;utils.UnionFindTest.test Union Find&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="code_practice" />
       <shortenClasspath name="NONE" />
@@ -168,11 +200,13 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Gradle.UnionFindTest.test Union Find" />
       <item itemvalue="Gradle.NodeTest.test creation (1)" />
       <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.UnionFindTest.test Union Find" />
         <item itemvalue="Gradle.NodeTest.test creation (1)" />
       </list>
     </recent_temporary>
@@ -227,7 +261,13 @@
       <workItem from="1659099841201" duration="366000" />
       <workItem from="1659104425028" duration="27286000" />
       <workItem from="1659396046494" duration="31117000" />
-      <workItem from="1659579286748" duration="9476000" />
+      <workItem from="1659579286748" duration="10194000" />
+      <workItem from="1659653629207" duration="15942000" />
+      <workItem from="1659769745803" duration="19566000" />
+      <workItem from="1659996455075" duration="357000" />
+      <workItem from="1660008040779" duration="1465000" />
+      <workItem from="1660048607558" duration="3904000" />
+      <workItem from="1660122158900" duration="13416000" />
     </task>
     <task id="LOCAL-00001" summary="assertEqualTo added lazyMsg; Node added toUnsafeString() clone() and fixed equals(); added Tuple; Leetcode_206 Leetcode_25 Leetcode_234 Leetcode_26 Leetcode_27 Leetcode_83">
       <created>1655385356850</created>
@@ -271,7 +311,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659402777656</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Leetcode_33 Leetcode_40 Leetcode_46 Leetcode_90 UnionFind">
+      <created>1659652906759</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659652906759</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +344,8 @@
     <MESSAGE value="Leetcode_138 Leetcode_2 Leetcode_287 Leetcode_146 Leetcode_226 Leetcode_104 Leetcode_543 Leetcode_110 Leetcode_572 Leetcode_235" />
     <MESSAGE value="Leetcode_703 Leetcode_1046 Leetcode_70 Leetcode_746 Leetcode_136 Leetcode_191 Leetcode_338(WIP) Leetcode_190 Leetcode_268" />
     <MESSAGE value="Leetcode_208 (with three solutions)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leetcode_208 (with three solutions)" />
+    <MESSAGE value="Leetcode_33 Leetcode_40 Leetcode_46 Leetcode_90 UnionFind" />
+    <option name="LAST_COMMIT_MESSAGE" value="Leetcode_33 Leetcode_40 Leetcode_46 Leetcode_90 UnionFind" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -576,6 +624,41 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220802.kt</url>
           <line>217</line>
           <option name="timeStamp" value="223" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220804.kt</url>
+          <line>146</line>
+          <option name="timeStamp" value="224" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220804.kt</url>
+          <line>134</line>
+          <option name="timeStamp" value="229" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/utils/UnionFind.kt</url>
+          <line>44</line>
+          <option name="timeStamp" value="231" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220805.kt</url>
+          <line>388</line>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220805.kt</url>
+          <line>392</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220805.kt</url>
+          <line>398</line>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220807.kt</url>
+          <line>35</line>
+          <option name="timeStamp" value="235" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

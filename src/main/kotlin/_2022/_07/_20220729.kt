@@ -12,7 +12,7 @@ import java.util.*
 
 // 226. Invert Binary Tree
 // https://leetcode.com/problems/invert-binary-tree/
-interface Leetcode_226 {
+private interface Leetcode_226 {
     fun invertTree(root: TreeNode?): TreeNode?
 
     companion object : Testable {
@@ -78,7 +78,7 @@ private interface Leetcode_104 {
 
 // 104. Maximum Depth of Binary Tree
 // https://leetcode.com/problems/maximum-depth-of-binary-tree/
-interface Leetcode_543 {
+private interface Leetcode_543 {
     fun diameterOfBinaryTree(root: TreeNode?): Int
     private class S : Leetcode_543 {
         private var max = 0
@@ -112,7 +112,7 @@ interface Leetcode_543 {
 
 // 110. Balanced Binary Tree
 // https://leetcode.com/problems/balanced-binary-tree/
-interface Leetcode_110 {
+private interface Leetcode_110 {
     fun isBalanced(root: TreeNode?): Boolean
     private class S : Leetcode_110 {
         override fun isBalanced(root: TreeNode?): Boolean {
@@ -141,7 +141,7 @@ interface Leetcode_110 {
 // 100. Same Tree
 // https://leetcode.com/problems/same-tree/
 
-interface Leetcode_100 {
+private interface Leetcode_100 {
     fun isSameTree(p: TreeNode?, q: TreeNode?): Boolean
     private class S : Leetcode_100 {
         override fun isSameTree(p: TreeNode?, q: TreeNode?): Boolean {
@@ -168,7 +168,7 @@ interface Leetcode_100 {
 // [4,1,2]
 // expected: [False]
 
-interface Leetcode_572 {
+private interface Leetcode_572 {
     fun isSubtree(root: TreeNode?, subRoot: TreeNode?): Boolean
 
 
@@ -209,7 +209,7 @@ interface Leetcode_572 {
 
 // 235. Lowest Common Ancestor of a Binary Search Tree
 // https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/
-interface Leetcode_235 {
+private interface Leetcode_235 {
     fun lowestCommonAncestor(root: TreeNode?, p: TreeNode?, q: TreeNode?): TreeNode?
 
     private class M1 : Leetcode_235 {
@@ -320,7 +320,7 @@ interface Leetcode_235 {
 
 // 703. Kth Largest Element in a Stream
 // https://leetcode.com/problems/kth-largest-element-in-a-stream/
-interface Leetcode_703 {
+private interface Leetcode_703 {
     fun add(`val`: Int): Int
 
     // Runtime: 606 ms, faster than 39.45% of Kotlin online submissions for Kth Largest Element in a Stream.
@@ -348,7 +348,7 @@ interface Leetcode_703 {
 
 // 1046. Last Stone Weight
 // https://leetcode.com/problems/last-stone-weight/
-interface Leetcode_1046 {
+private interface Leetcode_1046 {
     fun lastStoneWeight(stones: IntArray): Int
 
     companion object : Testable {
@@ -387,7 +387,7 @@ interface Leetcode_1046 {
 
 // 70. Climbing Stairs
 // https://leetcode.com/problems/climbing-stairs/
-interface Leetcode_70 {
+private interface Leetcode_70 {
     fun climbStairs(n: Int): Int
 
     // Runtime: 228 ms, faster than 26.86% of Kotlin online submissions for Climbing Stairs.
@@ -429,7 +429,7 @@ interface Leetcode_70 {
 
 // 746. Min Cost Climbing Stairs
 // https://leetcode.com/problems/min-cost-climbing-stairs/
-interface Leetcode_746 {
+private interface Leetcode_746 {
     fun minCostClimbingStairs(cost: IntArray): Int
 
     companion object : Testable {
