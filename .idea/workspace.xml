@@ -4,26 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c15a0fa3-bdf6-48b4-87cd-b0658ceea7d4" name="Changes" comment="Leetcode_33 Leetcode_40 Leetcode_46 Leetcode_90 UnionFind">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220807.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220808.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220810.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220811.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_202208.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/kotlin/utils/UnionFindTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+    <list default="true" id="c15a0fa3-bdf6-48b4-87cd-b0658ceea7d4" name="Changes" comment="a few questions for a few days done">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220812.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220813.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220814.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220724.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220724.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220725.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220725.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220729.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220729.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220731.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_07/_20220731.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220804.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220804.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_sample.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220805.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/UnionFind.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/UnionFind.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/utils/_util.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/utils/_util.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220802.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220802.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220805.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220805.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_202208.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_202208.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +53,7 @@
         <option value="Kotlin Class" />
         <option value="Kotlin Interface" />
         <option value="JUnit5 Test Class" />
+        <option value="Kotlin Object" />
       </list>
     </option>
   </component>
@@ -267,7 +258,10 @@
       <workItem from="1659996455075" duration="357000" />
       <workItem from="1660008040779" duration="1465000" />
       <workItem from="1660048607558" duration="3904000" />
-      <workItem from="1660122158900" duration="13416000" />
+      <workItem from="1660122158900" duration="14605000" />
+      <workItem from="1660266918196" duration="5764000" />
+      <workItem from="1660441244157" duration="1838000" />
+      <workItem from="1660462847379" duration="14089000" />
     </task>
     <task id="LOCAL-00001" summary="assertEqualTo added lazyMsg; Node added toUnsafeString() clone() and fixed equals(); added Tuple; Leetcode_206 Leetcode_25 Leetcode_234 Leetcode_26 Leetcode_27 Leetcode_83">
       <created>1655385356850</created>
@@ -318,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659652906759</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="a few questions for a few days done">
+      <created>1660264413636</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1660264413636</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +346,8 @@
     <MESSAGE value="Leetcode_703 Leetcode_1046 Leetcode_70 Leetcode_746 Leetcode_136 Leetcode_191 Leetcode_338(WIP) Leetcode_190 Leetcode_268" />
     <MESSAGE value="Leetcode_208 (with three solutions)" />
     <MESSAGE value="Leetcode_33 Leetcode_40 Leetcode_46 Leetcode_90 UnionFind" />
-    <option name="LAST_COMMIT_MESSAGE" value="Leetcode_33 Leetcode_40 Leetcode_46 Leetcode_90 UnionFind" />
+    <MESSAGE value="a few questions for a few days done" />
+    <option name="LAST_COMMIT_MESSAGE" value="a few questions for a few days done" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -622,7 +624,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220802.kt</url>
-          <line>217</line>
+          <line>181</line>
           <option name="timeStamp" value="223" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
@@ -659,6 +661,21 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220807.kt</url>
           <line>35</line>
           <option name="timeStamp" value="235" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220814.kt</url>
+          <line>315</line>
+          <option name="timeStamp" value="237" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220814.kt</url>
+          <line>301</line>
+          <option name="timeStamp" value="238" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220814.kt</url>
+          <line>367</line>
+          <option name="timeStamp" value="239" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

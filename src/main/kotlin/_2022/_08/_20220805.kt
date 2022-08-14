@@ -418,15 +418,6 @@ private interface Leetcode_130 {
     }
 }
 
-
-
-private interface Leetcode_ {
-
-    private class S : Leetcode_ {
-
-    }
-}
-
 val _20220805 = listOf<Testable>(
     // Leetcode_133,
     // Leetcode_417,

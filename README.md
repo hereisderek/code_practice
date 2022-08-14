@@ -496,6 +496,44 @@ Notes:
 
 ---
 
+### [20220812](src/main/kotlin/_2022/_08/_20220812.kt)
+
+| Difficulty | Marks | Name                   | link                                                         | Notes |
+|:----------:|:-----:|------------------------|--------------------------------------------------------------|-------|
+|     🟠     |   ✅   | 846. Hand of Straights | [Leetcode](https://leetcode.com/problems/hand-of-straights/) |       |
+|     🟠     |  ✅❓   | 57. Insert Interval    | [Leetcode](https://leetcode.com/problems/insert-interval/)   |       |
+
+
+---
+
+### [20220813](src/main/kotlin/_2022/_08/_20220813.kt)
+
+| Difficulty | Marks | Name                                   | link                                                                         | Notes |
+|:----------:|:-----:|----------------------------------------|------------------------------------------------------------------------------|-------|
+|     🟠     | ✅❗❓❌  | 102. Binary Tree Level Order Traversal | [Leetcode](https://leetcode.com/problems/binary-tree-level-order-traversal/) |       |
+
+
+---
+
+### [20220814](src/main/kotlin/_2022/_08/_20220814.kt)
+
+| Difficulty | Marks | Name                                                           | link                                                                                  | Notes |
+|:----------:|:-----:|----------------------------------------------------------------|---------------------------------------------------------------------------------------|-------|
+|     🟠     |   ✅   | 199. Binary Tree Right Side View                               | [Leetcode](https://leetcode.com/problems/binary-tree-right-side-view/)                |       |
+|     🟠     |   ✅   | 1448. Count Good Nodes in Binary Tree                          | [Leetcode](https://leetcode.com/problems/count-good-nodes-in-binary-tree/)            |       |
+|     🟠     |   ✅   | 98. Validate Binary Search Tree                                | [Leetcode](https://leetcode.com/problems/validate-binary-search-tree/)                |       |
+|     🟠     |  ✅❗   | 230. Kth Smallest Element in a BST                             | [Leetcode](https://leetcode.com/problems/kth-smallest-element-in-a-bst/)              |       |
+|     🟠     | ✅❗❗❗  | 105. Construct Binary Tree from Preorder and Inorder Traversal | [Leetcode]()                                                                          |       |
+|     🟠     | ✅❗❓❌  | 211. Design Add and Search Words Data Structure                | [Leetcode](https://leetcode.com/problems/design-add-and-search-words-data-structure/) |       |
+|     🟠     |  ✅❓   | 621. Task Scheduler                                            | [Leetcode](https://leetcode.com/problems/task-scheduler/)                             |       |
+
+Notes:
+- bfs - order level traversal
+- 98: binary search tree - sorted order
+- 230: [solution](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/solution/er-cha-sou-suo-shu-zhong-di-kxiao-de-yua-8o07/)
+- 
+---
+
 ### [202208](src/main/kotlin/_2022/_08/_202208.kt)
 
 | Difficulty | Marks | Name | link         | Notes |
