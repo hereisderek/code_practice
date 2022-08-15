@@ -278,10 +278,12 @@ private interface Leetcode_621 {
         override fun test() {
             val tests = listOf(
                 tupleOf(charArrayOf('A','A','A','B','B','B'), 2, 8),
+                tupleOf(charArrayOf('A','A','A','A','A','A','B','C','D', 'E', 'F', 'G'), 2, 16),
             )
             listOf(
-                // M1()::leastInterval,
+                M1()::leastInterval,
                 S1()::leastInterval,
+                // M2()::leastInterval,
             ).runTimedTests(tests) { a, b, c ->
                 invoke(a, b).assertEqualTo(c)
             }
@@ -372,14 +374,174 @@ private interface Leetcode_621 {
                         q.add(pair)
                     }
                 }
-
-
             }
+            return i
+        }
+    }
+
+    // not working
+    private class M2 : Leetcode_621 {
+        private class Item(
+            var count: Int,
+            var nextI: Int = 0
+        )
+        override fun leastInterval(tasks: CharArray, n: Int): Int {
+            // Not working for test case:
+            // ["A","A","A","A","A","A","B","C","D","E","F","G"]
+            //
+            val heat = PriorityQueue<Item>(){ a, b ->
+                if (a.count != b.count) b.count - a.count else a.nextI - b.nextI
+            }
+            val map = HashMap<Char, Int>()
+            for (c in tasks) {
+                map[c] = (map[c] ?: 0) + 1
+            }
+            map.forEach { t, u -> heat.offer(Item(u)) }
+
+            var i = 0
+            while (heat.isNotEmpty()) {
+                val t = heat.peek()
+                if (t.count > 0 && t.nextI <= i) {
+                    heat.poll().apply {
+                        count--
+                        nextI = i + n + 1
+                        println("i:$i new count:$count nextI:$nextI")
+                        if (count > 0) heat.offer(this)
+                    }
+                }
+                i++
+            }
+
             return i
         }
     }
 }
 
+// 355. Design Twitter
+private interface Leetcode_355 {
+    fun postTweet(userId: Int, tweetId: Int)
+    fun getNewsFeed(userId: Int): List<Int>
+    fun follow(followerId: Int, followeeId: Int)
+    fun unfollow(followerId: Int, followeeId: Int)
+
+    // Runtime: 301 ms, faster than 30.91% of Kotlin online submissions for Design Twitter.
+    // Memory Usage: 37.2 MB, less than 38.18% of Kotlin online submissions for Design Twitter.
+    // https://leetcode.com/submissions/detail/773836551/
+    private class S : Leetcode_355 {
+        // userId, tweetId
+        val feeds = ArrayList<Pair<Int, Int>>()
+        val follows = HashMap<Int, HashSet<Int>>()
+
+        override fun postTweet(userId: Int, tweetId: Int) {
+            println("postTweet $userId-$tweetId")
+            feeds += userId to tweetId
+        }
+
+        override fun getNewsFeed(userId: Int): List<Int> {
+            val set = follows[userId]
+            var i = feeds.lastIndex
+            val list = ArrayList<Int>()
+
+            while(list.size != 10 && i >= 0) {
+                val feed = feeds[i]
+                println("getNewsFeed userId:$userId feed.first:${feed.first}")
+
+                if (feed.first == userId || (set != null && feed.first in set)) {
+                    list.add(feed.second)
+                }
+                i--
+            }
+            return list
+        }
+
+        override fun follow(followerId: Int, followeeId: Int) {
+            val set = follows[followerId]
+            if (set == null) {
+                follows[followerId] = HashSet<Int>()
+            }
+            follows[followerId]!!.add(followeeId)
+        }
+
+        override fun unfollow(followerId: Int, followeeId: Int) {
+            val set = follows[followerId] ?: return
+            set -= followeeId
+        }
+    }
+}
+
+// 332. Reconstruct Itinerary
+// https://leetcode.com/problems/reconstruct-itinerary/
+private interface Leetcode_332 {
+    fun findItinerary(tickets: List<List<String>>): List<String>
+
+    companion object : Testable {
+        override fun test() {
+            val tests = listOf(
+                listOf(
+                    // [["JFK","KUL"],["JFK","NRT"],["NRT","JFK"]]
+                    listOf("JFK","KUL"),listOf("JFK","NRT"),listOf("NRT","JFK")
+                // ["JFK","NRT","JFK","KUL"]
+                ) to listOf("JFK","NRT","JFK","KUL"),
+            )
+            listOf(
+                M1()::findItinerary
+            ).runTimedTests(tests) { a, b ->
+                invoke(a).assertEqualTo(b)
+            }
+        }
+    }
+
+    // Runtime: 266 ms, faster than 97.73% of Kotlin online submissions for Reconstruct Itinerary.
+    // Memory Usage: 44.4 MB, less than 93.18% of Kotlin online submissions for Reconstruct Itinerary.
+    // https://leetcode.com/submissions/detail/774154210/
+    private class M1 : Leetcode_332 {
+
+        override fun findItinerary(tickets: List<List<String>>): List<String> {
+            val res = ArrayList<String>()
+            val map = HashMap<String, ArrayList<String>>()
+
+            for (t in tickets) {
+                if (map[t[0]] == null) {
+                    map[t[0]] = ArrayList<String>()
+                }
+                map[t[0]]!!.add(t[1])
+            }
+
+            val sorted = map.mapValues {
+                ArrayList(it.value.sortedBy { it })
+            }
+
+            fun dfs(from: String) : Boolean {
+                res.add(from)
+                if (res.size == tickets.size + 1) return true
+
+                val dests = sorted[from] ?: return false
+                if (dests.isEmpty()) return false
+
+                val temp = ArrayList(dests)
+                for (t in temp) {
+                    dests.remove(t)
+
+                    if (dfs(t)) {
+                        return true
+                    } else {
+                        // res.removeLast() // not available in leetcode
+                        res.removeAt(res.lastIndex)
+                        dests.add(t)
+                    }
+                }
+                return false
+            }
+
+            dfs("JFK")
+            return res
+        }
+
+    }
+}
+
+
 val _20220814 = listOf<Testable>(
-    Leetcode_621
+    // Leetcode_621,
+    Leetcode_332,
 )

@@ -531,7 +531,21 @@ Notes:
 - bfs - order level traversal
 - 98: binary search tree - sorted order
 - 230: [solution](https://leetcode.cn/problems/kth-smallest-element-in-a-bst/solution/er-cha-sou-suo-shu-zhong-di-kxiao-de-yua-8o07/)
-- 
+
+
+---
+
+### [20220815](src/main/kotlin/_2022/_08/_20220815.kt)
+
+| Difficulty | Marks | Name                       | link                                                             | Notes |
+|:----------:|:-----:|----------------------------|------------------------------------------------------------------|-------|
+|     🟢     | ✅❗❓❌  |                            | [Leetcode]()                                                     |       |
+|     🟠     |  ✅❓   | 355. Design Twitter        | [Leetcode](https://leetcode.com/problems/design-twitter/)        |       |
+|     🟠     | ✅❗❓❌  | 332. Reconstruct Itinerary | [Leetcode](https://leetcode.com/problems/reconstruct-itinerary/) |       |
+|     🟠     | ✅❗❓❌  |  1584. Min Cost to Connect All Points                          | [Leetcode](https://leetcode.com/problems/min-cost-to-connect-all-points/)                                                     |       |
+|     🟠     | ✅❗❓❌  |                            | [Leetcode]()                                                     |       |
+|     🟠     | ✅❗❓❌  |                            | [Leetcode]()                                                     |       |
+|     🔴     | ✅❗❓❌  |                            | [Leetcode]()                                                     |       |
 ---
 
 ### [202208](src/main/kotlin/_2022/_08/_202208.kt)
