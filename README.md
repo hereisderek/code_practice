@@ -537,23 +537,44 @@ Notes:
 
 ### [20220815](src/main/kotlin/_2022/_08/_20220815.kt)
 
-| Difficulty | Marks | Name                       | link                                                             | Notes |
-|:----------:|:-----:|----------------------------|------------------------------------------------------------------|-------|
-|     🟢     | ✅❗❓❌  |                            | [Leetcode]()                                                     |       |
-|     🟠     |  ✅❓   | 355. Design Twitter        | [Leetcode](https://leetcode.com/problems/design-twitter/)        |       |
-|     🟠     | ✅❗❓❌  | 332. Reconstruct Itinerary | [Leetcode](https://leetcode.com/problems/reconstruct-itinerary/) |       |
-|     🟠     | ✅❗❓❌  |  1584. Min Cost to Connect All Points                          | [Leetcode](https://leetcode.com/problems/min-cost-to-connect-all-points/)                                                     |       |
-|     🟠     | ✅❗❓❌  |                            | [Leetcode]()                                                     |       |
-|     🟠     | ✅❗❓❌  |                            | [Leetcode]()                                                     |       |
-|     🔴     | ✅❗❓❌  |                            | [Leetcode]()                                                     |       |
+| Difficulty | Marks | Name                                 | link                                                                      | Notes |
+|:----------:|:-----:|--------------------------------------|---------------------------------------------------------------------------|-------|
+|     🟢     | ✅❗❓❌  |                                      | [Leetcode]()                                                              |       |
+|     🟠     |  ✅❓   | 355. Design Twitter                  | [Leetcode](https://leetcode.com/problems/design-twitter/)                 |       |
+|     🟠     |   ✅   | 332. Reconstruct Itinerary           | [Leetcode](https://leetcode.com/problems/reconstruct-itinerary/)          |       |
+|     🟠     |  ✅❓   | 1584. Min Cost to Connect All Points | [Leetcode](https://leetcode.com/problems/min-cost-to-connect-all-points/) |       |
+
+Notes:
+- 1584: Read S2
+
+---
+
+### [20220816](src/main/kotlin/_2022/_08/_20220816.kt)
+
+| Difficulty | Marks | Name | link         | Notes |
+|:----------:|:-----:|------|--------------|-------|
+|     🟢     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🔴     | ✅❗❓❌  |      | [Leetcode]() |       |
+
 ---
 
 ### [202208](src/main/kotlin/_2022/_08/_202208.kt)
 
 | Difficulty | Marks | Name | link         | Notes |
 |:----------:|:-----:|------|--------------|-------|
-|     🟢     | ✅❗❓❌  |      | [Leetcode]() |       |
 |     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🟢     | ✅❗❓❌  |      | [Leetcode]() |       |
 |     🔴     | ✅❗❓❌  |      | [Leetcode]() |       |
 
 ---
