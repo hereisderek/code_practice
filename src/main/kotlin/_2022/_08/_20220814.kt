@@ -231,43 +231,6 @@ private interface Leetcode_105 {
 }
 
 
-// 211. Design Add and Search Words Data Structure
-// https://leetcode.com/problems/design-add-and-search-words-data-structure/
-private interface Leetcode_211 {
-    fun addWord(word: String)
-    fun search(word: String): Boolean
-
-    companion object : Testable {
-        override fun test() {
-            listOf(
-                M1::class.java,
-            ).runTimedTests {
-                getDeclaredConstructor().newInstance().apply {
-                    addWord("bad")
-                    addWord("dad")
-                    addWord("mad")
-                    search("pad").assertEqualTo(false)
-                    search("bad").assertEqualTo(true)
-                    search(".ad").assertEqualTo(true)
-                    search("b..").assertEqualTo(true)
-                }
-            }
-        }
-    }
-
-    private class M1 : Leetcode_211 {
-
-
-        override fun addWord(word: String) {
-            TODO("Not yet implemented")
-        }
-
-        override fun search(word: String): Boolean {
-            TODO("Not yet implemented")
-        }
-    }
-}
-
 
 // 621. Task Scheduler
 // https://leetcode.com/problems/task-scheduler/

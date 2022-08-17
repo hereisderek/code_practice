@@ -6,8 +6,6 @@ import Testable
 import utils.assertEqualTo
 import utils.runTimedTests
 import java.util.*
-import kotlin.collections.HashMap
-import kotlin.collections.HashSet
 
 
 // 1584. Min Cost to Connect All Points
@@ -17,7 +15,7 @@ private interface Leetcode_1584 {
     companion object : Testable {
         override fun test() {
             val tests = listOf(
-                arrayOf(intArrayOf(0,0), intArrayOf(2,2), intArrayOf(3,10), intArrayOf(5,2), intArrayOf(7,0),) to 20,
+                arrayOf(intArrayOf(0, 0), intArrayOf(2, 2), intArrayOf(3, 10), intArrayOf(5, 2), intArrayOf(7, 0)) to 20,
                 // [[3,12],[-2,5],[-4,1]]
                 arrayOf(intArrayOf(3,12), intArrayOf(-2,5), intArrayOf(-4,1)) to 18,
                 // [[2,-3],[-17,-8],[13,8],[-17,-15]]
@@ -30,6 +28,7 @@ private interface Leetcode_1584 {
                 // M2()::minCostConnectPoints,
                 S1()::minCostConnectPoints,
                 S2()::minCostConnectPoints,
+                S3()::minCostConnectPoints,
             ).runTimedTests(tests) { a, b ->
                 invoke(a).assertEqualTo(b)
             }
@@ -247,6 +246,78 @@ private interface Leetcode_1584 {
             return total
         }
     }
+
+    // https://leetcode.cn/problems/min-cost-to-connect-all-points/solution/lian-jie-suo-you-dian-de-zui-xiao-fei-yo-kcx7/
+    private class S3 : Leetcode_1584 {
+        override fun minCostConnectPoints(points: Array<IntArray>): Int {
+            val n = points.size
+            val dsu = DisjointSetUnion(n)
+            val edges: MutableList<Edge> = ArrayList()
+            for (i in 0 until n) {
+                for (j in i + 1 until n) {
+                    edges.add(Edge(dist(points, i, j), i, j))
+                }
+            }
+            edges.sortWith { a, b -> a.len - b.len }
+
+            var ret = 0
+            var num = 1
+            for (edge in edges) {
+                val len = edge.len
+                val x = edge.x
+                val y = edge.y
+                if (dsu.unionSet(x, y)) {
+                    ret += len
+                    num++
+                    if (num == n) {
+                        break
+                    }
+                }
+            }
+            return ret
+        }
+
+        fun dist(points: Array<IntArray>, x: Int, y: Int): Int {
+            return Math.abs(points[x][0] - points[y][0]) + Math.abs(points[x][1] - points[y][1])
+        }
+    }
+
+    private class DisjointSetUnion(var n: Int) {
+        var f: IntArray
+        var rank: IntArray
+
+        init {
+            rank = IntArray(n)
+            Arrays.fill(rank, 1)
+            f = IntArray(n)
+            for (i in 0 until n) {
+                f[i] = i
+            }
+        }
+
+        fun find(x: Int): Int {
+            return if (f[x] == x) x else find(f[x]).also { f[x] = it }
+        }
+
+        fun unionSet(x: Int, y: Int): Boolean {
+            var fx = find(x)
+            var fy = find(y)
+            if (fx == fy) {
+                return false
+            }
+            if (rank[fx] < rank[fy]) {
+                val temp = fx
+                fx = fy
+                fy = temp
+            }
+            rank[fx] += rank[fy]
+            f[fy] = fx
+            return true
+        }
+    }
+
+    private class Edge(var len: Int, var x: Int, var y: Int)
+
 }
 
 

@@ -350,9 +350,6 @@ Leetcode 370: Range Addition
 |     🟢     |   ✅   | 110. Balanced Binary Tree         | [Leetcode](https://leetcode.com/problems/balanced-binary-tree/)         |       |
 |     🟢     |   ✅   | 100. Same Tree                    | [Leetcode](https://leetcode.com/problems/same-tree/)                    |       |
 |     🟢     |  ✅❗   | 572. Subtree of Another Tree      | [Leetcode](https://leetcode.com/problems/subtree-of-another-tree/)      |       |
-|     🟢     | ✅❗❓❌  |                                   | [Leetcode]()                                                            |       |
-|     🟠     | ✅❗❓❌  |                                   | [Leetcode]()                                                            |       |
-|     🔴     | ✅❗❓❌  |                                   | [Leetcode]()                                                            |       |
 
 
  * 572: can use a utility method `isSameTree` to check or need to be careful (see solution)
@@ -388,9 +385,6 @@ Leetcode 370: Range Addition
 |     🟢     |   ❌   | 338. Counting Bits    | [Leetcode](https://leetcode.com/problems/counting-bits/)    |       |
 |     🟢     |   ✅   | 190. Reverse Bits     | [Leetcode](https://leetcode.com/problems/reverse-bits/)     |       |
 |     🟢     | ✅❗❓❌  | 268. Missing Number   | [Leetcode](https://leetcode.com/problems/missing-number/)   |       |
-|     🟢     | ✅❗❓❌  |                       | [Leetcode]()                                                |       |
-|     🟠     | ✅❗❓❌  |                       | [Leetcode]()                                                |       |
-|     🔴     | ✅❗❓❌  |                       | [Leetcode]()                                                |       |
 
 * 191: use mod n = n % 2
 
@@ -429,22 +423,22 @@ Leetcode 370: Range Addition
 
 ---
 
-### [202208](src/main/kotlin/_2022/_08/_202208.kt)
+### [20220805](src/main/kotlin/_2022/_08/_20220805.kt)
 
-| Difficulty | Marks | Name | link         | Notes |
-|:----------:|:-----:|------|--------------|-------|
-|     🟠     | ✅❗❓❌  |   695. Max Area of Island   | [Leetcode](https://leetcode.com/problems/max-area-of-island/) |       |
-|     🟠     | ✅❗❓❌  |  133. Clone Graph    | [Leetcode](https://leetcode.com/problems/clone-graph/) |       |
+| Difficulty | Marks | Name                    | link                                                          | Notes |
+|:----------:|:-----:|-------------------------|---------------------------------------------------------------|-------|
+|     🟠     | ✅❗❓❌  | 695. Max Area of Island | [Leetcode](https://leetcode.com/problems/max-area-of-island/) |       |
+|     🟠     | ✅❗❓❌  | 133. Clone Graph        | [Leetcode](https://leetcode.com/problems/clone-graph/)        |       |
 
 
 ---
 
 ### [20220806](src/main/kotlin/_2022/_08/_20220806.kt)
 
-| Difficulty | Marks | Name | link         | Notes                 |
-|:----------:|:-----:|------|--------------|-----------------------|
-|     🟠     | ✅  |  417. Pacific Atlantic Water Flow    | [Leetcode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | revert: ocean to land |
-|     🟠     | ✅❗❓❌  | 130. Surrounded Regions     | [Leetcode](https://leetcode.com/problems/surrounded-regions/) |                       |
+| Difficulty | Marks | Name                             | link                                                                   | Notes                 |
+|:----------:|:-----:|----------------------------------|------------------------------------------------------------------------|-----------------------|
+|     🟠     |   ✅   | 417. Pacific Atlantic Water Flow | [Leetcode](https://leetcode.com/problems/pacific-atlantic-water-flow/) | revert: ocean to land |
+|     🟠     | ✅❗❓❌  | 130. Surrounded Regions          | [Leetcode](https://leetcode.com/problems/surrounded-regions/)          |                       |
 
 
 
@@ -474,10 +468,10 @@ Note:
 
 ### [20220810](src/main/kotlin/_2022/_08/_20220810.kt)
 
-| Difficulty | Marks | Name | link         | Notes |
-|:----------:|:-----:|------|--------------|-------|
-|     🟠     | ✅  |  36. Valid Sudoku    | [Leetcode](https://leetcode.com/problems/valid-sudoku/) |       |
-|     🟠     | ✅❗❓❌  | 53. Maximum Subarray     | [Leetcode](https://leetcode.com/problems/maximum-subarray/) |       |
+| Difficulty | Marks | Name                 | link                                                        | Notes |
+|:----------:|:-----:|----------------------|-------------------------------------------------------------|-------|
+|     🟠     |   ✅   | 36. Valid Sudoku     | [Leetcode](https://leetcode.com/problems/valid-sudoku/)     |       |
+|     🟠     | ✅❗❓❌  | 53. Maximum Subarray | [Leetcode](https://leetcode.com/problems/maximum-subarray/) |       |
 
 
 ---
@@ -545,37 +539,41 @@ Notes:
 |     🟠     |  ✅❓   | 1584. Min Cost to Connect All Points | [Leetcode](https://leetcode.com/problems/min-cost-to-connect-all-points/) |       |
 
 Notes:
-- 1584: Read S2
+- 1584: Read S2 and [link](https://leetcode.cn/problems/min-cost-to-connect-all-points/solution/prim-and-kruskal-by-yexiso-c500/)
 
 ---
 
-### [20220816](src/main/kotlin/_2022/_08/_20220816.kt)
+### [2022081](src/main/kotlin/_2022/_08/_20220817.kt)
 
 | Difficulty | Marks | Name | link         | Notes |
 |:----------:|:-----:|------|--------------|-------|
 |     🟢     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
+|     🟠     |   ✅   |  143. Reorder List    | [Leetcode](https://leetcode.com/problems/reorder-list/) |       |
+|     🟠     |   ✅   |  146. LRU Cache    | [Leetcode](https://leetcode.com/problems/lru-cache/) |       |
+|     🟠     |   ✅   |  23. Merge k Sorted Lists    | [Leetcode](https://leetcode.com/problems/merge-k-sorted-lists/) |       |
+|    Hard    |  🔴   | 25. Reverse Nodes in k-Group | [Leetcode](https://leetcode.com/problems/reverse-nodes-in-k-group/) |       |
+|     🟠     |       | 211. Design Add and Search Words Data Structure                | [Leetcode](https://leetcode.com/problems/design-add-and-search-words-data-structure/) |
+|     🟠     | ✅❗❓❌  |  4. Median of Two Sorted Arrays    | [Leetcode]() |       |
+|     🟠     | ✅❗❓❌  | 130. Surrounded Regions     | [Leetcode](https://leetcode.com/problems/surrounded-regions/) |       |
 |     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
 |     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
 |     🔴     | ✅❗❓❌  |      | [Leetcode]() |       |
+
+Notes:!!
+- 143: slow -> 0 and fast -> 1, fast jumps two steps while slow jumps one, when fast became null slow is at the end of the first half
 
 ---
 
 ### [202208](src/main/kotlin/_2022/_08/_202208.kt)
 
-| Difficulty | Marks | Name | link         | Notes |
-|:----------:|:-----:|------|--------------|-------|
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🟢     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🔴     | ✅❗❓❌  |      | [Leetcode]() |       |
+| Difficulty | Marks | Name | link         |
+|:----------:|:-----:|------|--------------|
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |
+|     🟠     | ✅❗❓❌  |      | [Leetcode]() |
+|     🟢     | ✅❗❓❌  |      | [Leetcode]() |
+|     🔴     | ✅❗❓❌  |      | [Leetcode]() |
 
 ---
 
