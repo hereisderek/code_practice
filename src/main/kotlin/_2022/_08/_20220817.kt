@@ -531,10 +531,10 @@ private interface Leetcode_130_2 {
             markI(board, y, x+1)
             markI(board, y, x-1)
         }
-
-
     }
 }
+
+
 
 
 val _20220817 = listOf<Testable>(

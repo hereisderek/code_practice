@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c15a0fa3-bdf6-48b4-87cd-b0658ceea7d4" name="Changes" comment="a few questions for a few days done">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220812.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220813.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220814.kt" afterDir="false" />
+    <list default="true" id="c15a0fa3-bdf6-48b4-87cd-b0658ceea7d4" name="Changes" comment="(20220816) 20220817">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220818.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220802.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220802.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220805.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220805.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_202208.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_202208.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220817.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220817.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +108,7 @@
   },
   &quot;keyToStringList&quot;: {
     &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;Python&quot;,
       &quot;kotlin&quot;
     ]
   }
@@ -261,7 +257,10 @@
       <workItem from="1660122158900" duration="14605000" />
       <workItem from="1660266918196" duration="5764000" />
       <workItem from="1660441244157" duration="1838000" />
-      <workItem from="1660462847379" duration="14089000" />
+      <workItem from="1660462847379" duration="29078000" />
+      <workItem from="1660618415628" duration="4723000" />
+      <workItem from="1660690034308" duration="13598000" />
+      <workItem from="1660823984601" duration="487000" />
     </task>
     <task id="LOCAL-00001" summary="assertEqualTo added lazyMsg; Node added toUnsafeString() clone() and fixed equals(); added Tuple; Leetcode_206 Leetcode_25 Leetcode_234 Leetcode_26 Leetcode_27 Leetcode_83">
       <created>1655385356850</created>
@@ -319,7 +318,35 @@
       <option name="project" value="LOCAL" />
       <updated>1660264413636</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="a few questions for a few days done">
+      <created>1660489874221</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1660489874221</updated>
+    </task>
+    <task id="LOCAL-00010" summary="20220814">
+      <created>1660556500783</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1660556500783</updated>
+    </task>
+    <task id="LOCAL-00011" summary="20220815">
+      <created>1660620157243</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1660620157243</updated>
+    </task>
+    <task id="LOCAL-00012" summary="(20220816) 20220817">
+      <created>1660742109018</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1660742109018</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,7 +374,10 @@
     <MESSAGE value="Leetcode_208 (with three solutions)" />
     <MESSAGE value="Leetcode_33 Leetcode_40 Leetcode_46 Leetcode_90 UnionFind" />
     <MESSAGE value="a few questions for a few days done" />
-    <option name="LAST_COMMIT_MESSAGE" value="a few questions for a few days done" />
+    <MESSAGE value="20220814" />
+    <MESSAGE value="20220815" />
+    <MESSAGE value="(20220816) 20220817" />
+    <option name="LAST_COMMIT_MESSAGE" value="(20220816) 20220817" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -664,18 +694,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220814.kt</url>
-          <line>315</line>
+          <line>280</line>
           <option name="timeStamp" value="237" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220814.kt</url>
-          <line>301</line>
-          <option name="timeStamp" value="238" />
+          <line>332</line>
+          <option name="timeStamp" value="239" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220814.kt</url>
-          <line>367</line>
-          <option name="timeStamp" value="239" />
+          <line>498</line>
+          <option name="timeStamp" value="248" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220814.kt</url>
+          <line>477</line>
+          <option name="timeStamp" value="249" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220815.kt</url>
+          <line>75</line>
+          <option name="timeStamp" value="250" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220815.kt</url>
+          <line>63</line>
+          <option name="timeStamp" value="252" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220815.kt</url>
+          <line>193</line>
+          <option name="timeStamp" value="254" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />

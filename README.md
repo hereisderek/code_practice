@@ -545,22 +545,34 @@ Notes:
 
 ### [2022081](src/main/kotlin/_2022/_08/_20220817.kt)
 
-| Difficulty | Marks | Name | link         | Notes |
-|:----------:|:-----:|------|--------------|-------|
-|     🟢     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🟠     |   ✅   |  143. Reorder List    | [Leetcode](https://leetcode.com/problems/reorder-list/) |       |
-|     🟠     |   ✅   |  146. LRU Cache    | [Leetcode](https://leetcode.com/problems/lru-cache/) |       |
-|     🟠     |   ✅   |  23. Merge k Sorted Lists    | [Leetcode](https://leetcode.com/problems/merge-k-sorted-lists/) |       |
-|    Hard    |  🔴   | 25. Reverse Nodes in k-Group | [Leetcode](https://leetcode.com/problems/reverse-nodes-in-k-group/) |       |
-|     🟠     |       | 211. Design Add and Search Words Data Structure                | [Leetcode](https://leetcode.com/problems/design-add-and-search-words-data-structure/) |
-|     🟠     | ✅❗❓❌  |  4. Median of Two Sorted Arrays    | [Leetcode]() |       |
-|     🟠     | ✅❗❓❌  | 130. Surrounded Regions     | [Leetcode](https://leetcode.com/problems/surrounded-regions/) |       |
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |       |
-|     🔴     | ✅❗❓❌  |      | [Leetcode]() |       |
+| Difficulty | Marks | Name                                            | link                                                                                  | Notes |
+|:----------:|:-----:|-------------------------------------------------|---------------------------------------------------------------------------------------|-------|
+|     🟢     | ✅❗❓❌  |                                                 | [Leetcode]()                                                                          |       |
+|     🟠     |   ✅   | 143. Reorder List                               | [Leetcode](https://leetcode.com/problems/reorder-list/)                               |       |
+|     🟠     |   ✅   | 146. LRU Cache                                  | [Leetcode](https://leetcode.com/problems/lru-cache/)                                  |       |
+|     🟠     |   ✅   | 23. Merge k Sorted Lists                        | [Leetcode](https://leetcode.com/problems/merge-k-sorted-lists/)                       |       |
+|     🔴     |   ✅   | 25. Reverse Nodes in k-Group                    | [Leetcode](https://leetcode.com/problems/reverse-nodes-in-k-group/)                   |       |
+|     🟠     |       | 211. Design Add and Search Words Data Structure | [Leetcode](https://leetcode.com/problems/design-add-and-search-words-data-structure/) |
+|     🟠     |  ❗❓❌  | 4. Median of Two Sorted Arrays                  | [Leetcode]()                                                                          |       |
+|     🟠     |   ✅   | 130. Surrounded Regions                         | [Leetcode](https://leetcode.com/problems/surrounded-regions/)                         |       |
+
 
 Notes:!!
 - 143: slow -> 0 and fast -> 1, fast jumps two steps while slow jumps one, when fast became null slow is at the end of the first half
+
+---
+
+### [202208](src/main/kotlin/_2022/_08/_202208.kt)
+
+| Difficulty | Marks | Name                    | link                                                          |
+|:----------:|:-----:|-------------------------|---------------------------------------------------------------|
+|     🟠     | ✅❗❓❌  | 743. Network Delay Time | [Leetcode](https://leetcode.com/problems/network-delay-time/) |       |
+|     🟠     | ✅❗❓❌  |  295. Find Median from Data Stream                       | [Leetcode](https://leetcode.com/problems/find-median-from-data-stream/)                                                  |
+|     🟠     | ✅❗❓❌  |                         | [Leetcode]()                                                  |
+|     🟠     | ✅❗❓❌  |                         | [Leetcode]()                                                  |
+|     🟠     | ✅❗❓❌  |                         | [Leetcode]()                                                  |
+|     🟢     | ✅❗❓❌  |                         | [Leetcode]()                                                  |
+|     🔴     | ✅❗❓❌  |                         | [Leetcode]()                                                  |
 
 ---
 
