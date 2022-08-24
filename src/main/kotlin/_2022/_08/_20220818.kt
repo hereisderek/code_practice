@@ -39,19 +39,10 @@ private interface Leetcode_743 {
 // 295. Find Median from Data Stream
 // https://leetcode.com/problems/find-median-from-data-stream/
 private interface Leetcode_295 {
+    fun addNum(num: Int)
+    fun findMedian(): Double
 
-    class MedianFinder1() {
-        val list = LinkedList<Int>()
 
-        fun addNum(num: Int) {
-
-        }
-
-        fun findMedian(): Double {
-
-        }
-
-    }
 }
 
 

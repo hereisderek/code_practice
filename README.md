@@ -564,15 +564,18 @@ Notes:!!
 
 ### [202208](src/main/kotlin/_2022/_08/_202208.kt)
 
-| Difficulty | Marks | Name                    | link                                                          |
-|:----------:|:-----:|-------------------------|---------------------------------------------------------------|
-|     🟠     | ✅❗❓❌  | 743. Network Delay Time | [Leetcode](https://leetcode.com/problems/network-delay-time/) |       |
-|     🟠     | ✅❗❓❌  |  295. Find Median from Data Stream                       | [Leetcode](https://leetcode.com/problems/find-median-from-data-stream/)                                                  |
-|     🟠     | ✅❗❓❌  |                         | [Leetcode]()                                                  |
-|     🟠     | ✅❗❓❌  |                         | [Leetcode]()                                                  |
-|     🟠     | ✅❗❓❌  |                         | [Leetcode]()                                                  |
-|     🟢     | ✅❗❓❌  |                         | [Leetcode]()                                                  |
-|     🔴     | ✅❗❓❌  |                         | [Leetcode]()                                                  |
+| Difficulty | Marks | Name                              | link                                                                    |
+|:----------:|:-----:|-----------------------------------|-------------------------------------------------------------------------|
+|     🟠     | ✅❗❓❌  | 743. Network Delay Time           | [Leetcode](https://leetcode.com/problems/network-delay-time/)           |       |
+|     🟠     | ✅❗❓❌  | 295. Find Median from Data Stream | [Leetcode](https://leetcode.com/problems/find-median-from-data-stream/) |
+
+---
+
+### [20220825](src/main/kotlin/_2022/_08/_202208.kt)
+
+| Difficulty | Marks | Name            | link                                                   |
+|:----------:|:-----:|-----------------|--------------------------------------------------------|
+|     🟠     |   ✅   | 79. Word Search | [Leetcode](https://leetcode.com/problems/word-search/) |
 
 ---
 

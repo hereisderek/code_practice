@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c15a0fa3-bdf6-48b4-87cd-b0658ceea7d4" name="Changes" comment="(20220816) 20220817">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220818.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220822.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220824.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/MainKt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/MainKt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220817.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220817.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220818.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220818.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,12 +63,6 @@
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib-common/1.7.0/f9c9b06e827013c64085993d479138766ef16aed/kotlin-stdlib-common-1.7.0-sources.jar!/generated/_Arrays.kt" root0="SKIP_INSPECTION" />
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.7.0/a47f6071d3ba1c695174371ffeb95ac2df2089a5/kotlin-stdlib-1.7.0-sources.jar!/generated/_ArraysJvm.kt" root0="SKIP_INSPECTION" />
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.7.0/a47f6071d3ba1c695174371ffeb95ac2df2089a5/kotlin-stdlib-1.7.0-sources.jar!/kotlin/Collections.kt" root0="SKIP_INSPECTION" />
-    <setting file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jetbrains.kotlin/kotlin-stdlib/1.7.0/a47f6071d3ba1c695174371ffeb95ac2df2089a5/kotlin-stdlib-1.7.0-sources.jar!/kotlin/Library.kt" root0="SKIP_INSPECTION" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -94,7 +92,7 @@
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/derek/Workspace/mine/code_practice/src/main/kotlin/_2022/_08&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Volumes/Private/Data/Workspace/mine/code_practice/src/main/kotlin/_2022/_08&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -261,6 +259,9 @@
       <workItem from="1660618415628" duration="4723000" />
       <workItem from="1660690034308" duration="13598000" />
       <workItem from="1660823984601" duration="487000" />
+      <workItem from="1661168102195" duration="154000" />
+      <workItem from="1661168349516" duration="2476000" />
+      <workItem from="1661246512206" duration="4865000" />
     </task>
     <task id="LOCAL-00001" summary="assertEqualTo added lazyMsg; Node added toUnsafeString() clone() and fixed equals(); added Tuple; Leetcode_206 Leetcode_25 Leetcode_234 Leetcode_26 Leetcode_27 Leetcode_83">
       <created>1655385356850</created>
