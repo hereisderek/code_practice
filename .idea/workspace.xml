@@ -4,15 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c15a0fa3-bdf6-48b4-87cd-b0658ceea7d4" name="Changes" comment="(20220816) 20220817">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220822.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220824.kt" afterDir="false" />
+    <list default="true" id="c15a0fa3-bdf6-48b4-87cd-b0658ceea7d4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220826.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220827.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220828.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220829.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220831.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_09/_20220906.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_09/_20220907.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_09/_20220908.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_09/_20220911.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/_202209.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations/MainKt.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations/MainKt.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220818.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220818.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/_202208.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220825.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +100,7 @@
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;18&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Volumes/Private/Data/Workspace/mine/code_practice/src/main/kotlin/_2022/_08&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Volumes/Private/Data/Workspace/mine/code_practice/src/main/kotlin/_2022/_09&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -101,23 +109,23 @@
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.3268366&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;Python&quot;,
-      &quot;kotlin&quot;
+      &quot;kotlin&quot;,
+      &quot;Python&quot;
     ]
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/_2022/_09" />
+      <recent name="$PROJECT_DIR$/src/main/kotlin/_2022/09" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/_2022/_08" />
       <recent name="$PROJECT_DIR$/src/main/kotlin/_2022/_07" />
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
-      <recent name="$PROJECT_DIR$/src/main/kotlin/_2022/_07/images" />
-      <recent name="$PROJECT_DIR$/src/main/kotlin/_2022/_06" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin/_2022/_05" />
@@ -262,6 +270,11 @@
       <workItem from="1661168102195" duration="154000" />
       <workItem from="1661168349516" duration="2476000" />
       <workItem from="1661246512206" duration="4865000" />
+      <workItem from="1661376426343" duration="872000" />
+      <workItem from="1661431827477" duration="36943000" />
+      <workItem from="1661839063281" duration="1221000" />
+      <workItem from="1662380081663" duration="8317000" />
+      <workItem from="1662593550023" duration="35396000" />
     </task>
     <task id="LOCAL-00001" summary="assertEqualTo added lazyMsg; Node added toUnsafeString() clone() and fixed equals(); added Tuple; Leetcode_206 Leetcode_25 Leetcode_234 Leetcode_26 Leetcode_27 Leetcode_83">
       <created>1655385356850</created>
@@ -347,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660742109018</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="20220824">
+      <created>1661376465103</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1661376465103</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,7 +398,8 @@
     <MESSAGE value="20220814" />
     <MESSAGE value="20220815" />
     <MESSAGE value="(20220816) 20220817" />
-    <option name="LAST_COMMIT_MESSAGE" value="(20220816) 20220817" />
+    <MESSAGE value="20220824" />
+    <option name="LAST_COMMIT_MESSAGE" value="20220824" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
@@ -728,6 +749,21 @@
           <line>193</line>
           <option name="timeStamp" value="254" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220826.kt</url>
+          <line>45</line>
+          <option name="timeStamp" value="257" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220827.kt</url>
+          <line>108</line>
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/src/main/kotlin/_2022/_08/_20220827.kt</url>
+          <line>158</line>
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="19" />
@@ -744,12 +780,6 @@
         <PinnedItemInfo parentTag="utils.Node" memberName="next" />
       </pinned-members>
     </pin-to-top-manager>
-    <watches-manager>
-      <configuration name="JetRunConfigurationType">
-        <watch expression="dummy.next?.toUnsafeString()" language="kotlin" />
-        <watch expression="sum" language="kotlin" />
-      </configuration>
-    </watches-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

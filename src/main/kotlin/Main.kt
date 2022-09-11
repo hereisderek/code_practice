@@ -1,5 +1,6 @@
 import _2022._07.*
 import _2022._08.*
+import _2022._09._20220908
 
 fun main(args: Array<String>) {
 
@@ -14,8 +15,10 @@ fun main(args: Array<String>) {
         // _20220811,
         // _20220812,
         // _20220814,
-        _20220815,
-
+        // _20220815,
+        // _20220826,
+        // _20220827,
+        _20220908
     ).flatten()
 
     for (i in tests.indices) {

@@ -571,7 +571,7 @@ Notes:!!
 
 ---
 
-### [20220825](src/main/kotlin/_2022/_08/_202208.kt)
+### [20220824](src/main/kotlin/_2022/_08/_202208.kt)
 
 | Difficulty | Marks | Name            | link                                                   |
 |:----------:|:-----:|-----------------|--------------------------------------------------------|
@@ -579,7 +579,84 @@ Notes:!!
 
 ---
 
-### [202208](src/main/kotlin/_2022/_08/_202208.kt)
+### [20220825](src/main/kotlin/_2022/_08/_20220825.kt)
+
+| Difficulty | Marks | Name                                      | link                                                               |
+|:----------:|:-----:|-------------------------------------------|--------------------------------------------------------------------|
+|     🟠     |   ❌   | 131. Palindrome Partitioning              | [Leetcode](https://leetcode.com/problems/palindrome-partitioning/) |
+|     🟠     | ✅❗❓❌  | 17. Letter Combinations of a Phone Number | [Leetcode]()                                                       |
+
+
+---
+
+### [20220826](src/main/kotlin/_2022/_08/_20220826.kt)
+
+| Difficulty | Marks | Name | link         |
+|:----------:|:-----:|------|--------------|
+|     🟠     | ✅ |  663 · Walls and Gates    | [Leetcode](https://www.lintcode.com/problem/663/) |
+|     🟠     | ✅  |  207. Course Schedule    | [Leetcode](https://leetcode.com/problems/course-schedule/submissions/) |
+
+
+- 207: S1
+
+---
+### [20220827](src/main/kotlin/_2022/_08/_20220827.kt)
+
+| Difficulty | Marks | Name                      | link                                                               |
+|:----------:|:-----:|---------------------------|--------------------------------------------------------------------|
+|     🟠     | ✅❗❓❌  | 684. Redundant Connection | [Leetcode](// https://leetcode.com/problems/redundant-connection/) |
+
+
+---
+### [20220828](src/main/kotlin/_2022/_08/_20220828.kt)
+
+| Difficulty | Marks | Name | link         |
+|:----------:|:-----:|------|--------------|
+|     🟠     | ✅  |  2385. Amount of Time for Binary Tree to Be Infected    | [Leetcode](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/) |
+
+- 2385: S1
+
+---
+### [20220829](src/main/kotlin/_2022/_08/_20220829.kt)
+
+| Difficulty | Marks | Name | link         |
+|:----------:|:-----:|------|--------------|
+|     🔴     | ✅❗❓❌  |   4. Median of Two Sorted Arrays   | [Leetcode]() |
+
+---
+### [20220907](src/main/kotlin/_2022/_08/_202208.kt)
+
+| Difficulty | Marks | Name                        | link                                                              |
+|:----------:|:-----:|-----------------------------|-------------------------------------------------------------------|
+|     🟠     | ✅❗❓❌  | 8. String to Integer (atoi) | [Leetcode](https://leetcode.com/problems/string-to-integer-atoi/) |
+|     🟠     | ✅❗❓❌  | 56. Merge Intervals         | [Leetcode](https://leetcode.com/problems/merge-intervals/)        |
+
+
+- 8: stupid ass question, not worth looking at
+
+---
+### [20220908](src/main/kotlin/_2022/_08/_20220908.kt)
+
+| Difficulty | Marks | Name | link                                                                    |
+|:----------:|:-----:|------|-------------------------------------------------------------------------|
+|     🟠     | ❌  |  435. Non-overlapping Intervals    | [Leetcode](https://leetcode.com/problems/non-overlapping-intervals/)    |
+|     🟠     | ✅❗❓❌  | Lintcode 919 · Meeting Rooms II     | [Leetcode](https://leetcode.com/problems/meeting-rooms-ii/) [youtube](https://www.youtube.com/watch?v=FdzJmTCVyJU) |
+
+---
+### [20220911](src/main/kotlin/_2022/_08/_20220911.kt)
+
+| Difficulty | Marks | Name                     | link                                                           |
+|:----------:|:-----:|--------------------------|----------------------------------------------------------------|
+|     🟠     |   ✅   |                          | [Leetcode](https://leetcode.com/problems/fruit-into-baskets/)  |
+|     🟠     |   ✅   | 73. Set Matrix Zeroes    | [Leetcode](https://leetcode.com/problems/set-matrix-zeroes/)   |
+|     🟠     |   ✅   | 50. Pow(x, n)            | [Leetcode](https://leetcode.com/problems/powx-n/)              |
+|     🟠     | ✅❗❓❌  | 371. Sum of Two Integers | [Leetcode](https://leetcode.com/problems/sum-of-two-integers/) |
+|     🟢     | ✅❗❓❌  | 202. Happy Number        | [Leetcode](https://leetcode.com/problems/happy-number/)        |
+|     🟢     | ✅❗❓❌  | 66. Plus One             | [Leetcode](https://leetcode.com/problems/plus-one)             |
+
+
+---
+### [202209](src/main/kotlin/_2022/_08/_202209.kt)
 
 | Difficulty | Marks | Name | link         |
 |:----------:|:-----:|------|--------------|
@@ -617,3 +694,11 @@ Notes:!!
 - [LABULADONG 的算法网站](https://labuladong.github.io/algo/)
 
 ---
+
+
+### To-Do list
+- https://leetcode.com/problems/number-of-connected-components-in-an-undirected-graph/
+- https://leetcode.com/problems/graph-valid-tree/
+- https://leetcode.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+- https://leetcode.com/problems/palindrome-partitioning/submissions/
+- https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/

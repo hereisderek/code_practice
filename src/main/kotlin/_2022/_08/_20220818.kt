@@ -44,8 +44,3 @@ private interface Leetcode_295 {
 
 
 }
-
-
-val _202208 = listOf<Testable>(
-
-)
