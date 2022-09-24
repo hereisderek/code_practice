@@ -591,10 +591,10 @@ Notes:!!
 
 ### [20220826](src/main/kotlin/_2022/_08/_20220826.kt)
 
-| Difficulty | Marks | Name | link         |
-|:----------:|:-----:|------|--------------|
-|     🟠     | ✅ |  663 · Walls and Gates    | [Leetcode](https://www.lintcode.com/problem/663/) |
-|     🟠     | ✅  |  207. Course Schedule    | [Leetcode](https://leetcode.com/problems/course-schedule/submissions/) |
+| Difficulty | Marks | Name                  | link                                                                   |
+|:----------:|:-----:|-----------------------|------------------------------------------------------------------------|
+|     🟠     |   ✅   | 663 · Walls and Gates | [Leetcode](https://www.lintcode.com/problem/663/)                      |
+|     🟠     |   ✅   | 207. Course Schedule  | [Leetcode](https://leetcode.com/problems/course-schedule/submissions/) |
 
 
 - 207: S1
@@ -610,18 +610,18 @@ Notes:!!
 ---
 ### [20220828](src/main/kotlin/_2022/_08/_20220828.kt)
 
-| Difficulty | Marks | Name | link         |
-|:----------:|:-----:|------|--------------|
-|     🟠     | ✅  |  2385. Amount of Time for Binary Tree to Be Infected    | [Leetcode](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/) |
+| Difficulty | Marks | Name                                                | link                                                                                     |
+|:----------:|:-----:|-----------------------------------------------------|------------------------------------------------------------------------------------------|
+|     🟠     |   ✅   | 2385. Amount of Time for Binary Tree to Be Infected | [Leetcode](https://leetcode.com/problems/amount-of-time-for-binary-tree-to-be-infected/) |
 
 - 2385: S1
 
 ---
 ### [20220829](src/main/kotlin/_2022/_08/_20220829.kt)
 
-| Difficulty | Marks | Name | link         |
-|:----------:|:-----:|------|--------------|
-|     🔴     | ✅❗❓❌  |   4. Median of Two Sorted Arrays   | [Leetcode]() |
+| Difficulty | Marks | Name                           | link         |
+|:----------:|:-----:|--------------------------------|--------------|
+|     🔴     | ✅❗❓❌  | 4. Median of Two Sorted Arrays | [Leetcode]() |
 
 ---
 ### [20220907](src/main/kotlin/_2022/_08/_202208.kt)
@@ -637,10 +637,10 @@ Notes:!!
 ---
 ### [20220908](src/main/kotlin/_2022/_08/_20220908.kt)
 
-| Difficulty | Marks | Name | link                                                                    |
-|:----------:|:-----:|------|-------------------------------------------------------------------------|
-|     🟠     | ❌  |  435. Non-overlapping Intervals    | [Leetcode](https://leetcode.com/problems/non-overlapping-intervals/)    |
-|     🟠     | ✅❗❓❌  | Lintcode 919 · Meeting Rooms II     | [Leetcode](https://leetcode.com/problems/meeting-rooms-ii/) [youtube](https://www.youtube.com/watch?v=FdzJmTCVyJU) |
+| Difficulty | Marks | Name                            | link                                                                                                               |
+|:----------:|:-----:|---------------------------------|--------------------------------------------------------------------------------------------------------------------|
+|     🟠     |   ❌   | 435. Non-overlapping Intervals  | [Leetcode](https://leetcode.com/problems/non-overlapping-intervals/)                                               |
+|     🟠     | ✅❗❓❌  | Lintcode 919 · Meeting Rooms II | [Leetcode](https://leetcode.com/problems/meeting-rooms-ii/) [youtube](https://www.youtube.com/watch?v=FdzJmTCVyJU) |
 
 ---
 ### [20220911](src/main/kotlin/_2022/_08/_20220911.kt)
@@ -650,22 +650,62 @@ Notes:!!
 |     🟠     |   ✅   |                          | [Leetcode](https://leetcode.com/problems/fruit-into-baskets/)  |
 |     🟠     |   ✅   | 73. Set Matrix Zeroes    | [Leetcode](https://leetcode.com/problems/set-matrix-zeroes/)   |
 |     🟠     |   ✅   | 50. Pow(x, n)            | [Leetcode](https://leetcode.com/problems/powx-n/)              |
-|     🟠     | ✅❗❓❌  | 371. Sum of Two Integers | [Leetcode](https://leetcode.com/problems/sum-of-two-integers/) |
-|     🟢     | ✅❗❓❌  | 202. Happy Number        | [Leetcode](https://leetcode.com/problems/happy-number/)        |
-|     🟢     | ✅❗❓❌  | 66. Plus One             | [Leetcode](https://leetcode.com/problems/plus-one)             |
+|     🟠     |   ❌   | 371. Sum of Two Integers | [Leetcode](https://leetcode.com/problems/sum-of-two-integers/) |
+|     🟢     |   ✅   | 202. Happy Number        | [Leetcode](https://leetcode.com/problems/happy-number/)        |
+|     🟢     |   ✅   | 66. Plus One             | [Leetcode](https://leetcode.com/problems/plus-one)             |
 
 
 ---
+### [20220912](src/main/kotlin/_2022/_08/_20220912.kt)
+
+| Difficulty | Marks | Name               | link                                                     |
+|:----------:|:-----:|--------------------|----------------------------------------------------------|
+|     🟠     |   ✅   | 338. Counting Bits | [Leetcode](https://leetcode.com/problems/counting-bits/) |
+|     🟠     | ✅❗❓❌  | 91. Decode Ways    | [Leetcode](https://leetcode.com/problems/decode-ways/)   |
+
+---
+### [20220914](src/main/kotlin/_2022/_08/_20220914.kt)
+
+| Difficulty | Marks | Name                 | link         |
+|:----------:|:-----:|----------------------|--------------|
+|     🟠     | ✅❗❓❌  | 213. House Robber II | [Leetcode]() |
+
+* 213: run house robber 1 two times with either first house included or the last
+
+---
+### [20220916](src/main/kotlin/_2022/_08/_20220916.kt)
+
+| Difficulty | Marks |       Name       | link                                                   |
+|:----------:|:-----:|:----------------:|--------------------------------------------------------|
+|     🟠     | ✅❗❓❌  | 322. Coin Change | [Leetcode](https://leetcode.com/problems/coin-change/) |
+
+---
+### [20220923](src/main/kotlin/_2022/_08/_20220923.kt)
+
+| Diff | Marks |              Name              | link                                                                 |
+|:----:|:-----:|:------------------------------:|----------------------------------------------------------------------|
+|  🟠  |  ✅❗   |    743. Network Delay Time     | [Leetcode](https://leetcode.com/problems/network-delay-time/)        |       |
+|  🟠  |   ✅   |   209. Minimum Size Subarray Sum                             | [Leetcode](https://leetcode.com/problems/minimum-size-subarray-sum/)                                                         |
+|  🟠  | ✅❗❓❌  |                                | [Leetcode]()                                                         |
+|  🟠  | ✅❗❓❌  |                                | [Leetcode]()                                                         |
+|  🟠  | ✅❗❓❌  |                                | [Leetcode]()                                                         |
+|  🟢  | ✅❗❓❌  |                                | [Leetcode]()                                                         |
+|  🟢  | ✅❗❓❌  | 977. Squares of a Sorted Array | [Leetcode](https://leetcode.com/problems/squares-of-a-sorted-array/) |
+|  🔴  | ✅❗❓❌  |                                | [Leetcode]()                                                         |
+
+* 209: sliding window (left/right pointers)
+---
+
 ### [202209](src/main/kotlin/_2022/_08/_202209.kt)
 
-| Difficulty | Marks | Name | link         |
-|:----------:|:-----:|------|--------------|
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |
-|     🟠     | ✅❗❓❌  |      | [Leetcode]() |
-|     🟢     | ✅❗❓❌  |      | [Leetcode]() |
-|     🔴     | ✅❗❓❌  |      | [Leetcode]() |
+| Diff | Marks | Name | link         |
+|:----:|:-----:|:----:|--------------|
+|  🟠  | ✅❗❓❌  |      | [Leetcode]() |
+|  🟠  | ✅❗❓❌  |      | [Leetcode]() |
+|  🟠  | ✅❗❓❌  |      | [Leetcode]() |
+|  🟠  | ✅❗❓❌  |      | [Leetcode]() |
+|  🟢  | ✅❗❓❌  |      | [Leetcode]() |
+|  🔴  | ✅❗❓❌  |      | [Leetcode]() |
 
 ---
 

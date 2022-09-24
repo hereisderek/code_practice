@@ -109,7 +109,7 @@ inline fun <reified T, reified R, reified A, reified B, reified C, reified Test 
                     } catch (e: Exception) {
                         null
                     } ?: testName
-                    val testId = "${prefix} run:$runIndex test:$testIndex"
+                    val testId = "${prefix} solution:${runIndex + 1} test:$testIndex"
                     if (duration != null) {
                         if (showDetail) {
                             println("[PASS]$testId, took ${duration.inWholeNanoseconds} Nanoseconds, input:[${toStr(a)}, ${toStr(b)}] output:${toStr(output)}")
